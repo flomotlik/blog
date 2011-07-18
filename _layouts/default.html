@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"> 
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
+<link rel="stylesheet" href="/css/main.css" type="text/css" />
+<head>
+<title>{{ page.title }}</title>
+</head>
+<body>
+
+<div class="container">
+<div id="navigation" class="span-24 last"></div>
+<div id="header" class="span-24 last">
+  <a href="/">
+  <img src="/images/blog_logo.png"/>
+  </a>
+</div>
+<div id="main" class="span-24 last">
+<div id="content" class="span-15">
+{{ content }}
+</div>
+<div id="about" class="span-9 last">
+  <div id="description" class="span-9 last">
+    <h3 class="span-9 last">About</h3>
+      <img src="/images/avatar.png"/>
+      <p >Railsonfire provides simple Continuous Integration for Ruby Apps in the Cloud. On every push to GitHub we test your code.</p>
+    </div>
+  <div id="tweets" class="span-9 last">
+  <h3>Latest Tweets</h3>
+  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 'auto',
+  height: 410,
+  theme: {
+    shell: {
+      background: '#ffffff',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#2434e3'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('railsonfire').start();
+</script>
+  </div>
+</div>
+</div>
+</body>
+</html>

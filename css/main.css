@@ -1,0 +1,53 @@
+body{
+	padding-top:30px;
+}
+
+#navigation{
+	height:40px;
+}
+
+#header{
+	margin-bottom: 20px;
+}
+
+#main{
+	border-top:1px solid #CCC;
+}
+
+#content{
+	min-height: 300px;
+	width:589px;
+}
+
+#about{
+	border-left: 1px solid #CCC;
+}
+
+#about h3{
+	color: #999;
+	border-bottom:1px solid #CCC;
+	height:20px;
+	padding:9px 0px 9px 20px;
+}
+
+#description{
+	margin-bottom: 20px;
+}
+
+#about img{
+	height:64px;
+	width:64px;
+	padding: 3px;
+	border: 1px solid #CCC;
+	float:left;
+	margin-left:20px;
+	margin-right:10px;
+}
+
+#tweets h3{
+	border-top: 1px solid #CCC;
+}
+
+.twtr-ft, .twtr-hd{
+	display:none;
+}
