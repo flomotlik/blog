@@ -10,10 +10,6 @@ body{
     margin-bottom: 20px;
 }
 
-#main{
-
-}
-
 #content{
     min-height: 300px;
     width:589px;
@@ -37,7 +33,7 @@ body{
     margin-bottom: 20px;
 }
 
-#about img{
+#about #description img{
     height:64px;
     width:64px;
     padding: 3px;
@@ -49,6 +45,10 @@ body{
 
 #tweets h3{
     border-top: 1px solid #CCC;
+}
+
+.twitter-follow-button{
+  margin-left:10px;
 }
 
 .twtr-ft, .twtr-hd{
@@ -81,6 +81,8 @@ body{
   margin-left:20px;
   width:560px;
   font: 13px Arial, sans-serif;
+  border-bottom: 1px solid #CCC;
+  margin-bottom:30px;
 }
 
 .post-content h3 a{
