@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mini Seedcamp
+title: Mini Seedcamp Ljubljana
 author: Flo
 ---
 
