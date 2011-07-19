@@ -10,14 +10,21 @@ body{
     margin-bottom: 20px;
 }
 
+#rss{
+  position:relative;
+  top:40px;
+  right:8px;
+  text-align:right;
+}
+
 #content{
     min-height: 300px;
     width:589px;
     margin-right:0px;
+    border-right: 1px solid #CCC;
 }
 
 #about{
-    border-left: 1px solid #CCC;
     border-top:1px solid #CCC;
 }
 
@@ -88,6 +95,12 @@ body{
 .post-content h3 a{
   font: 24px Arial, sans-serif;
   color: #111;
+}
+
+.post-content img{
+  padding: 2px;
+  border: 1px solid darkGray;
+  background-color: white;
 }
 
 .post-content h3 a:hover, .post-content h3 a:focus {
