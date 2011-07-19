@@ -4,14 +4,17 @@
       <a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
       by {{post.author}}
     </span>
-    <span class="span-2">
+    <span class="share">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="railsonfire">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </span>
+    <span class="share">
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://railsonfire.github.com/{{post.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true" class="span-3"></iframe>
+    </span>
+    <span class="share">
       <g:plusone size="medium"></g:plusone>
     </span>
-    <span class="span-3">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="railsonfire">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    </span>
-    <span class="span-2">
-      <iframe src="http://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://blog.railsonfire.com/{{post.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:35px;" allowTransparency="true" class="span-2"></iframe>
+    <span class="share">
+      <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-counter="right"></script>
     </span>
   </div>
 

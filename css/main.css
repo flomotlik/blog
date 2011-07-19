@@ -75,6 +75,7 @@ body{
   margin-top:20px;
   margin-left:20px;
   width:560px;
+  font: 13px Arial, sans-serif;
 }
 
 .post-content h3 a{
@@ -94,3 +95,6 @@ a:focus, a:hover, a:active {
   color: #0099FF;
 }
 
+.share{
+  float: left;
+}
