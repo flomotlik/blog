@@ -24,7 +24,7 @@ To round it all off [Mike Butcher](http://mbites.com/) gave, in his very very fu
 
 We then had a great evening with food, plenty of cocktails, talks and dancing. Although the Startups impressed us with their ideas and hard work nothing impressed us more than some of the incredible dance skills shown in the early morning hours. It was a total blast.
 
-On Friday several teams were invited for 15 minute talks with investors. Sadly we weren’t invited (this time) but we'll be back. We had to leave for Vienna early and thus weren’t able to make it to the Barcamp, but heard lot's of good stuff about it.
+On Friday several teams were invited for 15 minute talks with investors. Sadly we weren't invited (this time) but we'll be back. We had to leave for Vienna early and thus weren't able to make it to the Barcamp, but heard lot's of good stuff about it.
 
 But the best part from our Seedcamp experience happened during the six hour train travel back to Vienna. Thanks to all the Feedback our thoughts were spinning in every direction and we got some great ideas for the future of our service. Some big changes are coming up in the next weeks, so stay tuned.
 
