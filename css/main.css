@@ -29,7 +29,8 @@ body{
     color: #999;
     border-bottom:1px solid #CCC;
     height:20px;
-    padding:9px 0px 9px 20px;
+    padding:9px 0px 9px 0px;
+    text-indent:20px;
 }
 
 #description{
