@@ -99,7 +99,7 @@ body{
 
 .post-content img{
   padding: 2px;
-  border: 1px solid darkGray;
+  border: 1px solid #CCC;
   background-color: white;
 }
 
