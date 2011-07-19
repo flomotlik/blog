@@ -1,0 +1,26 @@
+<div class="post" class="span-15 last">
+  <div class="post-header span-15 last">
+    <span class="span-3">
+      <a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
+      by {{post.author}}
+    </span>
+    <span class="span-2">
+      <g:plusone size="medium"></g:plusone>
+    </span>
+    <span class="span-3">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="railsonfire">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </span>
+    <span class="span-2">
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://blog.railsonfire.com/{{post.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:35px;" allowTransparency="true" class="span-2"></iframe>
+    </span>
+  </div>
+
+  <div class="span-15 last post-content">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {% if content %}
+      {{ content }}
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+  </div>
+</div>

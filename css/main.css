@@ -1,53 +1,96 @@
 body{
-	padding-top:30px;
+    padding-top:30px;
 }
 
 #navigation{
-	height:40px;
+    height:40px;
 }
 
 #header{
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #main{
-	border-top:1px solid #CCC;
+
 }
 
 #content{
-	min-height: 300px;
-	width:589px;
+    min-height: 300px;
+    width:589px;
+    margin-right:0px;
 }
 
 #about{
-	border-left: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-top:1px solid #CCC;
 }
 
 #about h3{
-	color: #999;
-	border-bottom:1px solid #CCC;
-	height:20px;
-	padding:9px 0px 9px 20px;
+    color: #999;
+    border-bottom:1px solid #CCC;
+    height:20px;
+    padding:9px 0px 9px 20px;
 }
 
 #description{
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #about img{
-	height:64px;
-	width:64px;
-	padding: 3px;
-	border: 1px solid #CCC;
-	float:left;
-	margin-left:20px;
-	margin-right:10px;
+    height:64px;
+    width:64px;
+    padding: 3px;
+    border: 1px solid #CCC;
+    float:left;
+    margin-left:20px;
+    margin-right:10px;
 }
 
 #tweets h3{
-	border-top: 1px solid #CCC;
+    border-top: 1px solid #CCC;
 }
 
 .twtr-ft, .twtr-hd{
-	display:none;
+    display:none;
 }
+
+.post-header{
+    border-bottom: 1px solid #CCC;
+    border-top:1px solid #CCC;
+    margin-right:0px;
+    height:20px;
+    padding:9px 0px 9px 20px;
+    width:571px;
+}
+
+.post a{
+    text-decoration:none;
+}
+
+.post-header a{
+  color: #555;
+}
+
+.post-content{
+  margin-top:20px;
+  margin-left:20px;
+  width:560px;
+}
+
+.post-content h3 a{
+  font: 24px Arial, sans-serif;
+  color: #111;
+}
+
+.post-content h3 a:hover, .post-content h3 a:focus {
+color: #0099FF;
+}
+
+#header #pages a:focus, #header #pages a:hover, #header #pages a:active {
+  color: #0099FF;
+}
+
+a:focus, a:hover, a:active {
+  color: #0099FF;
+}
+
