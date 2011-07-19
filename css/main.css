@@ -55,6 +55,10 @@ body{
     display:none;
 }
 
+.twtr-tweet-text p{
+  font: 13px Arial, sans-serif;
+}
+
 .post-header{
     border-bottom: 1px solid #CCC;
     border-top:1px solid #CCC;
