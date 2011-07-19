@@ -16,7 +16,7 @@ After all the Presentations we had time to lean back and watch [Fred Destin](htt
 
 ![Fred Destin presenting at Seedcamp](http://railsonfire.github.com/images/seedcamp/Destin.jpg)
 
-Then all teams took place in their respective rooms and waited for the mentors to come in, give feedback, advice and general words of wisdom. Five groups of four mentors each joined us to talk business, marketing, technology or strategy with us. It was easy, hard, fun, tough, interesting and definitely very tiring. The Seedcampers really got a very diverse team of mentors for the event. From TelCo CEO's to Social Media Marketing pro's to developers and investors. Really cool.
+Then all teams went into their respective rooms and waited for the mentors to come in, give feedback, advice and general words of wisdom. Five groups of four mentors each joined us to talk business, marketing, technology or strategy with us. It was easy, hard, fun, tough, interesting and definitely very tiring. The Seedcampers really got a very diverse team of mentors for the event. From TelCo CEO's to Social Media Marketing pro's to developers and investors. Really cool.
 
 To round it all off [Mike Butcher](http://mbites.com/) gave, in his very very funny style, an introduction on how to deal with the media, while Austrian beer was enjoyed by the audience.
 
