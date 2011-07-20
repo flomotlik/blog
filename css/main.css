@@ -7,6 +7,16 @@ body{
 
 #header{
     margin-bottom: 20px;
+    height:73px;
+}
+
+#railsonfire-link{
+  font: 24px Arial, sans-serif;
+  color: #111;
+  position: relative;
+  top:30px;
+  text-decoration:none;
+  text-align:right;
 }
 
 #rss{
