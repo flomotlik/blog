@@ -126,3 +126,6 @@ a:focus, a:hover, a:active {
 .share{
   float: left;
 }
+.post li{
+  margin-bottom:10px;
+}
