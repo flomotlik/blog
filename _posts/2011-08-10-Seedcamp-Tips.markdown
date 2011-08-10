@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Seedcamp Tips
+title: How to hack Seedcamp
 author: Flo
 ---
 
