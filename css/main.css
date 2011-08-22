@@ -129,3 +129,30 @@ a:focus, a:hover, a:active {
 .post li{
   margin-bottom:10px;
 }
+#footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+
+}
+
+/* line 297, ../../app/stylesheets/railsonfire.scss */
+#footer {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+/* line 303, ../../app/stylesheets/railsonfire.scss */
+#footer a {
+  color: #76797C;
+  font-size: 11px;
+  font-family: arial;
+}
+
+/* line 309, ../../app/stylesheets/railsonfire.scss */
+#footer h3 {
+  color: #387FD5;
+  font-size: 12px;
+  font-family: arial;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
