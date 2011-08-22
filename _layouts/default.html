@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}"/>
 <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
   <!--[if lt IE 8]>
@@ -7,8 +10,7 @@
   <![endif]-->
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
 <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Railsonfire Atom Feed" />
-<head>
-<title>{{ page.title }}</title>
+<meta name="description" content="<%= yield :description %>"/>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js">// <![CDATA[
  {lang: 'en'}
  // ]]></script>
