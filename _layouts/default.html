@@ -90,12 +90,13 @@ new TWTR.Widget({
 </script>
   </div>
 </div>
+{% assign url = "http://railsonfire.com" %}
 <div id="footer" class="span-24 last">
          <div class="span-7">
            <h3>Service</h3>
            <ul>
-             <li><a href="/">How it works</a></li>
-             <li><a href="/pricing">Pricing</a></li>
+             <li><a href="{{ url }}">How it works</a></li>
+             <li><a href="{{ url }}/pricing">Pricing</a></li>
              <li><a href="https://railsonfire.tenderapp.com/kb" target="_blank">Frequently asked Questions</a></li>
              <li><a href="#" id="tender-support-link-bottom">Support</a></li>
            </ul>
@@ -104,8 +105,8 @@ new TWTR.Widget({
            <h3>About</h3>
            <ul>
              <li><a href="http://blog.railsonfire.com" target="_blank">Blog</a></li>
-             <li><a href="/team">Team</a></li>
-             <li><a href="/contact">Contact</a></li>
+             <li><a href="{{ url }}/team">Team</a></li>
+             <li><a href="{{ url }}/contact">Contact</a></li>
            </ul>
          </div>
          <div class="span-6">
