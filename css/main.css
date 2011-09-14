@@ -20,10 +20,9 @@ body{
 }
 
 #rss{
-  position:relative;
-  top:22px;
-  right:8px;
   text-align:right;
+  position: relative;
+  bottom: 4px;;
 }
 
 #content{
@@ -39,22 +38,29 @@ body{
 
 #about h3{
     color: #999;
-    border-bottom:1px solid #CCC;
     height:20px;
-    padding:9px 0px 9px 0px;
     text-indent:20px;
+    margin-bottom:0px;
 }
 
-#description{
+#about .about_header{
+  border-bottom:1px solid #CCC;
+  padding:9px 0px 0px 0px;
+  height: 29px;
+  margin-bottom:9px;
+}
+
+#about_content{
     margin-bottom: 2px;
+    padding-top: 9px;
 }
 
-#description a{
+#about_content a{
   text-decoration:none;
   color: #222;
 }
 
-#about #description img{
+#about #about_content img{
     height:64px;
     width:64px;
     padding: 3px;
@@ -163,4 +169,9 @@ a:focus, a:hover, a:active {
 
 #footer a{
   text-decoration:none;
+}
+
+.banner{
+  position:relative;
+  top:85px;
 }

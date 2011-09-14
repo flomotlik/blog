@@ -40,27 +40,26 @@
   <a href="/" class="span-14">
     <img src="/images/blog_logo.png"/>
   </a>
-  <a href="http://www.railsonfire.com" class="span-8" id="railsonfire-link">
-    Back to Railsonfire
-  </a>
-  <a href="http://feeds.feedburner.com/Railsonfire" id="rss" class="span-2 last">
-    <img src="/images/rss.png"/>
-  </a>
 </div>
 <div id="main" class="span-24 last">
 <div id="content" class="span-15">
 {{ content }}
 </div>
 <div  id="about" class="span-9 last">
-  <div href="http://railsonfire.com" id="description" class="span-9 last">
-    <h3 class="span-9 last">About</h3>
-    <a href="http://railsonfire.com">
-      <img src="/images/avatar.png"/>
-      <p >We provide Continuous Integration and Contiuous Deployment for Ruby code hosted on GitHub/Heroku. Stop wasting time and money maintaining your own server.</p>
-    </a>
-  </div>
+    <div class="span-9 last about_header">
+      <h3 class="span-7">About</h3>
+      <a href="http://feeds.feedburner.com/Railsonfire" id="rss" class="span-2 last">
+        <img src="/images/rss.png"/>
+      </a>
+    </div>
+    <div class="span-9 last" id="about_content">
+      <a href="http://railsonfire.com">
+        <img src="/images/avatar.png"/>
+        <p >We provide Continuous Integration and Contiuous Deployment for Ruby code hosted on GitHub/Heroku. Stop wasting time and money maintaining your own server.</p>
+      </a>
+    </div>
   <div id="tweets" class="span-9 last">
-  <h3>Latest Tweets</h3>
+  <h3 class="about_header">Latest Tweets</h3>
   <a href="http://twitter.com/railsonfire" class="twitter-follow-button">Follow @railsonfire</a>
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
   <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -68,10 +67,10 @@
 new TWTR.Widget({
   version: 2,
   type: 'profile',
-  rpp: 5,
+  rpp: 3,
   interval: 6000,
   width: 'auto',
-  height: 410,
+  height: 185,
   theme: {
     shell: {
       background: '#ffffff',
@@ -95,6 +94,7 @@ new TWTR.Widget({
 }).render().setUser('railsonfire').start();
 </script>
   </div>
+  <a href="http://railsonfire.com" target="_blank" class="banner"><img src="/images/rof-banner1.gif" alt="Railsonfire Banner"/></a>
 </div>
 {% assign url = "http://railsonfire.com" %}
 <div id="footer" class="span-24 last">
