@@ -46,7 +46,12 @@ body{
 }
 
 #description{
-    margin-bottom: 20px;
+    margin-bottom: 2px;
+}
+
+#description a{
+  text-decoration:none;
+  color: #222;
 }
 
 #about #description img{
@@ -97,7 +102,6 @@ body{
   margin-left:20px;
   width:560px;
   font: 13px Arial, sans-serif;
-  border-bottom: 1px solid #CCC;
 }
 
 .post-content h3 a{
@@ -155,4 +159,8 @@ a:focus, a:hover, a:active {
   font-family: arial;
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+#footer a{
+  text-decoration:none;
 }
