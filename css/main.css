@@ -149,6 +149,8 @@ a:focus, a:hover, a:active {
 #footer {
   padding-top: 10px;
   padding-left: 20px;
+  border-top: 1px solid #CCC;
+  margin-top:35px;
 }
 
 /* line 303, ../../app/stylesheets/railsonfire.scss */
@@ -169,9 +171,4 @@ a:focus, a:hover, a:active {
 
 #footer a{
   text-decoration:none;
-}
-
-.banner{
-  position:relative;
-  top:85px;
 }
