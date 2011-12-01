@@ -10,7 +10,7 @@ I love Mixpanel, Optimizely and Woopra. Diving into Google Analytics or Kissmetr
 
 The problem is this is by definition always very specific to your system, thus you need to implement it yourself.
 
-To make this easy for us I implemented a gem called [GSMetrics](https://github.com/railsonfire/gsmetrics) that lets us keep track of our data in Google Spreadsheets. We use it to run a daily job on Heroku to take all the data we are interrested in and write it into a Spreadsheet. We then analyse that data either directly on on Google Spreadsheets or via other means.
+To make this easy for us I implemented a gem called [GSMetrics](https://github.com/railsonfire/gsmetrics) that lets us keep track of our data in Google Spreadsheets. We use it to run a daily job on Heroku to take all the data we are interrested in and write it into a Spreadsheet. We then analyse that data either directly on Google Spreadsheets or via other means.
 
 I will go through the initial setup you have to do to get it running as well as a little rundown of how we use it with the Heroku Scheduler Addon.
 
@@ -30,7 +30,7 @@ You can read more about authorization with Google and OAuth2 in their [Documenta
 The following code block is an example of how to use GSMetrics:
 
     session = GSMetrics::Session.new(client_id,client_secret,refresh_token)
-    worksheet = session.worksheet document_id, worksheet_id
+    worksheet = session.worksheet(document_id, worksheet_id)
     worksheet << 1
     worksheet << 2
     worksheet.append(5)
@@ -44,3 +44,10 @@ If you add several new rows in a short period of time Google times out your requ
 We use the [Heroku Scheduler Addon](http://devcenter.heroku.com/articles/scheduler) to run a job every day that goes through our database, takes alle the relevant data, aggregates it and calls gsmetrics.
 
 This makes it incredibly easy to gather backend data and get meaningfull value out of it. Whenever we need to change our metrics it is a matter of minutes to change them, push the new change to github and in a matter of minutes it is tested and deployed (by Railsonfire of course).
+
+##Conclusion
+GSMetrics is a really simple way to gather your data and analyse your database in every way you wish. You can run it locally with a copy of your production database or on your production system.
+
+I would be really interrested in how you use GSMetrics or what you do to gather your backend metrics.
+
+If you have any suggestions for new features or bugs you can either comment below, send me a pull request or an email to flo@railsonfire.com.
