@@ -6,11 +6,11 @@ description: How we use Google Docs the measure the shit out of our Backend Data
 ---
 ![Measure all the things](http://railsonfire.github.com/images/gsmetrics/allthethings.jpg)
 
-I love Mixpanel, Optimizely and Woopra. Diving into Google Analytics or Kissmetrics gives me regular nerdboners. But as nice as those services are the most important source for your metrics is and always will be your database.
+I love Mixpanel, Optimizely and Woopra. Diving into Google Analytics or Kissmetrics gives me regular nerdboners. **But as nice as those services are the most important source for your metrics is and always will be your database**.
 
 The problem is this is by definition always very specific to your system, thus you need to implement it yourself.
 
-To make this easy for us I implemented a gem called [GSMetrics](https://github.com/railsonfire/gsmetrics) that lets us keep track of our data in Google Spreadsheets. We use it to run a daily job on Heroku to take all the data we are interrested in and write it into a Spreadsheet. We then analyse that data either directly on Google Spreadsheets or via other means.
+To make this easy for us we implemented a gem called [GSMetrics](https://github.com/railsonfire/gsmetrics) that lets us keep track of our data in Google Spreadsheets. We use it to run a daily job on Heroku to take all the data we are interrested in and write it into a Spreadsheet. We then analyse that data either directly on Google Spreadsheets or via other means.
 
 I will go through the initial setup you have to do to get it running as well as a little rundown of how we use it with the Heroku Scheduler Addon.
 
