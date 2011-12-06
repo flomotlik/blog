@@ -4,7 +4,7 @@ title: Backend Metrics done right
 author: Flo
 description: How we use Google Docs the measure the shit out of our Backend Data
 ---
-![Measure all the things](http://railsonfire.github.com/images/gsmetrics/allthethings.jpg)
+![Measure all the things](http://blog.railsonfire.com/images/gsmetrics/allthethings.jpg)
 
 I love Mixpanel, Optimizely and Woopra. Diving into Google Analytics or Kissmetrics gives me regular nerdboners. **But as nice as those services are the most important source for your metrics is and always will be your database**.
 
