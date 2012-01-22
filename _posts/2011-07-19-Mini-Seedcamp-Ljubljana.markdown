@@ -15,13 +15,13 @@ Then came the big day. For two hours every team had their 5 minutes of fame. Som
 
 After all the Presentations we had time to lean back and watch [Fred Destin](https://twitter.com/#!/fdestin) talk about the Startup Lifecycle. Definitely worth taking a good hard look at. You can watch it on [Prezi](http://bit.ly/p6bI3a)
 
-![Fred Destin presenting at Seedcamp](https://github.com/railsonfire/blog/blob/master/images/seedcamp/freddestin.png)
+![Fred Destin presenting at Seedcamp](http://blog.railsonfire.com/images/seedcamp/freddestin.png)
 
 Then all teams went into their respective rooms and waited for the mentors to come in, give feedback, advice and general words of wisdom. Five groups of four mentors each joined us to talk business, marketing, technology or strategy with us. It was easy, hard, fun, tough, interesting and definitely very tiring. The Seedcampers really got a very diverse team of mentors for the event. From TelCo CEO's to Social Media Marketing pro's to developers and investors. Really cool.
 
 To round it all off [Mike Butcher](http://mbites.com/) gave, in his very very funny style, an introduction on how to deal with the media, while Austrian beer was enjoyed by the audience.
 
-![Mike Butcher presenting at Seedcamp](https://github.com/railsonfire/blog/blob/master/images/seedcamp/mikebutcher.png)
+![Mike Butcher presenting at Seedcamp](http://blog.railsonfire.com/images/seedcamp/mikebutcher.png)
 
 We then had a great evening with food, plenty of cocktails, talks and dancing. Although the Startups impressed us with their ideas and hard work nothing impressed us more than some of the incredible dance skills shown in the early morning hours. It was a total blast.
 
