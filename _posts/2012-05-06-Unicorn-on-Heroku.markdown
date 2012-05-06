@@ -1,15 +1,17 @@
 ---
 layout: post
-title: How to get four times the throughput out of Heroku with Unicorn
+title: How to get 4x the throughput out of Heroku with Unicorn
 author: Flo
-description: How to get four the throughput out of Heroku with Unicorn
+description: How to get 4x the throughput out of Heroku with Unicorn
 ---
 
 ***This is the first of a two part series on how we set up Railsonfire with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
 
 ***This guide is only relevant and tested with the Heroku Cedar stack.***
 
-I have had several debates over the last couple of months whether Heroku is the way to go and especially if it is expensive or not. They provide a great service, but their documentation makes them look pretty bad when it comes to price. $35 for basically one single concurrent request seems very expensive, especially when starting out with a new project (although of course the first dyno is free).
+I have had several debates over the last couple of months whether Heroku is the way to go and especially if it is expensive or not. They provide a great service, but their documentation makes them look pretty bad when it comes to price.
+
+$35 for basically one single concurrent request seems very expensive, especially when starting out with a new project (although of course the first dyno is free).
 
 Heroku provides plenty of resources, but as it only allows to listen on one port you can run only one thin instance (as recommended by their [documentation](https://devcenter.heroku.com/articles/rails3)).
 
@@ -48,7 +50,7 @@ Let's go quickly through the configuration we use
 
 ***preload_app***: Load the application before forking workers. Set to true if you use NewRelic (which you should) or you [won't see any data](https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data)
 
-***before\_fork/after\_fork*** Disconnect in before\_fork and reconnect in after\_fork for your Database, Resque or other services. Without those handlers there will be regular database errors.
+***before\_fork/after\_fork:*** Disconnect in before\_fork and reconnect in after\_fork for your Database, Resque or other services. Without those handlers there will be regular database errors.
 
 ###NewRelic
 
