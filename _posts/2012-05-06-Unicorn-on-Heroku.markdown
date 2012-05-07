@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get 4x the throughput out of Heroku with Unicorn
+title: How to get 4x the performance out of Heroku with Unicorn
 author: Flo
-description: How to get 4x the throughput out of Heroku with Unicorn
+description: How to get 4x the performance out of Heroku with Unicorn
 ---
 
 ***This is the first of a two part series on how we set up Railsonfire with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
