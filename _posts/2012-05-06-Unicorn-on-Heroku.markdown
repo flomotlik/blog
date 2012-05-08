@@ -54,11 +54,11 @@ Let's go quickly through the configuration we use
 
 ###NewRelic
 
-Go to the NewRelic Page of your Heroku application and check your dynos and memory consumption.
+Go to the NewRelic Addon of your Heroku application and check your dynos and memory consumption in the dyno tab.
 
 ####Average Memory Consumption
 
-Check your Memory Consumption in NewRelic and set the ***worker_processes*** accordingly. The average consumption is shown on the Dyno tab of your heroku dashboard.
+Check your Memory Consumption in NewRelic and set the ***worker_processes*** accordingly. The average consumption is shown on the Dyno tab of your NewRelic dashboard.
 
 ![New Relic Menu](/images/unicorn/menu.png)
 
@@ -106,7 +106,7 @@ Going from one process to several increases performance drastically, from then o
 ###Conclusion
 So in closing using Unicorn as your Heroku Webserver not only pays off, but should be put into the Heroku documentation at least as advanced information.
 
-I actually talked to people and showed them our Unicorn setup, which convinced them that Heroku is not as expensive as it seems and especially when starting your project is a very viable alternative to having your own Server. By starting up one more dyno you can have several more concurrent requests.
+I actually talked to people and showed them our Unicorn setup, which convinced them that Heroku is not as expensive as it seems and especially when starting your project is a very viable alternative to having your own Server. With every new dyno you get several more concurrent requests, which is pretty neat.
 
 If you have any questions regarding the setup or anything else you can send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a Tweet to [@Railsonfire](https://twitter.com/#!/railsonfire) or use the Olark Chat Box in the right hand corner.
 
