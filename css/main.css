@@ -95,6 +95,11 @@ body{
     width:571px;
 }
 
+.post-header .date{
+  width:75px;
+  float:left;
+}
+
 .post a{
     text-decoration:none;
 }
