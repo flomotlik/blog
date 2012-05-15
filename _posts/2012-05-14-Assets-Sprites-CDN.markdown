@@ -49,9 +49,34 @@ We compile all our Javascript into one application.js file, but as we are not ve
 
 ###Images
 
-We use the spriting feature of compass-rails heavily in our application.
+We use Spriting for all of the images in our application. Spriting is the process of combining several images into one bigger image to lower the number of requests to your website.
+
+We use the [spriting feature of compass-rails](http://compass-style.org/help/tutorials/spriting/) heavily in our application. You should have already added compass-rails to your Gemfile before.
+
+Configure compass by adding a compass.rb file in ***config/compass.rb***
+<script src="https://gist.github.com/2694525.js?file=compass.rb"></script>
+
+Now put your images into ***app/assets/images*** or one of its subfolders.
+It is now very easy creating sprites for your website. Create an SCSS File like the following, which expects your buttons to be in ***app/assetsimages/buttons***
+<script src="https://gist.github.com/2694525.js?file=buttons.scss"></script>
+
+This will create a css file for you which references the specific buttons.
+
+For example consider you have a ***btn_signup.png*** and ***btn_signup_hover.png*** in your buttons folder. You will then get a ***buttons-btn_signup*** css class that you can put onto any element and which sets the background accordingly.
+
+The following example creates a link that has ***btn-signup*** as its background and gets a hover state. The second css class ***button*** is there to set the height and width of the button.
+<script src="https://gist.github.com/2694525.js?file=button_example.html.haml"></script>
+
+You have to make sure that you set the height and width of every button correctly, so the background fills the element exactly. Setting height and width is best practice in general as the Browser doesn't have to redraw the page when new images are loaded.
+
+You can read more about compass in their [Reference Documentation](http://compass-style.org/reference/compass/)
 
 ###Gzip
+
+To make sure all of your assets and pages are compressed before they are sent to your users add Rack:Deflater to your config.ru file.
+<script src="https://gist.github.com/2694525.js?file=config.ru"></script>
+
+This will make sure that all your pages are compressed and all the assets that are stored in Cloudfront later on are stored there compressed as well.
 
 ##Amazon Cloudfront
 
