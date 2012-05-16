@@ -28,8 +28,17 @@ At first add the necessary Gems to your Gemfile. It is assumed that you use the 
 Then you need to configure the asset pipeline in ***application.rb, development.rb and production.rb***
 
 <script src="https://gist.github.com/2694525.js?file=application.rb"></script>
+
+We set static_cache_control to ***"public, max-age=31536000"*** so the browser caches all static assets for up to a year.
+
+In production every asset has a hash added to its name, so whenever the file changes the browser requests the latest version as the hash and therefore the whole filename changes.
+
+Through this mechanism you do not have to invalidate any CDN cache at all, but you can by simply setting ***config.assets.version*** this will change the Hash as well and make the browser request every asset again.
+
 <script src="https://gist.github.com/2694525.js?file=development.rb"></script>
 <script src="https://gist.github.com/2694525.js?file=production.rb"></script>
+
+All of your assets will be precompiled during deployment to Heroku.
 
 ###CSS
 
@@ -57,12 +66,12 @@ Configure compass by adding a compass.rb file in ***config/compass.rb***
 <script src="https://gist.github.com/2694525.js?file=compass.rb"></script>
 
 Now put your images into ***app/assets/images*** or one of its subfolders.
-It is now very easy creating sprites for your website. Create an SCSS File like the following, which expects your buttons to be in ***app/assetsimages/buttons***
+It is now very easy to create sprites for your website. Create an SCSS File like the following, which expects your buttons to be in ***app/assetsimages/buttons***
 <script src="https://gist.github.com/2694525.js?file=buttons.scss"></script>
 
 This will create a css file for you which references the specific buttons.
 
-For example consider you have a ***btn_signup.png*** and ***btn_signup_hover.png*** in your buttons folder. You will then get a ***buttons-btn_signup*** css class that you can put onto any element and which sets the background accordingly.
+For example consider you have ***btn\_signup.png*** and ***btn\_signup\_hover.png*** in your buttons folder. You will then get a ***buttons-btn_signup*** css class that you can put onto any element and which sets the background accordingly.
 
 The following example creates a link that has ***btn-signup*** as its background and gets a hover state. The second css class ***button*** is there to set the height and width of the button.
 <script src="https://gist.github.com/2694525.js?file=button_example.html.haml"></script>
@@ -80,7 +89,46 @@ This will make sure that all your pages are compressed and all the assets that a
 
 ##Amazon Cloudfront
 
+Now that all assets are set up correctly we can go on to configure [Amazon Cloudfront](http://aws.amazon.com/cloudfront/) as our CDN. With Cloudfront you can set a Custom Origin pointing to your application. Thus upon the first time you hit a specific Cloudfront url it sends a request to your application and from then on caches the result.
 
+To get started go to the cloudfront tab in your [aws console](https://console.aws.amazon.com/cloudfront/home) and click Create Distribution.
 
-http://blog.arvidandersson.se/2011/10/03/how-to-do-the-asset-serving-dance-on-heroku-cedar-with-rails-3-1
-http://bindle.me/blog/index.php/395/caches-cdns-and-heroku-cedar
+![Amazon AWS Console](/images/assets/aws-console.png)
+
+In the first step choose Download as this distribution is used for caching static assets.
+![Distribution Settings](/images/assets/distribution-download.png)
+
+In the next step enter your Domain name (or Heroku App Name) as the ***Origin Domain Name***. Every requests that will go to your Cloudfront distribution will be made to this URL and the result will be cached. If you use https set the ***Origin Protocol Policy*** to Match Viewer, so we can later set it to https and all transfers between your application and Cloudfront are encrypted.
+![Distribution Origin](/images/assets/distribution-origin.png)
+The default values set for the caching behaviour are sufficient. Cloudfront will use the Cache headers we set earlier and store all assets for up to a year.
+![Distribution Caching](/images/assets/distribution-caching.png)
+In the next window make sure the Distribution state is set to enabled.
+![Create Distribution](/images/assets/distribution-create.png)
+
+You will be presented with a last overview of your new distribution and can create it then.
+
+Now you can set the asset host for your application. In your production.rb set ***config.action_controller.asset_host***. We prefer to set it to **ENV['ASSET_HOST']** as we can easily switch to another distribution then, which is very handy when using a staging server. Simply create another distribution for your staging environment and point there in your staging config.
+
+In either case you have to point the asset_host to the distributions ***Domain Name*** which should in the end look something like ***https://d2d3cu3tt4cei5.cloudfront.net***, though in the AWS console *https* is not shown.
+
+<script src="https://gist.github.com/2694525.js?file=production.rb"></script>
+
+Before deploying into production test this on your staging app. Make sure that the assets are loaded from cache after your first request. In Chrome open the [developer tools](http://www.chromium.org/devtools) and go to the network tab.
+
+If you reload the page with *F5* chrome will not use your cache, so make sure you either click somewhere in the page or simply open the page again through the NavBar.
+
+You should see lots of *(from cache)* for your requests. Click through your application and make sure that all of your assets are loaded from cache the second time you request them.
+
+![Chrome Network Tab](/images/assets/chrome.png)
+
+Check your Heroku logs as well to be sure only the bare minimum of reqeusts are sent to your application.
+
+If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com) ).
+
+###Conclusion
+Combining Unicorn on Heroku with the Asset Pipeline and Amazon Cloudfront gives you an incredible platform to scale from. Only the bare minimum of requests are sent to your application and caches are used all along the way to make your application fast, responsive and cheap to run.
+
+If you have any questions regarding the setup or anything else you can send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a Tweet to [@Railsonfire](https://twitter.com/#!/railsonfire) or use the Olark Chat Box in the right hand corner.
+
+###Thanks
+Thanks to [Arvid Andersson](http://blog.arvidandersson.se/2011/10/03/how-to-do-the-asset-serving-dance-on-heroku-cedar-with-rails-3-1) and [Tom Coleman](http://bindle.me/blog/index.php/395/caches-cdns-and-heroku-cedar) for their blogposts.
