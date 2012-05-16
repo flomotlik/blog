@@ -5,6 +5,8 @@ author: Flo
 description: How to get 4x the performance out of Heroku with Unicorn
 ---
 
+***Update***: [Part Two](/2012/05/14/Assets-Sprites-CDN.html) was released.
+
 ***This is the first of a two part series on how we set up Railsonfire with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
 
 ***This guide is only relevant and tested with the Heroku Cedar stack.***
