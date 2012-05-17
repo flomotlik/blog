@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to make your website even faster with the Asset Pipeline, Sprites and Amazon Cloudfront
+title: How to make your website superfast with the Asset Pipeline, Sprites and Amazon Cloudfront
 author: Flo
-description: How to make your website even faster with the AssetPipeline, Sprites and Amazon Cloudfront
+description: How to make your website superfast with the AssetPipeline, Sprites and Amazon Cloudfront
 ---
 
 ***This is the second in a two part series on how we set up Railsonfire with Heroku. Read the [first part](/2012/05/06/Unicorn-on-Heroku.html) that deals with Heroku and how to use it more efficiently with Unicorn.***
