@@ -123,7 +123,7 @@ You should see lots of *(from cache)* for your requests. Click through your appl
 
 Check your Heroku logs as well to be sure only the bare minimum of reqeusts are sent to your application.
 
-If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com) ).
+If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com)).
 
 ###Conclusion
 Combining Unicorn on Heroku with the Asset Pipeline and Amazon Cloudfront gives you an incredible platform to scale from. Only the bare minimum of requests are sent to your application and caches are used all along the way to make your application fast, responsive and cheap to run.
