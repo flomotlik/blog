@@ -13,10 +13,12 @@ As the Heroku Cedar stack has no Proxy in front of your Rails application any mo
 
 This blogpost shows how we use the Asset Pipeline, Compass and Amazon Cloudfront to serve all of our assets fast without sending any requests to our application directly.
 
+We use all of it on [railsonfire.com](https://www.railsonfire.com) to make sure we make the best of all the resources the cloud provides.
+
 ##Asset Pipeline
 ***The [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html) provides a framework to concatenate and minify or compress JavaScript and CSS assets. It also adds the ability to write these assets in other languages such as CoffeeScript, Sass and ERB.***
 
-The [official Guide](http://guides.rubyonrails.org/asset_pipeline.html) has a brief an easy introduction on how to use the asset pipeline and [upgrade from earlier versions of Rails](http://guides.rubyonrails.org/asset_pipeline.html#upgrading-from-old-versions-of-rails). Another great resources is the [Railscast on the asset pipeline](http://railscasts.com/episodes/279-understanding-the-asset-pipeline).
+The [official Guide](http://guides.rubyonrails.org/asset_pipeline.html) has a brief and easy introduction on how to use the asset pipeline and [upgrade from earlier versions of Rails](http://guides.rubyonrails.org/asset_pipeline.html#upgrading-from-old-versions-of-rails). Another great resource is the [Railscast on the asset pipeline](http://railscasts.com/episodes/279-understanding-the-asset-pipeline).
 
 We will briefly introduce our configuration and then go over our CSS, Javascript and Image setup.
 
@@ -78,7 +80,7 @@ The following example creates a link that has ***btn-signup*** as its background
 
 You have to make sure that you set the height and width of every button correctly, so the background fills the element exactly. Setting height and width is best practice in general as the Browser doesn't have to redraw the page when new images are loaded.
 
-You can read more about compass in their [Reference Documentation](http://compass-style.org/reference/compass/)
+You can read more about compass in their [Reference Documentation.](http://compass-style.org/reference/compass/)
 
 ###Gzip
 
@@ -96,16 +98,22 @@ To get started go to the cloudfront tab in your [aws console](https://console.aw
 ![Amazon AWS Console](/images/assets/aws-console.png)
 
 In the first step choose Download as this distribution is used for caching static assets.
+
 ![Distribution Settings](/images/assets/distribution-download.png)
 
 In the next step enter your Domain name (or Heroku App Name) as the ***Origin Domain Name***. Every requests that will go to your Cloudfront distribution will be made to this URL and the result will be cached. If you use https set the ***Origin Protocol Policy*** to Match Viewer, so we can later set it to https and all transfers between your application and Cloudfront are encrypted.
+
 ![Distribution Origin](/images/assets/distribution-origin.png)
+
 The default values set for the caching behaviour are sufficient. Cloudfront will use the Cache headers we set earlier and store all assets for up to a year.
+
 ![Distribution Caching](/images/assets/distribution-caching.png)
+
 In the next window make sure the Distribution state is set to enabled.
+
 ![Create Distribution](/images/assets/distribution-create.png)
 
-You will be presented with a last overview of your new distribution and can create it then.
+You are presented with a last overview of your new distribution and will be able to create it then.
 
 Now you can set the asset host for your application. In your production.rb set ***config.action_controller.asset_host***. We prefer to set it to **ENV['ASSET_HOST']** as we can easily switch to another distribution then, which is very handy when using a staging server. Simply create another distribution for your staging environment and point there in your staging config.
 
