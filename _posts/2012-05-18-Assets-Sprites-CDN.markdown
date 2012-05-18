@@ -15,6 +15,8 @@ This blogpost shows how we use the Asset Pipeline, Compass and Amazon Cloudfront
 
 We use all of it on [railsonfire.com](https://www.railsonfire.com) to make sure we make the best of all the resources the cloud provides.
 
+Although this guide is written with Rails in mind the concepts like Sprites or a CDN can be used with any framework and for any website.
+
 ##Asset Pipeline
 ***The [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html) provides a framework to concatenate and minify or compress JavaScript and CSS assets. It also adds the ability to write these assets in other languages such as CoffeeScript, Sass and ERB.***
 
