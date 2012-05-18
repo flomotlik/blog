@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to make your website even faster with the Asset Pipeline, Sprites and Amazon Cloudfront
+title: How to make your website superfast with the Asset Pipeline, Sprites and Amazon Cloudfront
 author: Flo
-description: How to make your website even faster with the AssetPipeline, Sprites and Amazon Cloudfront
+description: How to make your website superfast with the AssetPipeline, Sprites and Amazon Cloudfront
 ---
 
 ***This is the second in a two part series on how we set up Railsonfire with Heroku. Read the [first part](/2012/05/06/Unicorn-on-Heroku.html) that deals with Heroku and how to use it more efficiently with Unicorn.***
@@ -131,7 +131,7 @@ You should see lots of *(from cache)* for your requests. Click through your appl
 
 Check your Heroku logs as well to be sure only the bare minimum of reqeusts are sent to your application.
 
-If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com) ).
+If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com)).
 
 ###Conclusion
 Combining Unicorn on Heroku with the Asset Pipeline and Amazon Cloudfront gives you an incredible platform to scale from. Only the bare minimum of requests are sent to your application and caches are used all along the way to make your application fast, responsive and cheap to run.
