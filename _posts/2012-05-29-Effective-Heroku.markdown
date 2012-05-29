@@ -14,13 +14,13 @@ bash aliases and functions. Simply add them to your bash config.
 <script src="https://gist.github.com/2769640.js?file=bashrc"></script>
 
 This simply creates a ***h*** function that calls the heroku gem with
-the last parameter being the heroku app name. 
+the last parameter being the heroku app name.
 
 For example to show the config for our production app I simply type
 ***hp config***
 
-I personally do not like to have our Heroku production application as a 
-git remote as it forces me to always go through the proper way of testing 
+I personally do not like to have our Heroku production application as a
+git remote as it forces me to always go through the proper way of testing
 and deployment with Railsonfire.
 
 Thus I often need to provide the app name which is nicely solved by
