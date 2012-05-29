@@ -14,15 +14,23 @@ bash aliases and functions. Simply add them to your bash config.
 <script src="https://gist.github.com/2769640.js?file=bashrc"></script>
 
 This simply creates a ***h*** function that calls the heroku gem with
-the last parameter being the heroku app name. I personally do not like to have our
-Heroku production application as a git remote as it forces me to always
-go through the proper way of testing and deployment with Railsonfire.
+the last parameter being the heroku app name. 
+
+For example to show the config for our production app I simply type
+***hp config***
+
+I personally do not like to have our Heroku production application as a 
+git remote as it forces me to always go through the proper way of testing 
+and deployment with Railsonfire.
 
 Thus I often need to provide the app name which is nicely solved by
 these functions.
 
 They provide a nice template which you can use to build more complex
 functions or aliases for your daily development.
+
+As you use the Heroku Gem often on a daily basis even the smallest
+productivity gain has tremendous effects on your time. Give it a try.
 
 [Heroku Plus](https://github.com/bkuhlmann/heroku_plus) seems to be
 another gem worth looking at for more efficient Heroku Usage. They have
