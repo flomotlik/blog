@@ -37,7 +37,7 @@ To start using Unicorn all you have to do is:
 3. Add unicorn config in config/unicorn.rb
    <script src="https://gist.github.com/2621308.js?file=unicorn.rb"></script>
 
-4. Set the default Logger in **production.rb** to STDOUT, otherwise logging doesn't work.
+4. Set the default Logger in **application.rb** (and not just production.rb) to STDOUT, otherwise logging doesn't work. Thx to [***@krainboltgreene***](https://twitter.com/#!/krainboltgreene) for mentioning that just setting this in production.rb is not enough.
    <script src="https://gist.github.com/2621482.js"> </script>
 
 ###Unicorn config
