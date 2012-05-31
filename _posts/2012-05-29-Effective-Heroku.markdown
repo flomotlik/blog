@@ -13,6 +13,10 @@ bash aliases and functions. Simply add them to your bash config.
 
 <script src="https://gist.github.com/2769640.js?file=bashrc"></script>
 
+***UPDATE:*** [@_tomekw](https://twitter.com/#!/_tomekw) ported the
+functions to ZSH, which is awesome. Thx. 
+<script src="https://gist.github.com/2834383.js?file=zshrc"></script>
+
 This simply creates a ***h*** function that calls the heroku gem with
 the last parameter being the heroku app name.
 
