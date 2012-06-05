@@ -28,11 +28,16 @@ Mac simply buy their App from [the App
 store](http://itunes.apple.com/us/app/livereload/id482898991?mt=12). It costs $9.99 and works
 very fine. You earn the cost back in productivity on day one. Easily.
 
+There is a [guard
+integration](https://github.com/guard/guard-livereload) for Livereload as well.
+
 If you prefer having Livereload included in your development tools there
 are several options. Their [Help
 Pages](http://help.livereload.com/kb/editor-support/using-custom-scripts-to-support-other-editors)
 show support for various popular editors like TextMate and Sublime2.
-Sadly no Vim support, so here it is the all new [Vim-Livereload Extension](https://github.com/flomotlik/vim-livereload)
+Sadly no Vim support.
+
+So here it is the all new [Vim-Livereload Extension](https://github.com/flomotlik/vim-livereload)
 
 ###Vim-Livereload
 The Vim-Livereload plugin tells your browser to reload the page you
@@ -50,7 +55,7 @@ Rake initialises the submodules and pulls the latest changes. The plugin
 needs Vim with Ruby support. It uses eventmachine to open a Socket and
 receive requests from the [Livereload Chrome Browser
 plugin](https://chrome.google.com/webstore/detail/jnihajbhpnppcggbcgedagnkighmdlei).
-I only tested it with Chrome and the latest version in the appstore.
+I only tested it with Chrome and the latest version in the chrome store.
 
 ###Conclusion
 Give Livereload and the Vim plugin a try. It is incredibly easy and
