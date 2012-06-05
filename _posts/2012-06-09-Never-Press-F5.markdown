@@ -5,7 +5,7 @@ author: Flo
 description: Never press F5 when developing your Web app
 ---
 
-***TL:DR: Use [Livereload](http://livereload.com/) to never press F5 in your browser and if you use Vim try [my new
+***TL:DR: Use [Livereload](http://livereload.com/) to never press F5 in your browser again and if you use Vim try [my new
 Extension](https://github.com/flomotlik/vim-livereload)***
 
 A source of constantly wasted time when developing for the web is reloading
