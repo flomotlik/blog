@@ -20,7 +20,7 @@ A much better way instead is using [Livereload](http://livereload.com/).
 Livereload reloads your
 page whenever you change any file. When it detects changes in a CSS or
 Javascript file it merges them into the current page. This is especially
-great when you work on your css as any change is immediately visible in
+great when you work on your CSS as any change is immediately visible in
 your browser.
 
 There are several ways to get started with Livereload. If you use a
