@@ -45,7 +45,7 @@ mixpanel.track('page viewed', {'page name': document.title, 'url': window.locati
   <a href="/" class="span-14">
     <img src="/images/blog_logo.png"/>
   </a>
-  <a href="https://www.railsonfire.com" target="_blank">
+  <a href="https://www.railsonfire.com/?utm_source=blog&utm_medium=banner&utm_content=trynow&utm_campaign=blog" target="_blank">
   <img src="/images/try_now_ribbon.png" id="try_now"/>
   </a>
 </div>
@@ -61,7 +61,7 @@ mixpanel.track('page viewed', {'page name': document.title, 'url': window.locati
       </a>
     </div>
     <div class="span-9 last" id="about_content">
-      <a href="http://railsonfire.com">
+      <a href="http://railsonfire.com/?utm_source=blog&utm_medium=banner&utm_content=avatar&utm_campaign=blog">
         <img src="/images/avatar.png"/>
         <p >We provide a simple system to test every change you do in your application. If everything works we deploy to your staging/production environments.</p>
       </a>
@@ -102,25 +102,24 @@ new TWTR.Widget({
 }).render().setUser('railsonfire').start();
 </script>
   </div>
-  <a href="http://www.railsonfire.com/?utm_source=blog&utm_medium=banner&utm_campaign=banner" target="_blank" class="banner"><img src="/images/rof-banner1.gif" alt="Railsonfire Banner"/></a>
+  <a href="http://www.railsonfire.com/?utm_source=blog&utm_medium=banner&utm_content=gifbanner&utm_campaign=blog" target="_blank" class="banner"><img src="/images/rof-banner1.gif" alt="Railsonfire Banner"/></a>
 </div>
 {% assign url = "http://railsonfire.com" %}
 <div id="footer" class="span-24 last">
          <div class="span-7">
            <h3>Service</h3>
            <ul>
-             <li><a href="{{ url }}">How it works</a></li>
-             <li><a href="{{ url }}/pricing">Pricing</a></li>
-             <li><a href="https://railsonfire.tenderapp.com/kb" target="_blank">Frequently asked Questions</a></li>
-             <li><a href="#" id="tender-support-link-bottom">Support</a></li>
+             <li><a href="{{ url }}/?utm_source=blog&utm_medium=link&utm_campaign=blog">How it works</a></li>
+             <li><a href="{{ url }}/pricing/?utm_source=blog&utm_medium=link&utm_campaign=blog">Pricing</a></li>
+             <li><a href="https://help.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Frequently asked Questions</a></li>
            </ul>
          </div>
          <div class="span-6">
            <h3>About</h3>
            <ul>
-             <li><a href="http://blog.railsonfire.com" target="_blank">Blog</a></li>
-             <li><a href="{{ url }}/team">Team</a></li>
-             <li><a href="{{ url }}/contact">Contact</a></li>
+             <li><a href="http://blog.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Blog</a></li>
+             <li><a href="{{ url }}/team/?utm_source=blog&utm_medium=link&utm_campaign=blog">Team</a></li>
+             <li><a href="{{ url }}/contact/?utm_source=blog&utm_medium=link&utm_campaign=blog">Contact</a></li>
            </ul>
          </div>
          <div class="span-6">
