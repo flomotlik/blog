@@ -34,7 +34,9 @@ Campfire.
 
 ###Select and Skip Builds
 
-After several feature requests to select which branches should be built
+After several feature requests (e.g. [@ayb](https://twitter.com/ayb) and
+[@JohnMetta] (https://twitter.com/@JohnMetta) sent us nice and long
+emails and helped us discuss the topic) to select which branches should be built
 and how to skip specific branches or builds we have now implemented a
 way to accomplish this.
 
