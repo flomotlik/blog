@@ -23,10 +23,12 @@ parameters (which you can also set with railsonfire config add)
 
 When setting these config parameters a Test message will be posted to
 Hipchat to make sure everything worked.
+
 ![Hipchat Notifications](/images/notifications/setup.png)
 
 From now on every time a build is started and finished on Railsonfire a message will
 be posted to Hipchat.
+
 ![Hipchat Notifications](/images/notifications/notifications.png)
 
 We will expand from Hipchat to other Chat providers like Flowdock or
