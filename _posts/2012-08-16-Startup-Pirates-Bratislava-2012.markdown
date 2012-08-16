@@ -11,7 +11,8 @@ happy to help young entrepreneurs and therefore we took the train and rushed to 
 yesterday.
 
 <center>![Investor pitch workshop at Startup Pirates Bratislava](http://blog.railsonfire.com/images/startuppiratesbratislava/moritz.jpg)
-_Image from [facebook.com/startuppiratesbratislava](http://facebook.com/startuppiratesbratislava)_</center>
+
+_Image from <a href="http://facebook.com/startuppiratesbratislava" target="_blank">facebook.com/startuppiratesbratislava</a>_</center>
 
 ###Practise, practise & practise
 
@@ -27,7 +28,8 @@ in front of a crowd. That's the reason why you have to do it - often and again &
 beginning but like everything in life, your learning curve is extremely steep. So you will perform better super fast.
 
 <center>![Life begins at the end of your comfort zone](http://blog.railsonfire.com/images/startuppiratesbratislava/comfortzone.jpg)
-_Image from [quotespire.com](http://quotespire.com)_</center>
+
+_Image from <a href="http://quotespire.com" target="_blank">quotespire.com</a>_</center>
 
 ###You always pitch
 
@@ -44,6 +46,7 @@ from partners or also from friends & family.
 ###Next events
 
 We will attend a couple of events in the following months. Just shoot us an email if you wanna connect with us in person.
- * [Startup Live Bratislava](http://www.startuplive.in/bratislava)
- * [Mini Seedcamp Budapest](http://www.seedcamp.com/events/seedcamp-budapest-3rd-week-october-apply-now)
- * [Pioneers Festival](http://www.pioneersfestival.com)
+
+* [Startup Live Bratislava](http://www.startuplive.in/bratislava)
+* [Mini Seedcamp Budapest](http://www.seedcamp.com/events/seedcamp-budapest-3rd-week-october-apply-now)
+* [Pioneers Festival](http://www.pioneersfestival.com)
