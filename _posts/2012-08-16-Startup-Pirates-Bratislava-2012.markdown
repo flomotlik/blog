@@ -6,7 +6,7 @@ description: Investor pitch workshop at Startup Pirates Bratislava 2012
 ---
 
 We got an invitation to do an investor pitch workshop for the 
-[Startup Pirates Bratislava](http://bratislava.startuppirates.org) event. We are always 
+<a href="http://bratislava.startuppirates.org" target="_blank">Startup Pirates Bratislava</a> event. We are always 
 happy to help young entrepreneurs and therefore we took the train and rushed to Bratislava 
 yesterday.
 
@@ -38,6 +38,8 @@ and try to get better. You definitely need the ability to pitch in order to hire
 attract new customers and get the support from partners or also from friends & family.
 
 ###The presentation
+
+We have uploaded our presentation on Slideshare. Share it, download it and give us feedback!
 
 <center><iframe src="http://www.slideshare.net/slideshow/embed_code/13981031" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></center>
 
