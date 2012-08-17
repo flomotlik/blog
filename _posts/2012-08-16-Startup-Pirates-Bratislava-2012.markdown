@@ -16,7 +16,7 @@ yesterday.
 
 ###Practise, practise & practise
 
-Pitching is not science, you need no PhD for it. The most important point is practise, practise and practise. 
+Pitching is not science, you don't need a PhD for it. The most important point is practise, practise and practise. 
 It's like juggling. Do it really often and you will get better. Do it hundreds of times and you will be really good. 
 That's the reason why professional sport athletes train specific activities thousands of times. And it's the same 
 with pitching.
@@ -33,11 +33,10 @@ beginning but like everything in life, your learning curve is extremely steep. S
 
 ###You always pitch
 
-And by the way, you have to learn it if you wanna be a successful entrepreneur. Because you always pitch. You pitch 
-not only in front of an investor or to your customers. You also pitch to your friends, parents and even to random 
-strangers on the street. Use all those pitches, learn from it and try to get better. You definitely need the ability to 
-pitch in order to hire great employees (you won't convience them with a bad pitch), attract new customers and get the support
-from partners or also from friends & family.
+And by the way, you have to learn it if you wanna be a successful entrepreneur. Because you always pitch. Not only in front of an investor or 
+to your customers. You also pitch to your friends, parents and even to random strangers on the street. Use all those pitches, learn from it 
+and try to get better. You definitely need the ability to pitch in order to hire great employees (you won't convience them with a bad pitch), 
+attract new customers and get the support from partners or also from friends & family.
 
 ###The presentation
 
@@ -45,6 +44,9 @@ from partners or also from friends & family.
 
 ###Next events
 
+Thanks to the Startup Pirates Bratislava for having us. It was a great event by an inspiring team and was lots of fun for us. Looking forward 
+to the next edition.
+ 
 We will attend a couple of events in the following months. Just shoot us an email if you wanna connect with us in person.
 
 * <a href="http://www.startuplive.in/bratislava" target="_blank">Startup Live Bratislava</a>
