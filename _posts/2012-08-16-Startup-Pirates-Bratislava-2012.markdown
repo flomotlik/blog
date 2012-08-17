@@ -18,12 +18,11 @@ yesterday.
 
 Pitching is not science, you don't need a PhD for it. The most important point is practise, practise and practise. 
 It's like juggling. Do it really often and you will get better. Do it hundreds of times and you will be really good. 
-That's the reason why professional sport athletes train specific activities thousands of times. And it's the same 
-with pitching.
+And it's the same with pitching.
 
 ###Push yourself outside your comfort zone
 
-Always! The problem with presenting, especially if you are not good in, is that you are afraid of talking 
+Always! The problem with presenting, especially if you are not good at it, is that you are afraid of talking 
 in front of a crowd. That's the reason why you have to do it - often and again & again. It's not easy at the 
 beginning but like everything in life, your learning curve is extremely steep. So you will perform better super fast.
 
@@ -35,7 +34,7 @@ beginning but like everything in life, your learning curve is extremely steep. S
 
 And by the way, you have to learn it if you wanna be a successful entrepreneur. Because you always pitch. Not only in front of an investor or 
 to your customers. You also pitch to your friends, parents and even to random strangers on the street. Use all those pitches, learn from it 
-and try to get better. You definitely need the ability to pitch in order to hire great employees (you won't convience them with a bad pitch), 
+and try to get better. You definitely need the ability to pitch in order to hire great employees (you won't convince them with a bad pitch), 
 attract new customers and get the support from partners or also from friends & family.
 
 ###The presentation
