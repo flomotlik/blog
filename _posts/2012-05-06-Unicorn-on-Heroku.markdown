@@ -1,8 +1,11 @@
 ---
 layout: post
 title: How to get 4x the performance out of Heroku with Unicorn
-author: Flo
-description: How to get 4x the performance out of Heroku with Unicorn
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: How to get 4x the performance out of Heroku with Unicorn!
+image: http://blog.railsonfire.com/images/unicorn/dynos.png
 ---
 
 ***Update***: [Part Two](/2012/05/18/Assets-Sprites-CDN.html) was released.

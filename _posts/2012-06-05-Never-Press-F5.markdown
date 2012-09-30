@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Never press F5 when developing your Web app
-author: Flo
-description: Never press F5 when developing your Web app
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: Never press F5 again when developing your web application. Use Livereload instead!
 ---
 
 ***TL:DR: Use [Livereload](http://livereload.com/) to never press F5 in your browser again and if you use Vim try [my new

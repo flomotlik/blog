@@ -5,7 +5,7 @@ author: Moritz Plassnig
 twitter: moritzplassnig
 google: 101268986513519499518
 description: Railsonfire did an investor pitch workshop at the Startup Pirates Bratislava 2012 event. Here are the key learnings.
-image: http://blog.railsonfire.com/images/startuppiratesbratislava/moritz.jpg
+image: http://blog.railsonfire.com/images/startuppiratesbratislava/comfortzone.jpg
 ---
 
 We got an invitation to do an investor pitch workshop for the

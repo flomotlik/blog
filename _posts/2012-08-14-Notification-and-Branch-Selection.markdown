@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Notifications and Selecting Branches
-author: Flo
-description: Use Hipchat Notifications and Select the Branches you want to build
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: How to use Hipchat notifications and select the branches you want to build on Railsonfire.com!
+image: http://blog.railsonfire.com/images/hipchat/hipchat.png
 ---
 
 Today we announce two new features to help you implement Railsonfire

@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Mini Seedcamp Ljubljana
-author: Flo
-description: Our experience at Seedcamp Ljubljana
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: Our experience at the Mini Seedcamp Ljubljana!
+image: http://blog.railsonfire.com/images/seedcamp/seedcamp.jpg
 ---
 
 So we were invited to [Mini Seedcamp Ljubljana](http://www.seedcamp.com/events/msc-ljubljana-2011) from 13-15 July. [Finderly](http://finderly.com/) and [blossom.io](http://blossom.io/) were the other Viennese startups who joined us in three days of intense talks, mentoring, feedback and partying.

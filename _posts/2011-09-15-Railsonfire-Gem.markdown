@@ -1,8 +1,10 @@
 ---
 layout: post
 title: The all new Railsonfire Gem
-author: Flo
-description: How to use the Railsonfire Gem to start testing your code
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: How to use the Railsonfire Gem to start testing your code!
 ---
 To make the setup and interaction with Railsonfire as easy as possible we implemented a Ruby Gem. Right now you can set up Continuous Integration and Continuous Deployment for your project with the gem in less than a minute.
 

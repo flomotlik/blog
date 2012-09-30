@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Backend Metrics done right
-author: Flo
-description: How we use Google Docs the measure the shit out of our Backend Data
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: How we use Google Docs the measure the shit out of our Backend Data!
+image: http://blog.railsonfire.com/images/gsmetrics/allthethings.jpg
 ---
 ![Measure all the things](http://blog.railsonfire.com/images/gsmetrics/allthethings.jpg)
 
