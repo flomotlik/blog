@@ -2,7 +2,10 @@
 layout: post
 title: Grove.io and Flowdock Notifications
 author: Florian Motlik
-description: How to set up Grove and Flowdock notifications on Railsonfire
+twitter: leanvienna
+google: 115123333592137547204
+description: How to set up Grove and Flowdock notifications on Railsonfire.
+image: http://blog.railsonfire.com/images/flowdock/flowdock.png
 ---
 
 After releasing Hipchat Notifications and reimplementing our
