@@ -4,6 +4,15 @@
 <head>
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}"/>
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:title" content="{{ page.title }}" />
+{% if page.image %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign image = 'http://help.railsonfire.com/images/rof_logo.png'  %}
+{% endif %}
+<meta property="og:image" content="{{ image }}" />
+<meta property="og:url" content="http://help.railsonfire.com{{ page.url }}" />
 <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
   <!--[if lt IE 8]>
