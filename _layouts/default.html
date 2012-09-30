@@ -9,11 +9,12 @@
 {% if page.image %}
   {% assign image = page.image %}
 {% else %}
-  {% assign image = 'http://blog.railsonfire.com/images/avatar.png'  %}
+  {% assign image = 'http://help.railsonfire.com/images/rof_logo.png'  %}
 {% endif %}
 <meta property="og:image" content="{{ image }}" />
 <meta property="og:type" content="blog" />
 <meta property="og:url" content="http://blog.railsonfire.com{{ page.url }}" />
+<meta property="fb:admins" content="moritzplassnig" />
 <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
   <!--[if lt IE 8]>
