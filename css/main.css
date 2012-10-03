@@ -45,7 +45,7 @@ body{
   text-decoration: none;
 }
 
-#about h3 a {
+#about h3 a:hover {
   color: #0066cc;
 }
 
