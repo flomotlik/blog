@@ -41,7 +41,10 @@ body{
   height:20px;
   text-indent:20px;
   margin-bottom:0px;
+  font-weight: normal;
+  text-decoration: none;
 }
+
 
 #about .about_header{
   border-bottom:1px solid #CCC;
