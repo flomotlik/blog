@@ -36,7 +36,7 @@ body{
     border-top:1px solid #CCC;
 }
 
-#about h3{
+#about h3, #about h3 a{
     color: #999;
     height:20px;
     text-indent:20px;
@@ -183,4 +183,11 @@ a:focus, a:hover, a:active {
   position: relative;
   top:-20px;
   float:right;
+}
+#archive li{
+  list-style-type:none;
+  line-height:40px;
+}
+#archive li:nth-child(2n+1){
+  background-color:#F1F1F1;
 }

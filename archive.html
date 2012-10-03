@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="post-header span-15 last"><h3>Archive</h3></div>
+<ul class="span-14 last" id="archive">
+  {% for post in site.posts %}
+    <li class="span-14 last">
+      <span class="span-3">
+        {{post.date | date_to_string}}
+      </span>
+      <a class="span-11 last" href="{{post.url}}">{{post.title}}</a>
+    </li>
+    {% endfor %}
+</ul>
