@@ -45,6 +45,9 @@ body{
   text-decoration: none;
 }
 
+#about h3 a {
+  color: #0066cc;
+}
 
 #about .about_header{
   border-bottom:1px solid #CCC;
