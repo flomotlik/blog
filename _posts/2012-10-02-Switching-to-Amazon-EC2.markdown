@@ -55,15 +55,14 @@ not provide per hour pricing.
 ###Implementation
 
 We will split this section into two parts, Automated Deployment and
-Automated Scaling which describe how we introduce changes to our backend
+Automated Scaling, which describe how we introduce changes to our backend
 infrastructure and how we scale our backend respectively.
 
 ####Automated Deployment
 One of our guiding principles is, not surprisingly, to automate
 deployment as much as possible. Implementing continuous deployment for a
-website is rather easy to implement (especially when using Railsonfire)
-compared to continuously deploying Amazon AMIs. To implement this we
-have implemented the following workflow
+website is rather easy (especially when using Railsonfire)
+compared to continuously deploying Amazon AMIs. We use the following workflow
 
   1. When pushing to our backend repository on GitHub a new Railsonfire
      build is triggered
@@ -89,7 +88,7 @@ We have used this process before we switched to Amazon as well with our
 Hetzner Infrastructure, but improved it drastically when we switched to
 Amazon. It makes changing our backend incredibly easy and gives us
 extreme power and control in innovating our service. We simply love it
-and couldn't imagine working without it any more.
+and couldn't imagine working without it anymore.
 
 And not to forget having this automated system makes it much safer and
 less error prone. It is really hard now to accidentally introduce errors
