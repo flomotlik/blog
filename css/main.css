@@ -1,13 +1,13 @@
 body{
-    padding-top:20px;
+  padding-top:20px;
 }
 
 #navigation{
 }
 
 #header{
-    margin-bottom: 20px;
-    height:73px;
+  margin-bottom: 20px;
+  height:73px;
 }
 
 #railsonfire-link{
@@ -26,21 +26,21 @@ body{
 }
 
 #content{
-    min-height: 300px;
-    width:589px;
-    margin-right:0px;
-    border-right: 1px solid #CCC;
+  min-height: 300px;
+  width:589px;
+  margin-right:0px;
+  border-right: 1px solid #CCC;
 }
 
 #about{
-    border-top:1px solid #CCC;
+  border-top:1px solid #CCC;
 }
 
 #about h3, #about h3 a{
-    color: #999;
-    height:20px;
-    text-indent:20px;
-    margin-bottom:0px;
+  color: #999;
+  height:20px;
+  text-indent:20px;
+  margin-bottom:0px;
 }
 
 #about .about_header{
@@ -51,8 +51,8 @@ body{
 }
 
 #about_content{
-    margin-bottom: 2px;
-    padding-top: 9px;
+  margin-bottom: 2px;
+  padding-top: 9px;
 }
 
 #about_content a{
@@ -61,17 +61,17 @@ body{
 }
 
 #about #about_content img{
-    height:64px;
-    width:64px;
-    padding: 3px;
-    border: 1px solid #CCC;
-    float:left;
-    margin-left:20px;
-    margin-right:10px;
+  height:64px;
+  width:64px;
+  padding: 3px;
+  border: 1px solid #CCC;
+  float:left;
+  margin-left:20px;
+  margin-right:10px;
 }
 
 #tweets h3{
-    border-top: 1px solid #CCC;
+  border-top: 1px solid #CCC;
 }
 
 .twitter-follow-button{
@@ -79,7 +79,7 @@ body{
 }
 
 .twtr-ft, .twtr-hd{
-    display:none;
+  display:none;
 }
 
 .twtr-tweet-text p{
@@ -87,12 +87,12 @@ body{
 }
 
 .post-header{
-    border-bottom: 1px solid #CCC;
-    border-top:1px solid #CCC;
-    margin-right:0px;
-    height:20px;
-    padding:9px 0px 9px 20px;
-    width:571px;
+  border-bottom: 1px solid #CCC;
+  border-top:1px solid #CCC;
+  margin-right:0px;
+  height:20px;
+  padding:9px 0px 9px 20px;
+  width:571px;
 }
 
 .post-header .date{
@@ -101,7 +101,7 @@ body{
 }
 
 .post a{
-    text-decoration:none;
+  text-decoration:none;
 }
 
 .post-header a{
@@ -127,7 +127,7 @@ body{
 }
 
 .post-content h3 a:hover, .post-content h3 a:focus {
-color: #0099FF;
+  color: #0099FF;
 }
 
 #header #pages a:focus, #header #pages a:hover, #header #pages a:active {
@@ -188,6 +188,28 @@ a:focus, a:hover, a:active {
   list-style-type:none;
   line-height:40px;
 }
-#archive li:nth-child(2n+1){
-  background-color:#F1F1F1;
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+p {
+  font-family: Helvetica;
+  line-height: 1.3em;
+  margin: 0 0 1.5em;
+}
+.post-content h3 a {
+  color: #111111;
+  font: bold 26px Helvetica,sans-serif;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25em;
+  margin-bottom: 0.2em;
+}
+
+pre, code, tt {
+  color: #FF8800;
+  font: 1em/1.5 'monospace','lucida console','andale mono';
 }
