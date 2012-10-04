@@ -5,6 +5,9 @@ body{
 #navigation{
 }
 
+p img {
+  padding: 15px;
+
 #header{
   margin-bottom: 20px;
   height:73px;
