@@ -4,8 +4,7 @@ title: How and why we switched to Amazon EC2
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: A comparision about the advantages and disadvantages of 
-various platform-as-a-service providers like Amazon EC2, Rackspace, Linode or Hetzner.
+description: A comparison about the advantages and disadvantages of various platform-as-a-service providers like Amazon EC2, Rackspace, Linode or Hetzner.
 image: http://blog.railsonfire.com/images/amazon/aws.png
 ---
 
