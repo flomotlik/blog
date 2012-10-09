@@ -223,3 +223,20 @@ pre, code, tt {
   color: #FF8800;
   font: 1em/1.5 'monospace','lucida console','andale mono';
 }
+
+.socialbuttons {
+  margin-bottom: -30px;
+  margin-top: 2px;
+
+  a {
+    padding-right: 20px;
+  }
+}
+
+.fb-like {
+  padding-right: 20px;
+}
+
+.g-plusone {
+   padding-right: 20px;
+}

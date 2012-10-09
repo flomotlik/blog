@@ -91,6 +91,14 @@ new TWTR.Widget({
 </div>
 {% assign url = "http://railsonfire.com" %}
 <div id="footer" class="span-24 last">
+            <div class="socialbuttons">
+               <a href="https://angel.co/railsonfire?follow=1&type=Startup&id=24507"></a>
+              <div class="fb-like" data-href="https://www.facebook.com/railsonfire" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+               <a href="http://twitter.com/railsonfire" class="twitter-follow-button">Follow @railsonfire</a>
+              <div class="g-plusone" data-size="medium"></div>
+            </div>
+          </div>
+<div id="footer" class="span-24 last">
          <div class="span-7">
            <h3>Service</h3>
            <ul>
@@ -175,5 +183,21 @@ mixpanel.track('page viewed', {'page name': document.title, 'url': window.locati
   </script>
   <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">;
   </script>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215491298581056";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://angel.co/javascripts/embed.js" type="text/javascript"></script>
+<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>
 </html>
