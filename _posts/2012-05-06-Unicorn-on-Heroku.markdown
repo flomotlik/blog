@@ -81,6 +81,7 @@ I ran several tests with ApacheBench to determine how much the performance impro
 
 I ran 1000 Requests with 100 concurrent connections against the landing page of our staging application. The following graph shows the time the requests took combined with 1-4 workers.
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart);
