@@ -4,7 +4,7 @@ title: Speeding up our test suite in development
 author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
-description: How to speed up a test suite so it still stays 
+description: How to speed up your test suite to keep developing productively.
 image: http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg
 ---
 ![Speed gauges](http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg)  
