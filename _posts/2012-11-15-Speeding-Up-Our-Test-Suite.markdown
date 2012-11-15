@@ -48,7 +48,7 @@ Rspec provides [tagging](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/c
 
 ### Step three: Skip remote specs
 
-In [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we integrate a couple of external services like [Github](https://github.com/). Of course we also needed to verify that the communication with these services works. But a developer’s life is hard: Sometimes you are on a train, on a plane or there’s simply no network reception. And all of a sudden many of your specs fail.
+In [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we integrate a couple of external services like [Github](https://github.com/). Of course we also needed to verify that the communication with these services worked. But a developer’s life is hard: Sometimes you are on a train, on a plane or there’s simply no network reception. And all of a sudden many of your specs fail.
 
 Therefore we tried to remove the dependencies on external services for as many specs as possible. We tagged all specs that still required internet access with `remote: true` and skipped them in development.
 
