@@ -21,25 +21,19 @@ December.***
 ###Why Auto scale
 Every company, and especially every startup, has to focus solely on
 creating value for a customer. This is and always has been the guiding
-factor for the success of a company. When you create value and satisfaction
-for your customers, they pay you. As simple as this sounds this is what
-business boils down to.
+principle for the success of a company.
 
 The limiting factor for all businesses in talking to their customers,
 developing new features and giving great and fast support is ***time***. The
 more you have of it, the more you can use it to create value. The goal
 is to create as much ***value over the time*** your users engage with your
-product.
+product as possible.
 
 ![Value over Time](/images/amazon/valueovertime.png)
 
 We started Railsonfire to build a product that helps people create more
 value for their customers by focusing on what builds value and not on
 keeping the infrastructure up.
-
-We apply this thought process to all of our development and software as
-well. We automate religiously, so as few tasks as absolutely necessary
-have to be handled manually.
 
 By managing all of our backend infrastructure automatically and at the
 same time providing safeguards and checks to make sure our servers work
@@ -48,7 +42,7 @@ infrastructure.
 
 And of course auto-scaling not only helps us to develop much faster,
 but also to provide a better and at the same time cheaper service to our
-customers as we really only use what we need.
+customers as we really only use what we need..
 
 As explained in the [last
 post](/2012/10/04/Switching-to-Amazon-EC2.html) EC2 helps us a lot in
