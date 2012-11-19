@@ -31,8 +31,8 @@ product as possible.
 
 ![Value over Time](/images/amazon/valueovertime.png)
 
-We started Railsonfire to build a product that helps people create more
-value for their customers by focusing on what builds value and not on
+We started Railsonfire to build a product that helps people
+focusing on their product and customers, not on
 keeping the infrastructure up.
 
 By managing all of our backend infrastructure automatically and at the
