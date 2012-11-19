@@ -10,8 +10,8 @@ image: http://blog.railsonfire.com/images/amazon/aws.png
 
 ***This is part two of our Amazon blogposts which deals with how exactly
 we autoscale our infrastructure and what our plans are for the future.
-You can read [Part 1](/2012/10/04/Switching-to-Amazon-EC2.html) as
-well.***
+You should read [Part 1](/2012/10/04/Switching-to-Amazon-EC2.html) as
+well as it lays out why we went with EC2 in more detail.***
 
 ***This took a little longer than anticipated, sorry for that, but we were
 extremely busy over the last weeks to get our technology as well as our
@@ -25,7 +25,7 @@ factor for the success of a company. When you create value and satisfaction
 for your customers, they pay you. As simple as this sounds this is what
 business boils down to.
 
-The limiting factor for all businesses in talking to your customers,
+The limiting factor for all businesses in talking to their customers,
 developing new features and giving great and fast support is ***time***. The
 more you have of it, the more you can use it to create value.
 
@@ -59,7 +59,8 @@ server admin. We can focus all of our engineering power on building the
 tools as there are no maintenance tasks to be performed.
 
 ###How do we auto-scale
-We have implemented a Scaling class that has one scale method that
+At [Railsonfire](https://www.railsonfire.com) we have implemented a Scaling
+class that has one scale method and
 compares our queues with our currently running EC2 workers and then
 decides to start or shut down our instances. By providing only one
 externally available method that only takes where it was called from as
@@ -72,7 +73,8 @@ of them down. By letting our scaling infrastructure scale down even when a
 new build is created we always make sure that the appropriate number of
 resources is available.
 
-The logic for when to scale up or scale down is basically the following
+You can see a simplified version of our logic to scale up/down our
+servers in the next gist.
 <script src="https://gist.github.com/4079165.js?file=Scaler.rb"></script>
 
 So when there are more idle workers than open jobs we scale down.
@@ -109,6 +111,8 @@ and our server infrastructure is no exception there. We have implemented
 our own [GSMetrics](https://github.com/railsonfire/gsmetrics) gem to
 help us with pushing data into Google Docs. Works really well and makes
 collecting and analysing our data very easy.
+
+![Auto-scal log](/images/amazon/auto-scale-log.png)
 
 Whenever a server is started or stopped we write the according data to a
 spreadsheet so we can then analyse if all servers are properly accounted
