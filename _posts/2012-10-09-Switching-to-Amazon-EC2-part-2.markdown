@@ -86,12 +86,12 @@ start a new server.
 There are 3 separate occasions where we start our Scaling infrastructure.
 
 * When a new build is created
-  We make sure that there are enough resources available for the build
+  we make sure that there are enough resources available for the build
 to be performed
 * When a build is finished
-  So we can shut down any unused resources
+  so we can shut down any unused resources
 * Every ten minutes
-  To have an additional safeguard that makes sure that nothing got
+  to have an additional safeguard that makes sure that nothing got
 stuck
 
 We have experienced that it is important to have a regularly running
@@ -100,7 +100,37 @@ needs to be. We solve that by having a Heroku worker started through
 their scheduling addon every ten minutes.
 
 ####Log your scheduling
-Auto-scaling without proper logging and keeping track is like driving
-blindfolded.
+Auto-scaling without proper logging and record keeping is like driving
+blindfolded. Especially if you detect problems and have no idea how to
+debug them.
+
+We heavily use Google Docs to keep track of metrics in our application
+and our server infrastructure is no exception there. We have implemented
+our own [GSMetrics](https://github.com/railsonfire/gsmetrics) gem to
+help us with pushing data into Google Docs. Works really well and makes
+collecting and analysing our data very easy.
+
+Whenever a server is started or stopped we write the according data to a
+spreadsheet so we can then analyse if all servers are properly accounted
+for, how long they were running and so on.
+
+Additionally we have implemented several automated tasks that regularly
+check and compare the number of workers registered with our queue as
+well as the number of test servers to make sure all of them are running
+fine.
+
+This has given us great insight as well as accountability for our
+infrastructure. We have automated every single step and additionally
+have built safeguards along the way to automatically correct and then notify
+our team.
 
 ###The future of our infrastructure
+We are currently working on the next iteration of our service which will
+see some changes to our auto-scaling infrastructure. We are moving to
+stronger EC2 instances to give us better speeds. This will decrease the
+number of workers running, as each worker can run several builds at the
+same time.
+
+The basics of our auto-scaling effort will still be in place though and
+guarantee an infrastructure that scales to any size without us having to
+worry about it getting more complex.
