@@ -27,7 +27,11 @@ business boils down to.
 
 The limiting factor for all businesses in talking to their customers,
 developing new features and giving great and fast support is ***time***. The
-more you have of it, the more you can use it to create value.
+more you have of it, the more you can use it to create value. The goal
+is to create as much ***value over the time*** your users engage with your
+product.
+
+![Value over Time](/images/amazon/valueovertime.png)
 
 We started Railsonfire to build a product that helps people create more
 value for their customers by focusing on what builds value and not on
