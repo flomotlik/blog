@@ -9,11 +9,14 @@ image: http://blog.railsonfire.com/images/amazon/aws.png
 ---
 
 ***This will be a two part series due to popular demand. This first part deals
-with the decisisions behind switching to Amazon, the second part will
+with the decisions behind switching to Amazon, the second part will
 deal with the nitty gritty implementation details we use to auto scale
 our infrastructure.***
 
-For a good number of months we had our Infrastructure based on
+***UPDATE: [PART 2](2012/11/15/Switching-to-Amazon-EC2-part-2.html) is
+now released, so go and read it as well***
+
+For a good number of months we had our infrastructure based on
 [Hetzner](http://www.hetzner.de/) but due to our service growing and a
 need to scale dynamically we decided to research cloud platforms and
 move to the cloud. Additionally we experienced severe networking
