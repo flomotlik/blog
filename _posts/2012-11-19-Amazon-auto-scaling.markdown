@@ -99,7 +99,7 @@ process that makes sure that the infrastructure is scaled to where it
 needs to be. We solve that by having a Heroku worker started through
 their scheduling addon every ten minutes.
 
-####Log your scheduling
+####Log your Scaling
 Auto-scaling without proper logging and record keeping is like driving
 blindfolded. Especially if you detect problems and have no idea how to
 debug them.
