@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How we use the EC2 API to Autoscale our Infrastructure and keep track of all changes.
-image: http://blog.railsonfire.com/images/amazon/aws.png
+image: http://blog.railsonfire.com/images/amazon/valueovertime.png
 ---
 
 ***This is part two of our Amazon blogposts which deals with how exactly
