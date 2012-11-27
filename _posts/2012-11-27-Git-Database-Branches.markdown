@@ -5,7 +5,7 @@ author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
 description: How to keep a database synchronized with your branches.
-image: http://blog.railsonfire.com/images/branches.jpg
+image: http://blog.railsonfire.com/images/og_tag_gitbranches.jpg
 ---
 ![Branches](http://blog.railsonfire.com/images/branches.jpg)
 We love Git. At [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we are currently working on a new version of our platform with lots of new features. For every feature we create a separate Git branch and once it’s done we integrate the feature into the main application. This keeps us from having half-baked features spoiling our service.
