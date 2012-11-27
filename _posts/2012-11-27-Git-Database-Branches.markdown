@@ -7,13 +7,13 @@ google: 116883220210675577340
 description: How to keep a database synchronized with your branches.
 image: http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg
 ---
-We love Git. At [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we are currently working on a new version of our platform with lots of new features. For each feature we create a separate Git branch and once it’s done we integrate the feature into the main application. This keeps us from having half-baked features spoiling our service.
+We love Git. At [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we are currently working on a new version of our platform with lots of new features. For every feature we create a separate Git branch and once it’s done we integrate the feature into the main application. This keeps us from having half-baked features spoiling our service.
 
 There’s only one problem with this approach: While the code is perfectly separated in its own feature branch, the database will be the same for all branches. Unfortunately I tend to forget about this fact.
 
 That’s why last week I spent quite some time fixing weird bugs. I modified the database working on a new feature, but eventually I had to fix something on another branch. These database changes broke a couple of tests on the other branch that assumed attributes existed in the database that didn’t anymore.
 
-Right after I realized the mistake I thought about what to do about it. I found two solutions:
+Right after I realized the mistake I thought about how to deal with this problem. I found two solutions:
 
 ## Solution #1: Regenerate the database on branch change
 
