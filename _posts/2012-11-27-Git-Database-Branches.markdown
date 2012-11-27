@@ -15,7 +15,7 @@ That’s why last week I spent quite some time fixing weird bugs. I modified the
 
 Right after I realized the mistake I thought about how to deal with this problem. I found two solutions:
 
-## Solution #1: Regenerate the database on branch change
+### Solution #1: Regenerate the database on branch change
 
 Git offers a nice feature named *hooks*. A hook gets called when certain events happen in the repository. For example, [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) gets informed by a *post-receive* hook whenever there’s a new version of your product in the repository so we can download and test it.
 
@@ -24,11 +24,11 @@ There are also client-side hooks which support the Git workflow on your computer
 1. All data gets wiped every time I change branches. I personally toggle branches quite frequently, sometimes just to have a quick look at what state another branch is in. So losing all data on every toggle is just annoying.
 2. Wiping and recreating the database also takes a while. Not much, just a few seconds. But again, when you are used to toggling branches quickly, this is just annoying, too.
 
-## Solution #2: A separate database for each branch
+### Solution #2: A separate database for each branch
 
 The solution I finally sticked with was creating a separate database for each branch. When I create a branch, I also create a database. Unfortunately there’s no Git hook to help me with this, but I create branches less often than I change branches. So not really annoying. This solution keeps all data for a branch in the database and always provides the correct schema, no matter what branch I am on.
 
-# How do I implement this?
+#### How do I implement this?
 
 This is an example for a Rails application, but I figure it will be easy enough to use it with any technology. For convenience I use the *git* gem for the test and development environment to. In production I won’t need this behavior, so my `Gemfile` looks like this:
 
