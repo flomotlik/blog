@@ -10,46 +10,44 @@ image: http://blog.railsonfire.com/images/cd/adamgod.png
 ![Creation of Adam](/images/cd/adamgod.png)
 *Image obtained from [Wikipedia](http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1n.jpg)*
 
+Releasing new parts of your software daily has so many advantages, that
+you can't afford not to do it.
+
+* making releases a non-issue
+* increased development speed
+* faster user feedback
+* developer happiness
+
 In one of our [last posts](/2012/11/19/Amazon-auto-scaling.html) we
 talked about why it is important to deliver value to your customers and
 how continuous deployment can help there.
 
-Afterwards we got asked a lot 'So continuous deployment is great, but how
-do I get started'. There are a couple of steps you can take to get started with it quickly.
-
-We will go through them, but of course there are many different ways to
-approach this. Leave a comment to tell us about what exactly you did
-to get continuous deployment working for you.
+We have gathered 7 steps for you to get started with continuous deployment.
+Leave a comment if you have any additional tips or steps you took to speed up your
+development.
 
 ### Test/Test/Test, but be smart about it
 If you do not test your software in some automated fashion, you are
 simply doing it wrong. There is just no way around that.
 
-Of course you don't have to write a test for every small piece of code.
-Not every simple helper method needs to be tested. But if you do not
-have automated tests for your main business workflows you are already
-screwed.
+You don't have to write a test for every small piece of code.
+But if you do not have automated tests for your main features
+you are already screwed.
 
 You are not just hit by releasing buggy software all the time and
 breaking features that worked in the past, but you slow down your
-innovation. If you have a well tested application you can introduce
-changes everywhere without the fear to break important features. This
+development. If you have a well tested application you can introduce
+changes everywhere without the fear to break something. This
 gives you the power to question and change EVERYTHING all the time.
 
-Start at the top by using tools like [Selenium](http://seleniumhq.org/)
+Our next post will focus on how to start doing this with tools like [Selenium](http://seleniumhq.org/)
 or [Phantomjs](http://phantomjs.org/) and the various integrations there
-are in every programming language. You can even use
-[SauceLabs](https://saucelabs.com/) who provide hosted Selenium tests to
-get started. As soon as you have tests for your main business workflows
-(signup, login, payment, ...) you can start going into more specific
-parts of your application.
+are in every programming language.
 
 ### Build small services
-This is also kind of a no-brainer. The smaller and more isolated a
-service is the easier it is to test and introduce change.
-
-Additionally you can deploy parts of your whole stack without impacting
-any other parts not changed by that deployment.
+Split your system up into smaller parts that solve one specific problem
+and integrate with other parts of your infrastructure through clearly
+defined interfaces.
 
 You can innovate faster, build much more stable systems and improve your
 team workflow as you have clear boundaries between the different parts
@@ -58,32 +56,35 @@ of your application.
 ### Automate Deployment
 If you have to run more than one command to deploy you are doing it
 wrong. You need to have all of the steps accessible via one simple
-command. The command shouldn't have any parameters and be very clear to
-everyone.
+command. The command shouldn't have any parameters or need any
+additional configuration you have to remember.
 
 As soon as it is even a little more complicated you just won't do it
 that often and this hurts your development speed.
 
 ### Automate Rollback
-Rolling back to an old version, especially the database, should be as
-easily accessible as pushing a new release. When going back to a stable
-version involves several steps and is hard to do you just wont take the
-risk to do it a lot.
+Rolling back to an old version, especially for the database, should be as
+easy as pushing a new release. When going back to a stable
+version involves several steps complicated steps you just wont risk
+releasing new software all the time.
+
 ### Deploy to Staging
 If you are not deploying to your production system continuously you
-should at least push to a staging environment all continuously, so you
-can evaluate it anytime.
+should at least push to a staging environment all the time, so you
+can evaluate it there.
 
-All of your team should be able to see and test the latest version of your code before
-pushing it to your production system.
+The latest version of your code should always be running somewhere, so
+your team can access and test it.
+
 ### Use your staging environment
-If you have a product that your team uses (which you should) always work
-on a staging environment. As soon as you break anything you will notice
-first and fix fast as you need it to be stable.
+If you have a product that you use yourself (e.g. project management tool) always use
+your staging environment for your day to day work. As soon as you break anything you
+will notice first and fix fast as you need it to accomplish your daily work.
+
 ### Automatically deploy to production
 When you have done all of the above now you are ready to deploy
 continuously to your production system. You have built the necessary
-guards to make sure only good code is released to your production system
+guards to make sure only good code is released
 and if a bug slips through you can be sure you can go back to a stable
 version fast.
 
@@ -91,4 +92,4 @@ version fast.
 By following the layed out steps you can start getting your project on
 track for coontinuous deployment and really boost your development
 speed. If you have any more questions you can always send us a message
-or an email.
+or an [email](mailto:help@railsonfire.com).
