@@ -30,10 +30,10 @@ If you do not test your software automatedly, you are doing it wrong. There is n
 You don't have to write a test for every small piece of code.
 But if you can’t test your main features automatedly, you are already screwed.
 
-Witout tests you release buggy software. You break features that worked in the past and you slow down your innovation. In a well tested application you can introduce changes everywhere without the fear of breaking anything. This gives you the power to change EVERYTHING at all times.
+Without tests you release buggy software. You break features that worked in the past and you slow down your innovation. In a well tested application you can introduce changes everywhere without the fear of breaking anything. This gives you the power to change EVERYTHING at all times.
 
 In our next post we will get you started with tools like [Selenium](http://seleniumhq.org/)
-or [Phantomjs](http://phantomjs.org/). There are various integrations in every programming language, so stay tuned!
+or [PhantomJS](http://phantomjs.org/). There are various integrations in every programming language, so stay tuned!
 
 ### Build small services
 Split your system into small parts that solve one specific problem
