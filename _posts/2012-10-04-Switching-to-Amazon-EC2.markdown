@@ -13,7 +13,7 @@ with the decisions behind switching to Amazon, the second part will
 deal with the nitty gritty implementation details we use to auto scale
 our infrastructure.***
 
-***UPDATE: [PART 2](2012/11/15/Switching-to-Amazon-EC2-part-2.html) is
+***UPDATE: [PART 2](Switching-to-Amazon-EC2-part-2.html) is
 now released, so go and read it as well***
 
 For a good number of months we had our infrastructure based on
