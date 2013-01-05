@@ -4,11 +4,11 @@ title: Notifications and Selecting Branches
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: How to use Hipchat notifications and select the branches you want to build on Railsonfire.com!
-image: http://blog.railsonfire.com/images/hipchat/hipchat.png
+description: How to use Hipchat notifications and select the branches you want to build on Codeship.com!
+image: http://blog.codeship.io/images/hipchat/hipchat.png
 ---
 
-Today we announce two new features to help you implement Railsonfire
+Today we announce two new features to help you implement Codeship
 in your workflow. We will show how to use Hipchat for notifications and
 select/skip the branches you want to have built.
 
@@ -16,10 +16,10 @@ select/skip the branches you want to have built.
 
 You can set up Hipchat Notifications by simply calling
 
-    railsonfire notifications hipchat
+    codeship notifications hipchat
 
 in your appliction folder. The command simply sets the following config
-parameters (which you can also set with railsonfire config add)
+parameters (which you can also set with codeship config add)
 
     hipchat_key=xb9d35fhcle53n7586c09e9c1pedes
     hipchat_room=CI
@@ -29,7 +29,7 @@ Hipchat to make sure everything worked.
 
 ![Hipchat Notifications](/images/notifications/setup.png)
 
-From now on every time a build is started and finished on Railsonfire a message will
+From now on every time a build is started and finished on Codeship a message will
 be posted to Hipchat.
 
 ![Hipchat Notifications](/images/notifications/notifications.png)
@@ -50,13 +50,13 @@ branches/commits) of specifc builds.
 
 We will briefly describe both featuers, but you can always read about
 them on our [Help
-Pages](http://help.railsonfire.com/setup/skip-and-select.html).
+Pages](http://help.codeship.io/setup/skip-and-select.html).
 
 ####Select branches to be built
 To limit the branches you want to build you can set the ci_branches
 config parameter with a comma separated list of branch names.
 
-    railsonfire config add
+    codeship config add
     KEY:ci_branches
     VALUE: master,production
 
@@ -72,10 +72,10 @@ So for example a branch that is named ***featurex--skip-ci*** will be
 skipped.
 
 ###Conclusion
-With Hipchat Notifications and select/skip you can now use Railsonfire
+With Hipchat Notifications and select/skip you can now use Codeship
 more than ever before in your day to day workflow and configure it to
 fit the way you and your team works and deploys.
 
-If there are any other features you would like to see in Railsonfire
-tell us via [Twitter](https://twitter.com/railsonfire), our Olark Chat
-box in the right lower corner or by [email](mailto:flo@railsonfire.com).
+If there are any other features you would like to see in Codeship
+tell us via [Twitter](https://twitter.com/codeship), our Olark Chat
+box in the right lower corner or by [email](mailto:flo@codeship.io).

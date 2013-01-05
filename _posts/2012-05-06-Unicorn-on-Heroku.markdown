@@ -5,12 +5,12 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How to get 4x the performance out of Heroku with Unicorn!
-image: http://blog.railsonfire.com/images/unicorn/dynos.png
+image: http://blog.codeship.io/images/unicorn/dynos.png
 ---
 
 ***Update***: [Part Two](/2012/05/18/Assets-Sprites-CDN.html) was released.
 
-***This is the first of a two part series on how we set up Railsonfire with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
+***This is the first of a two part series on how we set up Codeship with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
 
 ***This guide is only relevant and tested with the Heroku Cedar stack.***
 
@@ -114,7 +114,7 @@ So in closing using Unicorn as your Heroku Webserver not only pays off, but shou
 
 I actually talked to people and showed them our Unicorn setup, which convinced them that Heroku is not as expensive as it seems and especially when starting your project is a very viable alternative to having your own Server. With every new dyno you get several more concurrent requests, which is pretty neat.
 
-If you have any questions regarding the setup or anything else you can send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a Tweet to [@Railsonfire](https://twitter.com/#!/railsonfire) or use the Olark Chat Box in the right hand corner.
+If you have any questions regarding the setup or anything else you can send an email to [flo@codeship.io](mailto:flo@codeship.io), a Tweet to [@Codeship](https://twitter.com/#!/codeship) or use the Olark Chat Box in the right hand corner.
 
 ###Thanks
 This post is very much built on Michael van Rooijen's [Blogpost](http://michaelvanrooijen.com/articles/2011/06/01-more-concurrency-on-a-single-heroku-dyno-with-the-new-celadon-cedar-stack/). Gists that helped with the setup were by [leshill](https://gist.github.com/1401792) and [jamiew](https://gist.github.com/2227268)

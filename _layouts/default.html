@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Looking at our Code? If you find an error send an email to ideserveabeer@railsonfire.com -->
+<!-- Looking at our Code? If you find an error send an email to ideserveabeer@codeship.com -->
 <head>
 <title>{{ page.title }}</title>
 <meta charset="utf-8">
@@ -10,11 +10,11 @@
 {% if page.image %}
   {% assign image = page.image %}
 {% else %}
-  {% assign image = 'http://help.railsonfire.com/images/rof_logo.png'  %}
+  {% assign image = 'http://help.codeship.com/images/rof_logo.png'  %}
 {% endif %}
 <meta property="og:image" content="{{ image }}" />
 <meta property="og:type" content="blog" />
-<meta property="og:url" content="http://blog.railsonfire.com{{ page.url }}" />
+<meta property="og:url" content="http://blog.codeship.io{{ page.url }}" />
 <meta property="fb:admins" content="moritzplassnig" />
 <meta name="xing:author" content="https://www.xing.com/profile/Moritz_Plassnig" />
 <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
-<link href="atom.xml" type="application/atom+xml" rel="alternate" title="Railsonfire Atom Feed" />
-<link rel="canonical" href="https://www.railsonfire.com"/>
+<link href="atom.xml" type="application/atom+xml" rel="alternate" title="codeship Atom Feed" />
+<link rel="canonical" href="https://www.codeship.io"/>
 </head>
 <body>
 <div class="container">
@@ -33,7 +33,7 @@
   <a href="/" class="span-14">
     <img src="/images/blog_logo.png"/>
   </a>
-  <a href="https://www.railsonfire.com/?utm_source=blog&utm_medium=banner&utm_content=trynow&utm_campaign=blog" target="_blank">
+  <a href="https://www.codeship.io/?utm_source=blog&utm_medium=banner&utm_content=trynow&utm_campaign=blog" target="_blank">
   <img src="/images/try_now_ribbon.png" id="try_now"/>
   </a>
 </div>
@@ -44,19 +44,19 @@
 <div  id="about" class="span-9 last">
     <div class="span-9 last about_header">
       <h3 class="span-7"><a href="/archive.html">Check our Archive</a></h3>
-      <a href="http://feeds.feedburner.com/Railsonfire" id="rss" class="span-2 last">
+      <a href="http://feeds.feedburner.com/codeship" id="rss" class="span-2 last">
         <img src="/images/rss.png"/>
       </a>
     </div>
     <div class="span-9 last" id="about_content">
-      <a href="http://railsonfire.com/?utm_source=blog&utm_medium=banner&utm_content=avatar&utm_campaign=blog">
+      <a href="http://codeship.io/?utm_source=blog&utm_medium=banner&utm_content=avatar&utm_campaign=blog">
         <img src="/images/avatar.png"/>
         <p >We provide a simple system to test every change you do in your application. If everything works we deploy to your staging/production environments.</p>
       </a>
     </div>
   <div id="tweets" class="span-9 last">
   <h3 class="about_header">Latest Tweets</h3>
-  <a href="http://twitter.com/railsonfire" class="twitter-follow-button">Follow @railsonfire</a>
+  <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
   <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
@@ -87,17 +87,17 @@ new TWTR.Widget({
     avatars: false,
     behavior: 'all'
   }
-}).render().setUser('railsonfire').start();
+}).render().setUser('codeship').start();
 </script>
   </div>
-  <a href="http://www.railsonfire.com/?utm_source=blog&utm_medium=banner&utm_content=gifbanner&utm_campaign=blog" target="_blank" class="banner"><img src="/images/rof-banner1.gif" alt="Railsonfire Banner"/></a>
+  <a href="http://www.codeship.io/?utm_source=blog&utm_medium=banner&utm_content=gifbanner&utm_campaign=blog" target="_blank" class="banner"><img src="/images/rof-banner1.gif" alt="Codeship Banner"/></a>
 </div>
-{% assign url = "http://railsonfire.com" %}
+{% assign url = "http://www.codeship.io" %}
 <div id="footer" class="span-24 last">
             <div class="socialbuttons">
-               <a href="https://angel.co/railsonfire?follow=1&type=Startup&id=24507"></a>
-              <div class="fb-like" data-href="https://www.facebook.com/railsonfire" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
-               <a href="http://twitter.com/railsonfire" class="twitter-follow-button">Follow @railsonfire</a>
+               <a href="https://angel.co/codeship?follow=1&type=Startup&id=24507"></a>
+              <div class="fb-like" data-href="https://www.facebook.com/codeship" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+               <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
               <div class="g-plusone" data-size="medium"></div>
             </div>
           </div>
@@ -107,13 +107,13 @@ new TWTR.Widget({
            <ul>
              <li><a href="{{ url }}/?utm_source=blog&utm_medium=link&utm_campaign=blog">How it works</a></li>
              <li><a href="{{ url }}/pricing/?utm_source=blog&utm_medium=link&utm_campaign=blog">Pricing</a></li>
-             <li><a href="https://help.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Frequently asked Questions</a></li>
+             <li><a href="https://help.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Frequently asked Questions</a></li>
            </ul>
          </div>
          <div class="span-6">
            <h3>About</h3>
            <ul>
-             <li><a href="http://blog.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Blog</a></li>
+             <li><a href="http://blog.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Blog</a></li>
              <li><a href="{{ url }}/team/?utm_source=blog&utm_medium=link&utm_campaign=blog">Team</a></li>
              <li><a href="{{ url }}/contact/?utm_source=blog&utm_medium=link&utm_campaign=blog">Contact</a></li>
            </ul>
@@ -121,10 +121,10 @@ new TWTR.Widget({
          <div class="span-6">
            <h3>Find us</h3>
            <ul>
-             <li><a href="https://github.com/railsonfire" target="blank">GitHub</a></li>
-             <li><a href="https://twitter.com/railsonfire" target="_blank">Twitter</a></li>
-             <li><a href="https://facebook.com/railsonfire" target="_blank">Facebook</a></li>
-             <li><a href="https://www.linkedin.com/company/railsonfire" target="_blank">LinkedIn</a></li>
+             <li><a href="https://github.com/codeship" target="blank">GitHub</a></li>
+             <li><a href="https://twitter.com/codeship" target="_blank">Twitter</a></li>
+             <li><a href="https://facebook.com/codeship" target="_blank">Facebook</a></li>
+             <li><a href="https://www.linkedin.com/company/codeship" target="_blank">LinkedIn</a></li>
            </ul>
          </div>
        </div>
@@ -149,7 +149,7 @@ new TWTR.Widget({
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-21192046-1']);
-  _gaq.push(['_setDomainName', 'blog.railsonfire.com']);
+  _gaq.push(['_setDomainName', 'blog.codeship.io']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -169,7 +169,7 @@ mixpanel.track('blog post viewed', {'title': document.title});
 </script><!-- end Mixpanel -->
 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <!-- Google Code for railsonfire.com Remarketing List -->
+    <!-- Google Code for codeship.io Remarketing List -->
     <script type="text/javascript">
         /* <![CDATA[ */
     var google_conversion_id = 1009317086;

@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://blog.railsonfire.com/sitemap.xml
+Sitemap: http://blog.codeship.io/sitemap.xml

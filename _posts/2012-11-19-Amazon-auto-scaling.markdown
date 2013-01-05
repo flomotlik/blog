@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How we use the EC2 API to Autoscale our Infrastructure and keep track of all changes.
-image: http://blog.railsonfire.com/images/amazon/valueovertime.png
+image: http://blog.codeship.io/images/amazon/valueovertime.png
 ---
 
 ***This is part two of our Amazon blogposts which deals with how exactly
@@ -31,7 +31,7 @@ product as possible.
 
 ![Value over Time](/images/amazon/valueovertime.png)
 
-We started Railsonfire to build a product that helps people
+We started Codeship to build a product that helps people
 focusing on their product and customers, not on
 keeping the infrastructure up.
 
@@ -57,7 +57,7 @@ server admin. We can focus all of our engineering power on building the
 tools as there are no maintenance tasks to be performed.
 
 ###How do we auto-scale
-At [Railsonfire](https://www.railsonfire.com) we have implemented a Scaling
+At [Codeship](https://www.codeship.io) we have implemented a Scaling
 class that has one scale method and
 compares our queues with our currently running EC2 workers and then
 decides to start or shut down our instances. By providing only one
@@ -106,7 +106,7 @@ debug them.
 
 We heavily use Google Docs to keep track of metrics in our application
 and our server infrastructure is no exception there. We have implemented
-our own [GSMetrics](https://github.com/railsonfire/gsmetrics) gem to
+our own [GSMetrics](https://github.com/codeship/gsmetrics) gem to
 help us with pushing data into Google Docs. Works really well and makes
 collecting and analysing our data very easy.
 

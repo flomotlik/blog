@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: 7 steps to take to get to continuously deploying your application
-image: http://blog.railsonfire.com/images/cd/adamgod.png
+image: http://blog.codeship.io/images/cd/adamgod.png
 ---
 ![Creation of Adam](/images/cd/adamgod.png)
 *Image obtained from [Wikipedia](http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1n.jpg)*
@@ -64,4 +64,4 @@ You have built all necessary guards to ensure that only working code is released
 And if a bug slips through, you can go back to a stable version fast.
 
 ###Conclusion
-By following these steps you will get your project on track for continuous deployment and boost your development speed. If you have any questions, just drop us a line here or [email](mailto:help@railsonfire.com) us.
+By following these steps you will get your project on track for continuous deployment and boost your development speed. If you have any questions, just drop us a line here or [email](mailto:help@codeship.io) us.

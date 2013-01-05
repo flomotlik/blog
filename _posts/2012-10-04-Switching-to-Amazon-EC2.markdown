@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: A comparison about the advantages and disadvantages of various platform-as-a-service providers like Amazon EC2, Rackspace, Linode or Hetzner.
-image: http://blog.railsonfire.com/images/amazon/aws.png
+image: http://blog.codeship.io/images/amazon/aws.png
 ---
 
 ***This will be a two part series due to popular demand. This first part deals
@@ -13,7 +13,7 @@ with the decisions behind switching to Amazon, the second part will
 deal with the nitty gritty implementation details we use to auto scale
 our infrastructure.***
 
-***UPDATE: [PART 2](http://blog.railsonfire.com/2012/11/19/Amazon-auto-scaling.html) is
+***UPDATE: [PART 2](http://blog.codeship.io/2012/11/19/Amazon-auto-scaling.html) is
 now released, so go and read it as well***
 
 For a good number of months we had our infrastructure based on
@@ -51,7 +51,7 @@ simply do not have to hire additional server admins because we run
 a much larger infrastructure.
 
 ###Providers
-<img src="http://blog.railsonfire.com/images/amazon/aws.png" title="amazon web services" style="width: 200px; float: left; margin-right: 5px;"/>We looked at various Providers including [Rackspace](http://www.rackspace.com/),
+<img src="http://blog.codeship.io/images/amazon/aws.png" title="amazon web services" style="width: 200px; float: left; margin-right: 5px;"/>We looked at various Providers including [Rackspace](http://www.rackspace.com/),
 [Linode](http://www.linode.com/), [ElasticHosts](http://www.elastichosts.com/)
 and [Amazon EC2](http://aws.amazon.com/). Especially Rackspace was great
 and their support is just incredible, but in the end
@@ -69,10 +69,10 @@ infrastructure and how we scale our backend respectively.
 ####Automated Deployment
 One of our guiding principles is, not surprisingly, to automate
 deployment as much as possible. Implementing continuous deployment for a
-website is rather easy (especially when using Railsonfire)
+website is rather easy (especially when using Codeship)
 compared to continuously deploying Amazon AMIs. We use the following workflow
 
-  1. When pushing to our backend repository on GitHub a new Railsonfire
+  1. When pushing to our backend repository on GitHub a new Codeship
      build is triggered
   2. The build runs the backend unit tests to make sure our scripts work
      fine
@@ -127,6 +127,6 @@ give you the ability to run your tests on Instances with up to 8 cores
 to parallelize your tests and reduce the time your tests take
 dramatically.
 
-We are really thrilled for the future of Railsonfire and can't wait to
+We are really thrilled for the future of Codeship and can't wait to
 tell you all the good news and updates we have in store over the next
 weeks.

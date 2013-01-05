@@ -5,10 +5,10 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Make your website super fast with Asset Pipeline, Sprites & Cloudfront!
-image: http://blog.railsonfire.com/images/assets/distribution-caching.png
+image: http://blog.codeship.io/images/assets/distribution-caching.png
 ---
 
-***This is the second in a two part series on how we set up Railsonfire with Heroku. Read the [first part](/2012/05/06/Unicorn-on-Heroku.html) that deals with Heroku and how to use it more efficiently with Unicorn.***
+***This is the second in a two part series on how we set up Codeship with Heroku. Read the [first part](/2012/05/06/Unicorn-on-Heroku.html) that deals with Heroku and how to use it more efficiently with Unicorn.***
 
 In the first part we introduced our Unicorn setup that helps you manage several concurrent requests on one Heroku Dyno. The best optimization though is to remove all unnecessary requests completely.
 
@@ -16,7 +16,7 @@ As the Heroku Cedar stack has no Proxy in front of your Rails application any mo
 
 This blogpost shows how we use the Asset Pipeline, Compass and Amazon Cloudfront to serve all of our assets fast without sending any requests to our application directly.
 
-We use all of it on [railsonfire.com](https://www.railsonfire.com) to make sure we make the best of all the resources the cloud provides.
+We use all of it on [codeship.io](https://www.codeship.io) to make sure we make the best of all the resources the cloud provides.
 
 Although this guide is written with Rails in mind the concepts like Sprites or a CDN can be used with any framework and for any website.
 
@@ -136,12 +136,12 @@ You should see lots of *(from cache)* for your requests. Click through your appl
 
 Check your Heroku logs as well to be sure only the bare minimum of reqeusts are sent to your application.
 
-If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com)).
+If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@codeship.io)).
 
 ###Conclusion
 Combining Unicorn on Heroku with the Asset Pipeline and Amazon Cloudfront gives you an incredible platform to scale from. Only the bare minimum of requests are sent to your application and caches are used all along the way to make your application fast, responsive and cheap to run.
 
-If you have any questions regarding the setup or anything else you can send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a Tweet to [@Railsonfire](https://twitter.com/#!/railsonfire) or use the Olark Chat Box in the right hand corner.
+If you have any questions regarding the setup or anything else you can send an email to [flo@codeship.io](mailto:flo@codeship.io), a Tweet to [@Codeship](https://twitter.com/#!/codeship) or use the Olark Chat Box in the right hand corner.
 
 ###Thanks
 Thanks to [Arvid Andersson](http://blog.arvidandersson.se/2011/10/03/how-to-do-the-asset-serving-dance-on-heroku-cedar-with-rails-3-1) and [Tom Coleman](http://bindle.me/blog/index.php/395/caches-cdns-and-heroku-cedar) for their blogposts.

@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Getting efficient when working with Heroku. Just use createa a ***h*** function that calls the heroku gem with the last parameter being the heroku app name.
-image: http://blog.railsonfire.com/images/unicorn/heroku.png
+image: http://blog.codeship.io/images/unicorn/heroku.png
 ---
 Heroku provides a great infrastructure, but using their Gem often feels
 a little bit clunky. Especially when viewing the Heroku logs or getting
@@ -28,7 +28,7 @@ For example to show the config for our production app I simply type
 
 I personally do not like to have our Heroku production application as a
 git remote as it forces me to always go through the proper way of testing
-and deployment with Railsonfire.
+and deployment with Codeship.
 
 Thus I often need to provide the app name which is nicely solved by
 these functions.

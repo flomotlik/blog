@@ -4,8 +4,8 @@ title: Startup Pirates Bratislava 2012
 author: Moritz Plassnig
 twitter: moritzplassnig
 google: 101268986513519499518
-description: Railsonfire did an investor pitch workshop at the Startup Pirates Bratislava 2012 event. Here are the key learnings.
-image: http://blog.railsonfire.com/images/startuppiratesbratislava/comfortzone.jpg
+description: Codeship did an investor pitch workshop at the Startup Pirates Bratislava 2012 event. Here are the key learnings.
+image: http://blog.codeship.io/images/startuppiratesbratislava/comfortzone.jpg
 ---
 
 We got an invitation to do an investor pitch workshop for the
@@ -13,7 +13,7 @@ We got an invitation to do an investor pitch workshop for the
 happy to help young entrepreneurs and therefore we took the train and rushed to Bratislava
 yesterday.
 
-<center>![Investor pitch workshop at Startup Pirates Bratislava](http://blog.railsonfire.com/images/startuppiratesbratislava/moritz.jpg)
+<center>![Investor pitch workshop at Startup Pirates Bratislava](http://blog.codeship.io/images/startuppiratesbratislava/moritz.jpg)
 
 <i>Image from <a href="http://facebook.com/startuppiratesbratislava" target="_blank">facebook.com/startuppiratesbratislava</a></i></center>
 
@@ -29,7 +29,7 @@ Always! The problem with presenting, especially if you are not good at it, is th
 in front of a crowd. That's the reason why you have to do it - often and again & again. It's not easy at the
 beginning but like everything in life, your learning curve is extremely steep. So you will perform better super fast.
 
-<center>![Life begins at the end of your comfort zone](http://blog.railsonfire.com/images/startuppiratesbratislava/comfortzone.jpg)
+<center>![Life begins at the end of your comfort zone](http://blog.codeship.io/images/startuppiratesbratislava/comfortzone.jpg)
 
 <i>Image from <a href="http://quotespire.com" target="_blank">quotespire.com</a></i></center>
 

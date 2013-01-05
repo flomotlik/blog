@@ -5,10 +5,10 @@ author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
 description: How to keep a database synchronized with your branches.
-image: http://blog.railsonfire.com/images/og_tag_gitbranches.png
+image: http://blog.codeship.io/images/og_tag_gitbranches.png
 ---
-![Branches](http://blog.railsonfire.com/images/branches.jpg)
-We love Git. At [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we are currently working on a new version of our platform with lots of new features. For every feature we create a separate Git branch and once it’s done we integrate the feature into the main application. This keeps us from having half-baked features spoiling our service.
+![Branches](http://blog.codeship.io/images/branches.jpg)
+We love Git. At [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) we are currently working on a new version of our platform with lots of new features. For every feature we create a separate Git branch and once it’s done we integrate the feature into the main application. This keeps us from having half-baked features spoiling our service.
 
 There’s only one problem with this approach: While the code is perfectly separated in its own feature branch, the database will be the same for all branches. Unfortunately I tend to forget about this fact.
 
@@ -18,7 +18,7 @@ Right after I realized the mistake I thought about how to deal with this problem
 
 ### Solution #1: Regenerate the database on branch change
 
-Git offers a nice feature named *hooks*. A hook gets called when certain events happen in the repository. For example, [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) gets informed by a *post-receive* hook whenever there’s a new version of your product in the repository so we can download and test it.
+Git offers a nice feature named *hooks*. A hook gets called when certain events happen in the repository. For example, [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) gets informed by a *post-receive* hook whenever there’s a new version of your product in the repository so we can download and test it.
 
 There are also client-side hooks which support the Git workflow on your computer. To fix my database problem I could write a *post-checkout* hook that always resets the database to the current branch’s version. Unfortunately this approach has two downsides:
 

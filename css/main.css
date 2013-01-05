@@ -14,7 +14,7 @@ p img {
   height:73px;
 }
 
-#railsonfire-link{
+#codeship-link{
   font: 24px Arial, sans-serif;
   color: #222;
   position: relative;
@@ -160,7 +160,7 @@ a:focus, a:hover, a:active {
 
 }
 
-/* line 297, ../../app/stylesheets/railsonfire.scss */
+/* line 297, ../../app/stylesheets/codeship.scss */
 #footer {
   padding-top: 10px;
   padding-left: 20px;
@@ -168,14 +168,14 @@ a:focus, a:hover, a:active {
   margin-top:35px;
 }
 
-/* line 303, ../../app/stylesheets/railsonfire.scss */
+/* line 303, ../../app/stylesheets/codeship.scss */
 #footer a {
   color: #76797C;
   font-size: 11px;
   font-family: arial;
 }
 
-/* line 309, ../../app/stylesheets/railsonfire.scss */
+/* line 309, ../../app/stylesheets/codeship.scss */
 #footer h3 {
   color: #387FD5;
   font-size: 12px;

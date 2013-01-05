@@ -12,7 +12,7 @@ image: http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg
 
 ***When you practice test-driven development, most of the time you need to run only a small number of tests to validate your recent code changes. Unfortunately things change once you start refactoring. Refactoring models implicates your entire application. So in order to keep things from going down the drain, you’ll need to run all (or most of) your tests constantly. And that’s where things get tedious.***
 
-At [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we develop our Ruby on Rails web app test-driven with [Rspec](https://www.relishapp.com/rspec/rspec-rails/v/2-12/docs). Most of our specs are high level request specs (in a way integration tests) which are slow compared to controller or model specs. One of the reasons for this slowness is that request specs test the whole application stack. Another reason is that we changed the default capybara driver from [Rack::Test](https://github.com/brynary/rack-test) to [Poltergeist](https://github.com/jonleighton/poltergeist).
+At [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) we develop our Ruby on Rails web app test-driven with [Rspec](https://www.relishapp.com/rspec/rspec-rails/v/2-12/docs). Most of our specs are high level request specs (in a way integration tests) which are slow compared to controller or model specs. One of the reasons for this slowness is that request specs test the whole application stack. Another reason is that we changed the default capybara driver from [Rack::Test](https://github.com/brynary/rack-test) to [Poltergeist](https://github.com/jonleighton/poltergeist).
 
 *“Poltergeist? But that’s so much slower!”*
 
@@ -26,13 +26,13 @@ That would be enough to test all of the Javascript functionality. Unfortunately 
 
 Because of this additional safety we decided on making Poltergeist the default capybara driver.
 
-## Development vs. [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) CI
+## Development vs. [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) CI
 
 Using test-driven development will eventually take you to the point of misery, when running all your specs slows down your productivity unbearably. Poltergeist lets us reach this point at record speed. So what to do now? On the one hand we wanted to retain the quality of our web app, on the other hand we wanted to continue developing without feeling the need of poking our eyes out while waiting for the specs to succeed.
 
 Running our spec suite on my computer with this setup took **8:45 minutes**.
 
-The solution was [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) itself: We would speed up the specs in development as much as possible and let the Continous Integration server do all the cumbersome work.
+The solution was [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) itself: We would speed up the specs in development as much as possible and let the Continous Integration server do all the cumbersome work.
 
 ### Step one: Use Poltergeist only for Javascript
 
@@ -48,7 +48,7 @@ Rspec provides [tagging](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/c
 
 ### Step three: Skip remote specs
 
-In [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) we integrate a couple of external services like [Github](https://github.com/). Of course we also needed to verify that the communication with these services worked. But a developer’s life is hard: Sometimes you are on a train, on a plane or there’s simply no network reception. And all of a sudden many of your specs fail.
+In [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) we integrate a couple of external services like [Github](https://github.com/). Of course we also needed to verify that the communication with these services worked. But a developer’s life is hard: Sometimes you are on a train, on a plane or there’s simply no network reception. And all of a sudden many of your specs fail.
 
 Therefore we tried to remove the dependencies on external services for as many specs as possible. We tagged all specs that still required internet access with `remote: true` and skipped them in development.
 
@@ -58,7 +58,7 @@ This stunning result was good enough for now, so we stopped optimizing here. But
 
 ## Results
 
-By changing our test setup and skipping time-consuming tests in development we were able to cut down test execution time by more than **83%**. This way we could stay productive during development and still perform extensive checks on our web application using the [Railsonfire](https://www.railsonfire.com/?utm_source=blog&utm_medium=link&utm_campaign=blog) continous integration server.
+By changing our test setup and skipping time-consuming tests in development we were able to cut down test execution time by more than **83%**. This way we could stay productive during development and still perform extensive checks on our web application using the [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) continous integration server.
 
 Here’s a final overview of the results after each optimization step:
 
