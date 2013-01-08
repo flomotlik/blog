@@ -219,11 +219,6 @@ h4 {
   margin-bottom: 0.2em;
 }
 
-pre, code, tt {
-  color: #FF8800;
-  font: 1em/1.5 'monospace','lucida console','andale mono';
-}
-
 .socialbuttons {
   margin-bottom: -30px;
   margin-top: 2px;
@@ -239,4 +234,8 @@ pre, code, tt {
 
 .g-plusone {
    padding-right: 20px;
+}
+
+table.highlight{
+  background-color: white;
 }
