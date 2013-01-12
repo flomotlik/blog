@@ -1,0 +1,174 @@
+body{
+    padding-top:20px;
+}
+
+#navigation{
+}
+
+#header{
+    margin-bottom: 20px;
+    height:73px;
+}
+
+#railsonfire-link{
+  font: 24px Arial, sans-serif;
+  color: #222;
+  position: relative;
+  top:30px;
+  text-decoration:none;
+  text-align:right;
+}
+
+#rss{
+  text-align:right;
+  position: relative;
+  bottom: 4px;;
+}
+
+#content{
+    min-height: 300px;
+    width:589px;
+    margin-right:0px;
+    border-right: 1px solid #CCC;
+}
+
+#about{
+    border-top:1px solid #CCC;
+}
+
+#about h3{
+    color: #999;
+    height:20px;
+    text-indent:20px;
+    margin-bottom:0px;
+}
+
+#about .about_header{
+  border-bottom:1px solid #CCC;
+  padding:9px 0px 0px 0px;
+  height: 29px;
+  margin-bottom:9px;
+}
+
+#about_content{
+    margin-bottom: 2px;
+    padding-top: 9px;
+}
+
+#about_content a{
+  text-decoration:none;
+  color: #222;
+}
+
+#about #about_content img{
+    height:64px;
+    width:64px;
+    padding: 3px;
+    border: 1px solid #CCC;
+    float:left;
+    margin-left:20px;
+    margin-right:10px;
+}
+
+#tweets h3{
+    border-top: 1px solid #CCC;
+}
+
+.twitter-follow-button{
+  margin-left:10px;
+}
+
+.twtr-ft, .twtr-hd{
+    display:none;
+}
+
+.twtr-tweet-text p{
+  font: 13px Arial, sans-serif;
+}
+
+.post-header{
+    border-bottom: 1px solid #CCC;
+    border-top:1px solid #CCC;
+    margin-right:0px;
+    height:20px;
+    padding:9px 0px 9px 20px;
+    width:571px;
+}
+
+.post a{
+    text-decoration:none;
+}
+
+.post-header a{
+  color: #555;
+}
+
+.post-content{
+  margin-top:20px;
+  margin-left:20px;
+  width:560px;
+  font: 13px Arial, sans-serif;
+}
+
+.post-content h3 a{
+  font: 24px Arial, sans-serif;
+  color: #111;
+}
+
+.post-content img{
+  padding: 2px;
+  border: 1px solid #CCC;
+  background-color: white;
+}
+
+.post-content h3 a:hover, .post-content h3 a:focus {
+color: #0099FF;
+}
+
+#header #pages a:focus, #header #pages a:hover, #header #pages a:active {
+  color: #0099FF;
+}
+
+a:focus, a:hover, a:active {
+  color: #0099FF;
+}
+
+.share{
+  float: left;
+}
+.post li{
+  margin-bottom:10px;
+}
+#footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+
+}
+
+/* line 297, ../../app/stylesheets/railsonfire.scss */
+#footer {
+  padding-top: 10px;
+  padding-left: 20px;
+  border-top: 1px solid #CCC;
+  margin-top:35px;
+}
+
+/* line 303, ../../app/stylesheets/railsonfire.scss */
+#footer a {
+  color: #76797C;
+  font-size: 11px;
+  font-family: arial;
+}
+
+/* line 309, ../../app/stylesheets/railsonfire.scss */
+#footer h3 {
+  color: #387FD5;
+  font-size: 12px;
+  font-family: arial;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#footer a{
+  text-decoration:none;
+}

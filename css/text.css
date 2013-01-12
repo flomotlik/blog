@@ -1,0 +1,34 @@
+h1 {
+  font-family: "Roboto Bold Condensed", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #46505F;
+}
+
+h2 {
+font-family: "Roboto Bold Condensed", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #7b879b;
+}
+
+h3 {
+font-family: "Roboto Bold Condensed", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #94949D;
+
+}
+
+/* STYLE CODE BLOCKS */
+
+code {
+  font-family: "veramono", "Courier New", monospace;
+  font-weight: normal;
+  color: #666666;
+  padding: 0.2em;
+  background: #F5F2FC;
+}
