@@ -27,7 +27,7 @@ The [official Guide](http://guides.rubyonrails.org/asset_pipeline.html) has a br
 
 We will briefly introduce our configuration and then go over our CSS, Javascript and Image setup.
 
-###Configuration
+##Configuration
 
 At first add the necessary Gems to your Gemfile. It is assumed that you use the latest versions available of all gems.
 <script src="https://gist.github.com/2694525.js?file=Gemfile"></script>
@@ -47,7 +47,7 @@ Through this mechanism you do not have to invalidate any CDN cache at all, but y
 
 All of your assets will be precompiled during deployment to Heroku.
 
-###CSS
+##CSS
 
 To minimize the requests needed for loading our site we create a single application.css through the asset pipeline. The inherent problem with this setup is that css definitions for different subpages can potentially clash. To make sure this doesn't happen we give the body tag a special id composed of the controller and action name of the current site.
 
@@ -59,11 +59,11 @@ Then we start every css file that only contains scss for a specific page with th
 
 It's definitely not an ideal solution, but it works fine and we haven't figured out any better way to do this.
 
-###Javascript
+##Javascript
 
 We compile all our Javascript into one application.js file, but as we are not very javascript heavy we didn't need to do any optimizations aside from compression here.
 
-###Images
+##Images
 
 We use Spriting for all of the images in our application. Spriting is the process of combining several images into one bigger image to lower the number of requests to your website.
 
@@ -87,7 +87,7 @@ You have to make sure that you set the height and width of every button correctl
 
 You can read more about compass in their [Reference Documentation.](http://compass-style.org/reference/compass/)
 
-###Gzip
+##Gzip
 
 To make sure all of your assets and pages are compressed before they are sent to your users add Rack:Deflater to your config.ru file.
 <script src="https://gist.github.com/2694525.js?file=config.ru"></script>
@@ -138,10 +138,10 @@ Check your Heroku logs as well to be sure only the bare minimum of reqeusts are 
 
 If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@codeship.io)).
 
-###Conclusion
+##Conclusion
 Combining Unicorn on Heroku with the Asset Pipeline and Amazon Cloudfront gives you an incredible platform to scale from. Only the bare minimum of requests are sent to your application and caches are used all along the way to make your application fast, responsive and cheap to run.
 
 If you have any questions regarding the setup or anything else you can send an email to [flo@codeship.io](mailto:flo@codeship.io), a Tweet to [@Codeship](https://twitter.com/#!/codeship) or use the Olark Chat Box in the right hand corner.
 
-###Thanks
+##Thanks
 Thanks to [Arvid Andersson](http://blog.arvidandersson.se/2011/10/03/how-to-do-the-asset-serving-dance-on-heroku-cedar-with-rails-3-1) and [Tom Coleman](http://bindle.me/blog/index.php/395/caches-cdns-and-heroku-cedar) for their blogposts.

@@ -22,17 +22,17 @@ need to scale dynamically we decided to research cloud platforms and
 move to the cloud. Additionally we experienced severe networking
 issues from time to time which forced us to switch.
 
-###Requirements
+##Requirements
 We had several other requirements as well, but following are our core
 needs a cloud service has to address.
 
-####Scaling
+###Scaling
 
 We want to be able to scale to any size at any time without
 limiting ourselves by having to set up or manage physical servers. A
 cloud provider with good automation support was thus the only viable route to go for us.
 
-####Flexibility
+###Flexibility
 
 We want to stay flexible in what type of server infrastructure (number
 of cores, RAM size, ...) we use so we can innovate continuously and also
@@ -40,7 +40,7 @@ provide different infrastructure for the differing needs of our
 customers. This also has a major role in our costs as we can use the
 exact server type we need for a specific task.
 
-####Automation
+###Automation
 
 As a hosted continuous deployment service releasing changes and scaling automatically is a necessity.
 When automating the whole process of deployment and scaling
@@ -50,7 +50,7 @@ decouple the scaling of our infrastructure with scaling our team. We
 simply do not have to hire additional server admins because we run
 a much larger infrastructure.
 
-###Providers
+##Providers
 <img src="http://blog.codeship.io/images/amazon/aws.png" title="amazon web services" style="width: 200px; float: left; margin-right: 5px;"/>We looked at various Providers including [Rackspace](http://www.rackspace.com/),
 [Linode](http://www.linode.com/), [ElasticHosts](http://www.elastichosts.com/)
 and [Amazon EC2](http://aws.amazon.com/). Especially Rackspace was great
@@ -60,13 +60,13 @@ various [Instance Types](http://aws.amazon.com/ec2/instance-types/). We looked i
 they seem fine as well. Linode was out of the picture fast, as they do
 not provide per hour pricing.
 
-###Implementation
+##Implementation
 
 We will split this section into two parts, Automated Deployment and
 Automated Scaling, which describe how we introduce changes to our backend
 infrastructure and how we scale our backend respectively.
 
-####Automated Deployment
+###Automated Deployment
 One of our guiding principles is, not surprisingly, to automate
 deployment as much as possible. Implementing continuous deployment for a
 website is rather easy (especially when using Codeship)
@@ -102,7 +102,7 @@ And not to forget having this automated system makes it much safer and
 less error prone. It is really hard now to accidentally introduce errors
 into the system as it is checked several times and improved continuously.
 
-####Automated Scaling
+###Automated Scaling
 
 We automatically scale our infastructure up and down depending on the
 number of builds we currently need to run. Every time a new build is
@@ -117,7 +117,7 @@ the servers accordingly. We make sure that we use as much of every EC2
 hour as possible by only stopping them shortly before they incur further
 expenses.
 
-###Conclusion
+##Conclusion
 
 It took us quite some time to build the current infrastructure and the
 automation to get the most out of it. But this is only the beginning. We

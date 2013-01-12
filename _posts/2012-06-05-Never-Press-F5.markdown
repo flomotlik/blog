@@ -41,7 +41,7 @@ Sadly no Vim support.
 
 So here it is the all new [Vim-Livereload Extension](https://github.com/flomotlik/vim-livereload)
 
-###Vim-Livereload
+##Vim-Livereload
 The Vim-Livereload plugin tells your browser to reload the page you
 watch over with Livereload on every save. Simply click the Livereload
 button in your browser to listen to events and the next time you save
@@ -59,7 +59,7 @@ receive requests from the [Livereload Chrome Browser
 plugin](https://chrome.google.com/webstore/detail/jnihajbhpnppcggbcgedagnkighmdlei).
 I only tested it with Chrome and the latest version in the chrome store.
 
-###Conclusion
+##Conclusion
 Give Livereload and the Vim plugin a try. It is incredibly easy and
 makes you much more productive immediately.
 

@@ -24,7 +24,7 @@ That’s why we gathered 7 steps for you to get started with continuous deployme
 Leave a comment if you have any additional tips on how to speed up
 development.
 
-### Test/Test/Test, but be smart about it
+## Test/Test/Test, but be smart about it
 If you do not test your software automatedly, you are doing it wrong. There is no way around automated testing.
 
 You don't have to write a test for every small piece of code.
@@ -35,33 +35,33 @@ Without tests you release buggy software. You break features that worked in the 
 In our next post we will get you started with tools like [Selenium](http://seleniumhq.org/)
 or [PhantomJS](http://phantomjs.org/). There are various integrations in every programming language, so stay tuned!
 
-### Build small services
+## Build small services
 Split your system into small parts that solve one specific problem
 and interact with other parts through clearly defined interfaces.
 
 You will innovate faster, build more stable systems and improve your team workflow thanks to the clear boundaries between single parts of your application.
 
-### Automate Deployment
+## Automate Deployment
 If you run more than one command to deploy your application, you are doing it wrong. Have all of your deployment steps accessible through one command. The command shouldn't require additional configuration.
 
 As soon as it is even a little more complicated you won't do it frequently and this slows down your development.
 
-### Automate Rollback
+## Automate Rollback
 Reverting your application to an old version should be as easy as releasing a new version. This is especially important for your database. You probably won’t risk a rollback if it is hard to do and involves several steps.
 
-### Deploy to Staging
+## Deploy to Staging
 If you are not continuously deploying to your production system, at least do so for a staging environment, so you can evaluate it anytime.
 
 The latest version of your application should always be running somewhere, so
 your team can access and test it.
 
-### Use your staging environment
+## Use your staging environment
 If you build a product that you use yourself, always work on the staging environment. As soon as you break something you will be the first to notice and you will fix it quickly, because you rely on it.
 
-### Automatically deploy to production
+## Automatically deploy to production
 With all these steps done you are ready to deploy continuously to your production system.
 You have built all necessary guards to ensure that only working code is released.
 And if a bug slips through, you can go back to a stable version fast.
 
-###Conclusion
+## Conclusion
 By following these steps you will get your project on track for continuous deployment and boost your development speed. If you have any questions, just drop us a line here or [email](mailto:help@codeship.io) us.

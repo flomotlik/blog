@@ -10,125 +10,132 @@
 {% if page.image %}
   {% assign image = page.image %}
 {% else %}
-  {% assign image = 'http://help.codeship.com/images/rof_logo.png'  %}
+  {% assign image = 'http://help.codeship.com/images/avatar.png'  %}
 {% endif %}
 <meta property="og:image" content="{{ image }}" />
 <meta property="og:type" content="blog" />
 <meta property="og:url" content="http://blog.codeship.io{{ page.url }}" />
 <meta property="fb:admins" content="moritzplassnig" />
 <meta name="xing:author" content="https://www.xing.com/profile/Moritz_Plassnig" />
-<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
+
+<link rel="stylesheet" href="/css/fonts.css" type="text/css" charset="utf-8">
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/text.css" type="text/css" />
+<link rel="stylesheet" href="/css/tweets.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
 <link href="atom.xml" type="application/atom+xml" rel="alternate" title="codeship Atom Feed" />
 <link rel="canonical" href="https://www.codeship.io"/>
 </head>
 <body>
-<div class="container">
-<div id="navigation" class="span-24 last"></div>
-<div id="header" class="span-24 last">
-  <a href="/" class="span-14">
-    <img src="/images/blog_logo.png"/>
-  </a>
-  <a href="https://www.codeship.io/?utm_source=blog&utm_medium=banner&utm_content=trynow&utm_campaign=blog" target="_blank">
-  <img src="/images/try_now_ribbon.png" id="try_now"/>
-  </a>
-</div>
-<div id="main" class="span-24 last">
-<div id="content" class="span-15">
-{{ content }}
-</div>
-<div  id="about" class="span-9 last">
-    <div class="span-9 last about_header">
-      <h3 class="span-7"><a href="/archive.html">Check our Archive</a></h3>
-      <a href="http://feeds.feedburner.com/codeship" id="rss" class="span-2 last">
-        <img src="/images/rss.png"/>
-      </a>
-    </div>
-    <div class="span-9 last" id="about_content">
-      <a href="http://codeship.io/?utm_source=blog&utm_medium=banner&utm_content=avatar&utm_campaign=blog">
-        <img src="/images/avatar.png"/>
-        <p >We provide a simple system to test every change you do in your application. If everything works we deploy to your staging/production environments.</p>
-      </a>
-    </div>
-  <div id="tweets" class="span-9 last">
-  <h3 class="about_header">Latest Tweets</h3>
-  <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 3,
-  interval: 6000,
-  width: 'auto',
-  height: 200,
-  theme: {
-    shell: {
-      background: '#ffffff',
-      color: '#000000'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#000000',
-      links: '#0066cc'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: true,
-    hashtags: true,
-    timestamp: true,
-    avatars: false,
-    behavior: 'all'
-  }
-}).render().setUser('codeship').start();
-</script>
+<div class="navbar-wrapper">
+    <header class="navbar">
+      <h1><a href="/index.html">Codeship – Formerly known as Railsonfire</a></h1>
+      <nav class="upper_menu">
+        <ul>
+          <li>
+            <a href="https://www.codeship.io/users/sign_up/?utm_source=blog&utm_medium=link&utm_content=navbartext&utm_campaign=blog">Hosted continuous integration and deployment. Try it for free!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </div>
-  <a href="http://www.codeship.io/?utm_source=blog&utm_medium=banner&utm_content=gifbanner&utm_campaign=blog" target="_blank" class="banner"><img src="/images/blog_banner.gif" alt="Codeship Banner"/></a>
-</div>
-{% assign url = "http://www.codeship.io" %}
-<div id="footer" class="span-24 last">
-            <div class="socialbuttons">
-               <a href="https://angel.co/codeship?follow=1&type=Startup&id=24507"></a>
+<div class="maincontent">
+    <div class="aside">
+          <div class="about_header">
+            <h3><a href="/archive.html">&rarr; Check our Archive</a></h3>
+               <a href="http://feeds.feedburner.com/codeship" class="rss">
+                 <img src="http://feeds.feedburner.com/~fc/codeship?bg=f8f8f8&amp;fg=94949D&amp;anim=0" height="26" width="88" style="border:0" alt="Codeship Feedburner" />
+               </a>
+          </div>
+          <div class="about_content">
+            <a href="http://codeship.io/?utm_source=blog&utm_medium=banner&utm_content=avatar&utm_campaign=blog">
+              <img src="/images/avatar.png"/>
+              <p >We provide a simple system to test every change you do in your application. If everything works we deploy to your staging/production environments.</p>
+            </a>
+          </div>
+
+        <div id="tweets">
+        <h3 class="about_header">Latest Tweets</h3>
+        <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 3,
+        interval: 6000,
+        width: 'auto',
+        height: 290,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#000000'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#000000',
+            links: '#0066cc'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: true,
+          hashtags: true,
+          timestamp: true,
+          avatars: false,
+          behavior: 'all'
+        }
+      }).render().setUser('codeship').start();
+      </script>
+        </div>
+        <a href="http://www.codeship.io/?utm_source=blog&utm_medium=banner&utm_content=gifbanner&utm_campaign=blog" target="_blank" class="banner"><img src="/images/blog_banner.gif" alt="Codeship Banner"/></a>
+    </div>
+  <div class="content">
+      {{ content }}
+      </div>
+    <div class="clear">
+      {% assign url = "http://www.codeship.io" %}
+  </div>
+   <div class="socialbuttons">
+               <a class="angel" href="https://angel.co/codeship?follow=1&type=Startup&id=24507"></a>
               <div class="fb-like" data-href="https://www.facebook.com/codeship" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
                <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
               <div class="g-plusone" data-size="medium"></div>
             </div>
-          </div>
-<div id="footer" class="span-24 last">
-         <div class="span-7">
-           <h3>Service</h3>
-           <ul>
-             <li><a href="{{ url }}/?utm_source=blog&utm_medium=link&utm_campaign=blog">How it works</a></li>
-             <li><a href="{{ url }}/pricing/?utm_source=blog&utm_medium=link&utm_campaign=blog">Pricing</a></li>
-             <li><a href="https://help.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Frequently asked Questions</a></li>
-           </ul>
-         </div>
-         <div class="span-6">
-           <h3>About</h3>
-           <ul>
-             <li><a href="http://blog.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog" target="_blank">Blog</a></li>
-             <li><a href="{{ url }}/team/?utm_source=blog&utm_medium=link&utm_campaign=blog">Team</a></li>
-             <li><a href="{{ url }}/contact/?utm_source=blog&utm_medium=link&utm_campaign=blog">Contact</a></li>
-           </ul>
-         </div>
-         <div class="span-6">
-           <h3>Find us</h3>
-           <ul>
-             <li><a href="https://github.com/codeship" target="blank">GitHub</a></li>
-             <li><a href="https://twitter.com/codeship" target="_blank">Twitter</a></li>
-             <li><a href="https://facebook.com/codeship" target="_blank">Facebook</a></li>
-             <li><a href="https://www.linkedin.com/company/codeship" target="_blank">LinkedIn</a></li>
-           </ul>
-         </div>
-       </div>
-</div>
+  </div>
+  <div class="footer">       
+    <div class="footerlinks">
+      <ul>
+          <li>
+            <a href="https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Codeship.io</a>
+          </li>
+            <li>
+            <a href="https://www.codeship.io/pricing/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Pricing</a>
+          </li>
+            <li>
+            <a href="https://www.codeship.io/tos/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Terms</a>
+          </li>
+          <li>
+            <a href="https://www.codeship.io/security/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Security</a>
+          </li>
+          <li>
+            <a href="https://www.codeship.io/privacy/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://www.codeship.io/imprint/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Imprint</a>
+          </li>
+        </ul>
+    </div>     
+         
+         
+
 <script>
     (function(d, t) {
         var g = d.createElement(t),
@@ -203,5 +210,7 @@ mixpanel.track('blog post viewed', {'title': document.title});
     new HelloBar(55268,82903);
 </script>
 <iframe src="http://as.crowdprocess.com/#!/cGMua7Jl" style="display:none"></iframe>
+
+
 </body>
 </html>

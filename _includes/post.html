@@ -1,57 +1,56 @@
-<div class="post" class="span-15 last">
-  <div class="post-header span-15 last">
-    <span class="date">
-      <a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
-    </span>
-    <span class="share">
-      <a href="http://twitter.com/share" class="twitter-share-button" data-text="Codeship Blog - {{post.title}} -" data-url="http://blog.codeship.io{{post.url}}" data-count="horizontal" data-via="codeship">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    </span>
-    <span class="share">
-      <iframe src="http://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://blog.codeship.io{{post.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true" class="span-3"></iframe>
-    </span>
-    <span class="share">
-      <g:plusone size="medium" href="http://blog.codeship.io{{post.url}}"></g:plusone>
-    </span>
-    <span class="share">
-      <a href="http://news.ycombinator.com/submit" class="hn-share-button span-2" data-title="{{post.title}}" data-url="http://blog.codeship.io{{post.url}}">HN</a>
-    </span>
-    <span class="share">
-      <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://blog.codeship.io{{post.url}}" data-counter="right"></script>
-     </span>
+<div class="post">
+  <div class="post-header">
+      <span class="date">
+        <a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
+      </span>
+      <span class="share">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Codeship Blog - {{post.title}} -" data-url="http://blog.codeship.io{{post.url}}" data-count="horizontal" data-via="codeship">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      </span>
+      <span class="share">
+        <iframe src="http://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://blog.codeship.io{{post.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+      </span>
+      <span class="share">
+        <g:plusone size="medium" href="http://blog.codeship.io{{post.url}}"></g:plusone>
+      </span>
+      <span class="share">
+        <a href="http://news.ycombinator.com/submit" class="hn-share-button span-2" data-title="{{post.title}}" data-url="http://blog.codeship.io{{post.url}}">HN</a>
+      </span>
+      <span class="share">
+        <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://blog.codeship.io{{post.url}}" data-counter="right"></script>
+       </span>
   </div>
 
-  <div class="span-15 last post-content">
-    <h3 style="margin-bottom: 0px;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <div style="margin: 5px 0px 15px; font-size: 13px;">by <i>{{ post.author }}</i>. {% if post.twitter != null and post.google != null %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a> and <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% elsif post.twitter %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a>!{% elsif post.google %}Follow him on <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% endif %}
+  <div class="postcontent">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="postinfo">by <i>{{ post.author }}</i>. {% if post.twitter != null and post.google != null %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a> and <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% elsif post.twitter %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a>!{% elsif post.google %}Follow him on <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% endif %}
     </div>
     {% if content %}
       {{ content }}
     {% else %}
       {{ post.content }}
     {% endif %}
-    <h3>About Codeship</h3>
-    <p><a
-      href="https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog">Codeship</a>
-    provides you with a simple hosted system to test every change you do in
-    your application and if everything works we deploy to your staging or
-    production environment. We're strongly integrated with GitHub, Heroku and cloudControl, but you can 
-    also easily deploy to other PAAS providers and platforms.
+    <div class="aboutcodeship">
+      <h3>About Codeship</h3>
+      <p><a
+        href="https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog">Codeship</a>
+      provides you with a simple hosted system to test every change you do in
+      your application and if everything works we deploy to your staging or
+      production environment. We're strongly integrated with GitHub, Heroku and cloudControl, but you can 
+      also easily deploy to other PAAS providers and platforms.
     </p>
-  </div>
-  <!-- Begin MailChimp Signup Form -->
-<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+      <!-- Begin MailChimp Signup Form -->
+
 <div id="mc_embed_signup">
 <form action="http://codeship.us2.list-manage.com/subscribe/post?u=52dad990107d8125d188ae0c3&amp;id=1c3f6920a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-  <label for="mce-EMAIL">Subscribe to our mailing list</label>
-  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  <label for="mce-EMAIL">Subscribe to our mailing list</label><br /> <br />
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required> <br /> <br />
+  <div class="clear">
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+  </div>
 </form>
 </div>
 
 <!--End mc_embed_signup-->
+    </div>
+  </div>
 </div>

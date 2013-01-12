@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Railsonfire becomes Codeship || Codeship welcomes Seedcamp!
+title: Railsonfire becomes Codeship and Codeship welcomes Seedcamp!
 author: Moritz Plassnig
 twitter: moritzplassnig
 google: 101268986513519499518
-description: Hooray! Finally we completed our rebranding from Railsonfire to Codeship. Furthermore we're happy to announce our investment form Seedcamp.
+description: Hooray! Finally we completed our rebranding from Railsonfire to Codeship. Furthermore we're happy to announce our investment from Seedcamp.
 image: http://blog.codeship.io/images/avatar.png
 ---
 

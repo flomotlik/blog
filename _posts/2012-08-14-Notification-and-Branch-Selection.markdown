@@ -12,7 +12,7 @@ Today we announce two new features to help you implement Codeship
 in your workflow. We will show how to use Hipchat for notifications and
 select/skip the branches you want to have built.
 
-###Hipchat Notifications
+##Hipchat Notifications
 
 You can set up Hipchat Notifications by simply calling
 
@@ -37,7 +37,7 @@ be posted to Hipchat.
 We will expand from Hipchat to other Chat providers like Flowdock or
 Campfire.
 
-###Select and Skip Builds
+##Select and Skip Builds
 
 After several feature requests (e.g. [@ayb](https://twitter.com/ayb) and
 [@JohnMetta] (https://twitter.com/@JohnMetta) sent us nice and long
@@ -52,7 +52,7 @@ We will briefly describe both featuers, but you can always read about
 them on our [Help
 Pages](http://help.codeship.io/setup/skip-and-select.html).
 
-####Select branches to be built
+###Select branches to be built
 To limit the branches you want to build you can set the ci_branches
 config parameter with a comma separated list of branch names.
 
@@ -63,7 +63,7 @@ config parameter with a comma separated list of branch names.
 This will only build the ***master*** and ***production*** branch from
 now on.
 
-####Skip CI
+###Skip CI
 
 To Skip a branch or push simply add ***--skip-ci*** either to the
 branch name or the commit message of the last commit before you push.
@@ -71,7 +71,7 @@ branch name or the commit message of the last commit before you push.
 So for example a branch that is named ***featurex--skip-ci*** will be
 skipped.
 
-###Conclusion
+##Conclusion
 With Hipchat Notifications and select/skip you can now use Codeship
 more than ever before in your day to day workflow and configure it to
 fit the way you and your team works and deploys.

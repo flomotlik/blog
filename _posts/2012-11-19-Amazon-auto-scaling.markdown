@@ -7,6 +7,8 @@ google: 115123333592137547204
 description: How we use the EC2 API to Autoscale our Infrastructure and keep track of all changes.
 image: http://blog.codeship.io/images/amazon/valueovertime.png
 ---
+![Speed gauges](http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg)  
+*Image by [Juan-Calderon](http://www.flickr.com/photos/iguana_azul/).*
 
 ***This is part two of our Amazon blogposts which deals with how exactly
 we autoscale our infrastructure and what our plans are for the future.
@@ -18,7 +20,7 @@ extremely busy over the last weeks to get our technology as well as our
 business to the next level and have some great news to announce in
 December.***
 
-###Why Auto scale
+##Why Auto scale
 Every company, and especially every startup, has to focus solely on
 creating value for a customer. This is and always has been the guiding
 principle for the success of a company.
@@ -56,7 +58,7 @@ costs dramatically. Not to forget we simply do not have to hire any
 server admin. We can focus all of our engineering power on building the
 tools as there are no maintenance tasks to be performed.
 
-###How do we auto-scale
+##How do we auto-scale
 At [Codeship](https://www.codeship.io) we have implemented a Scaling
 class that has one scale method and
 compares our queues with our currently running EC2 workers and then
@@ -99,7 +101,7 @@ process that makes sure that the infrastructure is scaled to where it
 needs to be. We solve that by having a Heroku worker started through
 their scheduling addon every ten minutes.
 
-####Log your Scaling
+###Log your Scaling
 Auto-scaling without proper logging and record keeping is like driving
 blindfolded. Especially if you detect problems and have no idea how to
 debug them.
@@ -126,7 +128,7 @@ infrastructure. We have automated every single step and additionally
 have built safeguards along the way to automatically correct and then notify
 our team.
 
-###The future of our infrastructure
+##The future of our infrastructure
 We are currently working on the next iteration of our service which will
 see some changes to our auto-scaling infrastructure. We are moving to
 stronger EC2 instances to give us better speeds. This will decrease the

@@ -8,6 +8,8 @@ description: How to set up Grove and Flowdock notifications on Codeship.com!
 image: http://blog.codeship.io/images/flowdock/flowdock.png
 ---
 
+**Take care:** This blogpost ist outdated. Setting up notifications is now much easier through our interface on our website [Codeship.io](http://www.codeship.io).
+
 After releasing Hipchat Notifications and reimplementing our
 Notifications backend we now proudly support Grove.io and Flowdock as
 well.

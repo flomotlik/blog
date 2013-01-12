@@ -34,19 +34,19 @@ Running our spec suite on my computer with this setup took **8:45 minutes**.
 
 The solution was [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) itself: We would speed up the specs in development as much as possible and let the Continous Integration server do all the cumbersome work.
 
-### Step one: Use Poltergeist only for Javascript
+## Step one: Use Poltergeist only for Javascript
 
 I know, that’s what you always said. We decided on using Poltergeist for all request specs that required Javascript, and Rack::Test for the rest in development. On the continous integration server we’d still run all specs with Poltergeist.
 
 This little change reduced the execution time to **5:00 minutes**.
 
-### Step two: Skip slowest specs
+## Step two: Skip slowest specs
 
 There were some specs that took up to 40 seconds to run. These were used to check some quite complicated procedures that rarely changed. We decided to skip all specs for development that took longer than 10 seconds.
 
 Rspec provides [tagging](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/command-line/tag-option) to achieve this: We tagged our slow tags with `speed: "slow"`. Running our specs with `rspec --tag ~speed:slow` reduced the execution time by half: **2:29 minutes**. Yei!
 
-### Step three: Skip remote specs
+## Step three: Skip remote specs
 
 In [Codeship](https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_campaign=blog) we integrate a couple of external services like [Github](https://github.com/). Of course we also needed to verify that the communication with these services worked. But a developer’s life is hard: Sometimes you are on a train, on a plane or there’s simply no network reception. And all of a sudden many of your specs fail.
 
