@@ -15,11 +15,11 @@ As a result we have built a continuous testing and deployment solution for teams
 
 Codeship is a polyglot!
 We added ***support for additional programming languages***. From now on you can test your
-* Go
-* Java
-* Node.js
-* PHP
-* and Python
++ Go
++ Java
++ Node.js
++ PHP
++ and Python
 projects on [Codeship.io](https://www.codeship.io)! And over the next couple of weeks Codeship will be fluent in even more languages!
 
 There are even more good news: ***We listen to you. That’s why we have built a brand-new user interface***.
