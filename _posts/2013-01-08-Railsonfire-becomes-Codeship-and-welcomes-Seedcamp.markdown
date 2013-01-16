@@ -14,7 +14,6 @@ Hooray! Finally we completed our ***rebranding*** from Railsonfire to [Codeship]
 As a result we have built a continuous testing and deployment solution for teams with all kinds of technology stacks. The name "Railsonfire" didn’t seem to fit our service anymore and so "[Codeship](https://www.codeship.io)" was born. ***Our vision is it to make developers' lives easier and help them focus on their core business, while helping them to _ship_***. Teams nowadays have various multi-technology stacks and we thrive to support as many combinations and needs as possible.
 
 Codeship is a polyglot!
-* test
 We added ***support for additional programming languages***. From now on you can test your
 + Go
 + Java
