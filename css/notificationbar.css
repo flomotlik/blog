@@ -1,0 +1,48 @@
+.notificationbar-wrapper {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 40px
+  border-width: 0 0 1px;
+  border-width: 1px 0 0;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  box-shadow: 0 1px 6px rgba(0,0,0,.1);
+  border-bottom: 1px solid #cfcbda;
+  height: 40px;
+  margin-top: -65px;
+  padding-top: 6px;
+}
+
+
+
+.notificationbar {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  margin-top: 4px;
+}
+
+.notificationbar input[type=button] {
+    box-shadow: 0 0 3px 0 #949494 inset;
+    color: #454545;
+    cursor: pointer;
+    font-family: "Roboto Bold",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 0.8em;
+    height: 31px;
+    outline: medium none;
+    padding: 0 1em;
+    text-transform: uppercase;
+    width: 180px;
+    float: right;
+    margin-top: -6px;
+     }
