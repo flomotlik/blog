@@ -1,5 +1,10 @@
 <div class="post">
-  <div class="post-header">
+ 
+  <div class="postcontent">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="postinfo">by <i>{{ post.author }}</i>. {% if post.twitter != null and post.google != null %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a> and <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>{% elsif post.twitter %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a>!{% elsif post.google %}Follow him on <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% endif %}
+    </div>
+     <div class="post-header">
       <span class="date">
         <a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
       </span>
@@ -19,11 +24,6 @@
         <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://blog.codeship.io{{post.url}}" data-counter="right"></script>
        </span>
   </div>
-
-  <div class="postcontent">
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <div class="postinfo">by <i>{{ post.author }}</i>. {% if post.twitter != null and post.google != null %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a> and <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% elsif post.twitter %}Follow him on <a href="https://www.twitter.com/{{ post.twitter }}" target="_blank">Twitter</a>!{% elsif post.google %}Follow him on <a href="https://plus.google.com/{{ post.google }}?rel=author" target="_blank">Google+</a>!{% endif %}
-    </div>
     {% if content %}
       {{ content }}
     {% else %}
