@@ -13,6 +13,18 @@ problem and implemented safeguards so this problem can't arise anymore.
 After making sure for several days that it works we want to go through
 the problem in depth and how we handled.
 
+##We are sorry and thankful
+We want to start by saying we are really sorry that this happened and we
+are working hard on preventing any such failures in the future through
+better monitoring and a much stronger system.
+
+We have given the team that hit this bug one month service for free, as
+we are very thankful they helped us in making our system better. Please
+don't take that as a "Challenge accepted", but we are
+very happy for any hint we get about bugs or problems in our system.
+
+We rely on your feedback to make this ***the most kickass product***.
+
 ##Problem
 The basic problem we faced last week was that for one project the
 log output that was stored into our database was immense. Up to
@@ -20,7 +32,7 @@ log output that was stored into our database was immense. Up to
 against this specific Step to become ***really slow*** (>3 seconds)
 
 This in turn slowed down our workers as every time they had to write a
-log update, into our database for the previously mentioned project, which was often, the request would be very slow.
+log update into our database for the previously mentioned project, which was often, the request would be very slow.
 
 The fallout of this was that since our queue filled up to the brink our Redis service hit it's maximum storage capacity and closed down for any further connection.
 
@@ -45,7 +57,7 @@ informs of the limit. The commands are run without any interruption.
 
 ##Improvements
 We not only fixed this bug and thus made our infrastructure much more
-resilient we additionally upgraded and fixed several possible
+resilient but additionally upgraded and fixed several possible
 bottlenecks we suspected to be the problem.
 
 We have now upgraded to bigger postgres databases on Heroku as well as
@@ -54,14 +66,12 @@ bigger redis instances.
 While doing a code review on our test servers we fixed a couple of bugs
 that could potentially hit us in the future.
 
-##We are sorry and thankful
-We want to end by saying we are really sorry that this happened and we
-are working hard on preventing any such failures in the future through
-better monitoring and a much stronger system.
+Again sorry for the outage, but thanks for your patience.
 
-We have given the team that hit this bug one month service for free, as
-we are very thankful they helped us in making our system better. Please
-don't take that as a "Challenge accepted" and shoot us down, but we are
-very thankful for any hint we get about bugs or problems in our system.
+##Hiring
 
-We rely on your feedback to make this ***the most kickass product***.
+By the way if you are interrested in making our system even stronger we
+are currently hiring. We are looking for a Web developer with lots of
+experience in Rails and another developer helping with our test server
+infrastructure running on Amazon EC2 and implemented in Ruby. Take a look at our [Jobs
+Page](https://www.codeship.io/jobs) to get more info.
