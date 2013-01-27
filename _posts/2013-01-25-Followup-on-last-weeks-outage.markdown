@@ -10,40 +10,39 @@ image: http://blog.codeship.io/images/avatar.png
 
 Last week our service had a major outage for a day. We solved the
 problem and implemented safeguards so this problem can't arise anymore.
-After several days of verifying that it works we want to walk you through
+After verifying that the fix worked several days we want to walk you through
 the problem and how we solved it.
 
 ##We are sorry and thankful
 We want to start by saying that we are really sorry that this happened and we
-are working hard on preventing any such failures in the future through
+are working hard on preventing such failures in the future through
 better monitoring and a stronger system.
 
 The team that hit this bug got one month free service, as
 we are very thankful that they helped us improve our system. Please
 don't take that as a "Challenge accepted", but we are
-grateful for any hint about problems with our system.
+grateful for any hints about problems with our system.
 
 We rely on your feedback to make Codeship ***the most kickass product*** out there.
 
 ##Problem
-The problem we faced last week was that for one project the
-log output stored in our database was vast. Up to
+The problem we faced last week was the vast
+log output of one project stored in our database. Up to
 150.000.000 characters (over 100 MB) for one test command.
 
-This in turn slowed down our workers: Every time they had to write a
-log update into our database for this project, the SQL query would take more than 3 seconds.
-As we update the log in the database more frequent than that, soon we were faced
+This in turn slowed down our workers: Every time they had to update the log in the database
+for this project, the SQL query would take more than 3 seconds.
+As we update the log more frequently than that, soon we were faced
 with an enormous stack of log updates that couldn't be processed in time.
 
 Consequently our queue filled up to the brink and at some point our Redis service hit
 its maximum storage capacity and denied any further connections.
 
-This was when the whole system went belly up and couldn't handle any more builds
-(although all of them were stored in the database and
-rerun at a later time)
+This was when the whole system went belly up and couldn't process any more builds
+(although all of them were stored in the database and rerun later)
 
 ##Resolution
-It took us a while to figure out what the problem was. At
+It took us a while to spot the problem. At
 first we thought that we hit some database level problems with Heroku and
 upgraded our Postgres database there.
 
