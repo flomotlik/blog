@@ -8,9 +8,9 @@ description: Why the system failed last week and what we did to not ever have th
 image: http://blog.codeship.io/images/avatar.png
 ---
 
-Last week our service had a major outage for a day. We solved the
+Last week our service experienced a major outage for a day. We solved the
 problem and implemented safeguards so this problem can't arise anymore.
-After verifying that the fix worked several days we want to walk you through
+After verifying for several days that the fix worked we want to walk you through
 the problem and how we solved it.
 
 ##We are sorry and thankful
@@ -32,7 +32,7 @@ log output of one project stored in our database. Up to
 
 This in turn slowed down our workers: Every time they had to update the log in the database
 for this project, the SQL query would take more than 3 seconds.
-As we update the log more frequently than that, soon we were faced
+As we updated the log more frequently than that, soon we were faced
 with an enormous stack of log updates that couldn't be processed in time.
 
 Consequently our queue filled up to the brink and at some point our Redis service hit
@@ -52,12 +52,12 @@ than enough to output any information necessary, while still keeping our
 database manageable. From tens of thousands of logs stored in our database
 only 410 exceeded this limit, so this change will affect hardly any projects.
 
-When your log hits the limit we append a message that
+When your log hits the limit, we append a message that
 informs you about it. The commands keep running without any interruption.
 
 ##Improvements
 We didn't only fix this bug and thus made our infrastructure more
-resilient but additionally removed several possible
+resilient but we also removed several possible
 bottlenecks we suspected to be responsible for the outage.
 
 We upgraded to larger postgres databases on Heroku as well as
@@ -73,5 +73,5 @@ Sorry again for the outage, but thanks for your patience.
 By the way, if you are interrested in making our system even stronger: We
 are currently hiring! We are looking for a web developer with lots of
 experience in Ruby on Rails and another developer helping with our test server
-infrastructure running on Amazon EC2 and implemented in Ruby. Take a look at our [Jobs
-Page](https://www.codeship.io/jobs) to find out more.
+infrastructure running on Amazon EC2 and implemented in Ruby. Take a look at our [jobs
+page](https://www.codeship.io/jobs) to find out more.
