@@ -8,70 +8,71 @@ description: Why the system failed last week and what we did to not ever have th
 image: http://blog.codeship.io/images/avatar.png
 ---
 
-Last week we had a major outage of our service for a day. We solved that
+Last week our service had a major outage for a day. We solved the
 problem and implemented safeguards so this problem can't arise anymore.
-After making sure for several days that it works we want to go through
-the problem in depth and how we handled.
+After several days of verifying that it works we want to walk you through
+the problem and how we solved it.
 
 ##We are sorry and thankful
-We want to start by saying we are really sorry that this happened and we
+We want to start by saying that we are really sorry that this happened and we
 are working hard on preventing any such failures in the future through
-better monitoring and a much stronger system.
+better monitoring and a stronger system.
 
-We have given the team that hit this bug one month service for free, as
-we are very thankful they helped us in making our system better. Please
+The team that hit this bug got one month free service, as
+we are very thankful that they helped us improve our system. Please
 don't take that as a "Challenge accepted", but we are
-very happy for any hint we get about bugs or problems in our system.
+grateful for any hint about problems with our system.
 
-We rely on your feedback to make this ***the most kickass product***.
+We rely on your feedback to make Codeship ***the most kickass product*** out there.
 
 ##Problem
-The basic problem we faced last week was that for one project the
-log output that was stored into our database was immense. Up to
-150.000.000 characters for one command. This caused every SQL request
-against this specific Step to become ***really slow*** (>3 seconds)
+The problem we faced last week was that for one project the
+log output stored in our database was vast. Up to
+150.000.000 characters (over 100 MB) for one test command.
 
-This in turn slowed down our workers as every time they had to write a
-log update into our database for the previously mentioned project, which was often, the request would be very slow.
+This in turn slowed down our workers: Every time they had to write a
+log update into our database for this project, the SQL query would take more than 3 seconds.
+As we update the log in the database more frequent than that, soon we were faced
+with an enormous stack of log updates that couldn't be processed in time.
 
-The fallout of this was that since our queue filled up to the brink our Redis service hit it's maximum storage capacity and closed down for any further connection.
+Consequently our queue filled up to the brink and at some point our Redis service hit
+its maximum storage capacity and denied any further connections.
 
-And this is when the whole system went belly up and no builds went
-through any more (although all of them were stored in the database and
+This was when the whole system went belly up and couldn't handle any more builds
+(although all of them were stored in the database and
 rerun at a later time)
 
 ##Resolution
-It took us quite some time to figure out the exact problem as we at
-first thought that we hit some database level problems with Heroku and
+It took us a while to figure out what the problem was. At
+first we thought that we hit some database level problems with Heroku and
 upgraded our Postgres database there.
 
-After recognizing the specific problem we have now implemented a limit
-of 200.000 characters for the log of every command you run. This is more
+After discovering the real problem we limited the maximum log size for each command
+to 200.000 characters. This is more
 than enough to output any information necessary, while still keeping our
 database manageable. From tens of thousands of logs stored in our database
-only 410 are over this limit of 200.000 so this is only a problem for
-very very few projects.
+only 410 exceeded this limit, so this change will affect hardly any projects.
 
-When a log hits the limit we append a message to the end of the command that
-informs of the limit. The commands are run without any interruption.
+When your log hits the limit we append a message that
+informs you about it. The commands keep running without any interruption.
 
 ##Improvements
-We not only fixed this bug and thus made our infrastructure much more
-resilient but additionally upgraded and fixed several possible
-bottlenecks we suspected to be the problem.
+We didn't only fix this bug and thus made our infrastructure more
+resilient but additionally removed several possible
+bottlenecks we suspected to be responsible for the outage.
 
-We have now upgraded to bigger postgres databases on Heroku as well as
-bigger redis instances.
+We upgraded to larger postgres databases on Heroku as well as
+larger redis instances.
 
-While doing a code review on our test servers we fixed a couple of bugs
-that could potentially hit us in the future.
+While reviewing code on our test servers we fixed a couple of potential problems
+that could have hit us in the future.
 
-Again sorry for the outage, but thanks for your patience.
+Sorry again for the outage, but thanks for your patience.
 
 ##Hiring
 
-By the way if you are interrested in making our system even stronger we
-are currently hiring. We are looking for a Web developer with lots of
-experience in Rails and another developer helping with our test server
+By the way, if you are interrested in making our system even stronger: We
+are currently hiring! We are looking for a web developer with lots of
+experience in Ruby on Rails and another developer helping with our test server
 infrastructure running on Amazon EC2 and implemented in Ruby. Take a look at our [Jobs
-Page](https://www.codeship.io/jobs) to get more info.
+Page](https://www.codeship.io/jobs) to find out more.
