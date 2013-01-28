@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Followup to last weeks outage
+title: Followup to last outage
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: Why the system failed last week and what we did to not ever have that happen again
+description: Why the system failed and what we did to not ever have that happen again
 image: http://blog.codeship.io/images/avatar.png
 ---
 
 ![Broken Eggs](/images/outage/egg.png)
 *Image by [Jennifer Gensch](http://www.flickr.com/people/therapycatguardian/).*
 
-Last week our service experienced a major outage for a day. We solved the
+A couple of days ago our service experienced a major outage for a day. We solved the
 problem and implemented safeguards so this problem can't arise anymore.
 After verifying for several days that the fix worked we want to walk you through
 the problem and how we solved it.
@@ -29,7 +29,7 @@ grateful for any hints about problems with our system.
 We rely on your feedback to make Codeship ***the most kickass product*** out there.
 
 ##Problem
-The problem we faced last week was the vast
+The problem we faced was the vast
 log output of one project stored in our database. Up to
 150.000.000 characters (over 100 MB) for one test command.
 
