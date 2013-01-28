@@ -44,7 +44,7 @@ its maximum storage capacity and denied any further connections.
 This was when the whole system went belly up and couldn't process any more builds
 (although all of them were stored in the database and rerun later)
 
-##Resolution
+##Solution
 It took us a while to spot the problem. At
 first we thought that we hit some database level problems with Heroku and
 upgraded our Postgres database there.
