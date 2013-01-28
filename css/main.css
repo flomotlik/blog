@@ -212,6 +212,8 @@ height: 4em;
       width: 500px;
       outline: none;
       cursor: pointer;
+      -webkit-appearance: button;
+      -moz-appearance: button;
 
 }
 

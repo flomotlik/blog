@@ -32,7 +32,7 @@
   margin-top: 4px;
 }
 
-.notificationbar input[type=button] {
+.notificationbutton {
     box-shadow: 0 0 3px 0 #949494 inset;
     color: #454545;
     cursor: pointer;
@@ -45,4 +45,6 @@
     width: 180px;
     float: right;
     margin-top: -6px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
      }
