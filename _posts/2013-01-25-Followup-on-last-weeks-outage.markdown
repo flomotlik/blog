@@ -8,6 +8,9 @@ description: Why the system failed last week and what we did to not ever have th
 image: http://blog.codeship.io/images/avatar.png
 ---
 
+![Broken Eggs](/images/outage/egg.png)
+*Image by [Jennifer Gensch](http://www.flickr.com/people/therapycatguardian/).*
+
 Last week our service experienced a major outage for a day. We solved the
 problem and implemented safeguards so this problem can't arise anymore.
 After verifying for several days that the fix worked we want to walk you through
