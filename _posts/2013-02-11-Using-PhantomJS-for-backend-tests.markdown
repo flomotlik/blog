@@ -7,23 +7,25 @@ google: 115123333592137547204
 description: Why Phantomjs will make you forget Selenium as Capybara driver
 image: http://phantomjs.org/images/phantomjs-logo.png
 ---
+![Phantom](/images/phantomjs/phantom.jpg)
+*Image by [petcoffr](http://www.flickr.com/photos/petcoffr/6050263571/sizes/l/in/photostream/).*
 
-[Phantomjs](http://phantomjs.org) is a great tool for end to end tests of your application. It
+[Phantomjs](http://phantomjs.org) is a great tool for end-to-end tests of your application. It
  provides a headless browser based on webkit, that allows your tests to
-navigate through the web application. At Codeship we use it's capybara integration, but Phantomjs can be used
+navigate through the web application. At Codeship we use its capybara integration, but Phantomjs can be used
 for lots of purposes.
 
-Throughout the lifetime of our codebase we have tried lots of [Capybara](https://github.com/jnicklas/capybara)
-drivers to find the one that suits our test environment and workflow
-We started of with [akephalos](https://github.com/bernerdschaefer/akephalos),
+Throughout the lifetime of our codebase we have tried various [Capybara](https://github.com/jnicklas/capybara)
+drivers to find the one that suits our test environment and workflow.
+We started off with [akephalos](https://github.com/bernerdschaefer/akephalos),
 moved on to Selenium and switched
 that for [capybara-webkit](https://github.com/thoughtbot/capybara-webkit).
 
-All of them have their benefits, but also their quirks. Especially Selenium broke frequently
+All of them have their benefits, but also their quirks. Selenium broke frequently
 when new Firefox versions were released which were incompatible with
-older versions of the selenium-webdriver gem. Another problem was that
+older versions of the selenium-webdriver gem. Another issue was that
 Selenium had problems with links covered by modal panels. One of our
-customers experienced the same behavior in capybara-webkit
+customers experienced the same behavior in capybara-webkit.
 Phantomjs correctly failed and provided the right error messages.
 
 Finally we started using Phantomjs with great success.
@@ -31,7 +33,7 @@ Finally we started using Phantomjs with great success.
 Phantomjs’ main advantage for us was that it fails tests on javascript
 errors. Neither Selenium nor
 capybara-webkit support this, but it is absolutely crucial. In our team
-everyone has the ability to deploy new code to the live system so we really
+everyone is allowed to deploy new code to the live system so we really
 need to make our tests hard and safe. Making sure there are no
 javascript errors on your page is mandatory. We had a
 handful of instances where a small change in javascript broke all of
