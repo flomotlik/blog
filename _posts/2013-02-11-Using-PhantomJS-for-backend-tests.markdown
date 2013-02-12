@@ -11,7 +11,7 @@ image: http://phantomjs.org/images/phantomjs-logo.png
 *Image by [petcoffr](http://www.flickr.com/photos/petcoffr/6050263571/sizes/l/in/photostream/).*
 
 [Phantomjs](http://phantomjs.org) is a great tool for end-to-end tests of your application. It
- provides a headless browser based on webkit, that allows your tests to
+provides a headless browser based on webkit that allows your tests to
 navigate through the web application. At Codeship we use its capybara integration, but Phantomjs can be used
 for lots of purposes.
 
@@ -51,9 +51,8 @@ gem integrates Phantomjs with Capybara and provides a lot of great extensions. T
 get a better understanding of what you can do.
 <script src="https://gist.github.com/flomotlik/4757094.js"></script>
 
-If you want to use Capybara with the [parallel_tests
-gem](https://github.com/grosser/parallel_tests) you can use the setup we
-use for Codeship:
+Here is the Capybara config with the [parallel_tests
+gem](https://github.com/grosser/parallel_tests) setup we use for Codeship:
 <script src="https://gist.github.com/flomotlik/4757186.js"></script>
 
 Additionally this raises javascript errors and increases the
