@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Casperjs is the perfect tool to get started with testing your deployed applications
-image: http://blog.codeship.io/200x200_casper_js.png
+image: /images/200x200_casper_js.png
 ---
 ![Casperjs](/images/casperjs/Casper_JS_ghost.gif)
 
