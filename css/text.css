@@ -32,3 +32,11 @@ code {
   padding: 0.2em;
   background: #F5F2FC;
 }
+
+#disqus_thread {
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.disqus {
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
