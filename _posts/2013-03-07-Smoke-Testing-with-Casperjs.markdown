@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Start testing your app with the awesome Casperjs
+title: Start testing your app with Casperjs
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: Casperjs is the perfect tool to get started with Testing your deployed apps
+description: Casperjs is the perfect tool to get started with testing your deployed applications
 image: http://phantomjs.org/images/phantomjs-logo.png
 ---
 ![Casperjs](/images/casperjs/Casper_JS_ghost.gif)
