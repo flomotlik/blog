@@ -37,6 +37,6 @@ code {
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.disqus {
-  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+#conversation, #posts, #community, #dashboard, #profile, #reactions, #discovery {
+ font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
