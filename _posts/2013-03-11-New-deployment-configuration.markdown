@@ -5,7 +5,7 @@ author: Clemenshelm
 twitter: clemenshelm
 google: 116883220210675577340
 description: How to setup your deployments in a minute with Codeship.
-image: http://phantomjs.org/images/phantomjs-logo.png
+image: http://blog.codeship.io/images/deploymentconfiguration/engineyard_capistrano.png
 ---
 At Codeship we are always working on improving our service. We get great feedback
 from our users telling us which parts of our web application are tedious to handle.
