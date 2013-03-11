@@ -33,7 +33,7 @@ now. Previously it listed all form fields of all your deployments.
 ## 2. Hiding optional configuration
 
 You can selectively choose to edit one of your deployments. In edit mode we show
-you only required fields to make the deployment work.
+you only the fields required to make the deployment work.
 
 ![Screenshot edit mode collapsed](/images/deploymentconfiguration/edit-mode-collapsed.png)
 
@@ -60,7 +60,7 @@ Just grab the deployment step at its logo and drag it to the desired position.
 Something many of you wished for were deployment configurations for capistrano
 and engineyard. Voilà, here they are!
 
-TODO: Insert screenshot of new capistrano and engineyard deployments.
+![EngineYard and Capistrano deployment](/images/deploymentconfiguration/engineyard_capistrano.png)
 
 ## Conclusions
 
