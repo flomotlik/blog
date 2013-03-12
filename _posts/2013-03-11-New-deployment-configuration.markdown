@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure deployments in a minute
-author: Clemenshelm
+author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
 description: How to setup your deployments in a minute with Codeship.
@@ -57,8 +57,8 @@ Just grab the deployment step at its logo and drag it to the desired position.
 
 ## 4. New deployment options
 
-Something many of you wished for were deployment configurations for capistrano
-and engineyard. Voilà, here they are!
+Something many of you wished for were deployment configurations for Capistrano
+and Engine Yard. Voilà, here they are!
 
 ![EngineYard and Capistrano deployment](/images/deploymentconfiguration/engineyard_capistrano.png)
 
