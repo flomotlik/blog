@@ -33,13 +33,13 @@ scenarios and over time start testing the lower parts of your system.
 As easy as this sounds we've seen teams struggle with coming to that
 conclusion and then following through.
 
-Start by defining what the most important steps in your product are. We've come
-up with a little exercise to help with that.
+You should start by defining what the most important steps in your product are.
+We've come up with a little exercise to help with that.
 
 Get everyone in your team to write down 8 scenarios they think
-are the most important ones in your application. They should do it
+are the most important ones in your application. Do it
 separately and order them according to how important each step is to
-them.
+everyone of you.
 
 All of them should be
 structured with ***Given***, ***When*** and ***Then*** steps.
