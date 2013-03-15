@@ -5,7 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Getting started with testing is hard, so start from the top, not bottom
-image: http://blog.codeship.io/images/200x200_casper_js.png
+image: http://blog.codeship.io/images/200x200_iceberg-testing-og.jpg
 ---
 ![Iceberg top to bottom](/images/top-to-bottom-testing/iceberg-top-down-testing.jpg)
 
