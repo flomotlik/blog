@@ -7,6 +7,9 @@ google: 115123333592137547204
 description: Getting started with testing is hard, so start from the top, not bottom
 image: http://blog.codeship.io/images/200x200_casper_js.png
 ---
+![Iceberg top to bottom](/images/top-to-bottom-testing/iceberg-top-down-testing.jpg)
+
+*Image via foldedstory.com*
 
 We are regularly talking to teams who are just starting out with testing
 their application. Some of them have a few tests, but don't know where
@@ -22,9 +25,10 @@ this easily.
 
 ## Start from the top
 
-Testing is important so you can always be sure the most important steps
+By testing your application you can always be sure the most important steps
 users can take in your application work. So why not start with what is
-most important to your product.
+most important to your product. Why not start with a few high level
+scenarios and over time start testing the lower parts of your system.
 
 As easy as this sounds we've seen teams struggle with coming to that
 conclusion and then following through.
@@ -60,7 +64,7 @@ Another example would be
     Then:  I will be shown an overview of my purchase
     And:   I can finish the purchase
 
-And one more to finish
+And one more
 
     Given: I am on my profile page
     When:  I am searching for a person
@@ -77,6 +81,16 @@ easily make sure you do not destroy the essential parts of your product.
 
 The next time you build a new feature just add the tests immediately.
 
+You can over time start going from [testing your high level scenarios](http://en.wikipedia.org/wiki/Behavior-driven_development) to
+more [lower level testing](http://en.wikipedia.org/wiki/Unit_testing).
+
+[Our blogpost about
+Casperjs](http://blog.codeship.io/2013/03/07/Smoke-Testing-with-Casperjs.html) shows you
+how to implement your first high level tests. Tools like [Cucumber for
+ruby](http://cukes.info/), [Lettuce for python](https://github.com/gabrielfalcao/lettuce)
+or [Selenium](http://docs.seleniumhq.org/) are great tools to get
+started as well.
+
 This should only be the beginning of testing your application. But
 getting started is often the hardest part.
 
@@ -86,6 +100,10 @@ giving you the confidence to change any part of your system. When you
 can refactor your code or implement a new feature and still be sure that
 everything works you can work much faster.
 
-Having a strong security net
-in place lets you take more risks and try more interesting paths. And
-those paths are often the ones that make your product great.
+Having a strong security net in place lets you take more risks and
+try more interesting paths. And those paths are often the ones that
+make your product great.
+
+We will expand this into a series of blogposts about how to get started
+with testing. Please leave a comment on what you would like to have as
+the next topic.
