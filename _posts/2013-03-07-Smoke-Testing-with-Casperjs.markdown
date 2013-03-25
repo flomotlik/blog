@@ -28,7 +28,9 @@ show you the power it provides and introduce you to its power already.
 We wanted a tool that doesn't have any dependencies on languages
 or frameworks a team may use. While tools like Capybara are great and neatly
 integrated into Rails they still need some effort to be set up. And if you
-don't use Rails you are out of luck.
+don't use Rails ***UPDATE***(**thx to the comments for mentioning that you of
+course can use Capybara without Rails. Ruby is more appropriate here**)
+you are out of luck.
 
 We also wanted everyone on our team to be able to write tests with it.
 The syntax therefore needed to be easy and comfortable for all of us.
@@ -50,7 +52,7 @@ sure we are at the jobs page.
 
 The second one sets the user agent header and the viewport size. By default
 PhantomJS sets the viewport size to 400x300 which is rather small for a
-web page. Then it clicks a menu item at casperjs.org and makes sure
+web page. Thus we set it to 1024, 768. Then it clicks a menu item at casperjs.org and makes sure
 the right pages are loaded. In the end it captures the current page as a
 png image.
 
