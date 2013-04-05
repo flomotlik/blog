@@ -5,7 +5,7 @@ author: Manuel Weiss
 twitter: manualwise
 google: 102765013408074370908
 description: Codeship got mentors and teams of this Spring's TechStars Boston class 2013 and the Boston Startup Institute together in a meetup.
-image: http://blog.codeship.io/images/200x200_coffee-og.jpg
+image: http://blog.codeship.io/images/200x200-coffee-og.jpg
 ---
 ![Codeship meetup coffee](/images/coffeemeetup/coffee.jpg)
 
