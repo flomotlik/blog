@@ -9,7 +9,7 @@ image: http://blog.codeship.io/images/200x200_coffee-og.jpg
 ---
 ![Codeship meetup coffee](/images/coffeemeetup/coffee.jpg)
 
-Today Codeship sponsored a free coffee meet-up at Voltage Coffee, joined by mentors and teams of the TechStars Boston class and the Boston Startup Institute. We really enjoyed having you all around and hope you got some value out of the meet-up other than just free coffee!
+Yesterday Codeship sponsored a free coffee meet-up at Voltage Coffee, joined by mentors and teams of the TechStars Boston class and the Boston Startup Institute. We really enjoyed having you all around and hope you got some value out of the meet-up other than just free coffee!
 
 Having had experience connecting many Startups for years back in Europe, we wanted to also do something similar in Boston. We try to connect smart people with other smart people because it's just a thing we inherently enjoy doing. Our core belief is that everyone profits from bringing like-minded souls together. The TechStars program is of course a great help for that.
 
