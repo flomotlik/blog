@@ -5,8 +5,11 @@ author: Florian Motlik
 twitter: flomotlik 
 google: 115123333592137547204
 description: Always stay up to date in dependencies, otherwise you will run into constant trouble
-image: http://blog.codeship.io/images/200x200_casper_js.png
+image: http://blog.codeship.io/images/blog-dependencies/200x200_dependencies_og.jpg
 ---
+
+![Blog dependencies](/images/blog-dependencies/codeship_dependencies.jpg)
+*Image by [Mark Setchell](http://www.flickr.com/photos/marksetchell/)*
 
 Being able to introduce changes into your application is incredibly important. Having outdated 
 dependencies slows you down in various ways.
