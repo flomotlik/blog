@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Old dependencies is your second biggest technical debt
+title: Old dependencies are your second biggest technical debt
 author: Florian Motlik
 twitter: flomotlik 
 google: 115123333592137547204
@@ -26,7 +26,7 @@ Due to the complexity of software updating one dependency may require you to upd
 If that pile of outdated code grows, the time you need to update it increases exponentially.
 
 We know this pain very well. Even though we update regularly only a slip of 3 months for some of our libraries
-caused a big pain to bring everyting up to date. If we did it immediately it would have taken far less time
+caused a big pain to bring everything up to date. If we did it immediately it would have taken far less time
 to get all the tests to pass again.
 
 ##No tests is your biggest technical debt
