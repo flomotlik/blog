@@ -23,7 +23,7 @@ will reduce the effort when you eventually have to update all your dependencies.
 The second problem will appear when you have to fix a bug caused by one dependency. 
 If you stay up to date, it is easier to fix the bug by updating the one dependency. 
 Due to the complexity of software updating one dependency may require you to update others as well. 
-If that pile of outdated code becomes grows, the time you need to update it grows exponentially.
+If that pile of outdated code grows, the time you need to update it grows exponentially.
 
 We know that pain very well. Even though we update regularly only a slip of 3 months for some of our libraries
 caused a big pain to bring everyting up to date. If we did it immediately it would have taken far less time
