@@ -10,6 +10,20 @@ image: http://blog.codeship.io/images/unicorn/dynos.png
 
 ***Update***: [Part Two](/2012/05/18/Assets-Sprites-CDN.html) was released.
 
+***Update 2***:
+
+After the [shitstorm](http://rapgenius.com/James-somers-herokus-ugly-secret-lyrics) surrounding Heroku's routing they
+have updated their docs and now regard [Unicorn as their default Rails server](https://blog.heroku.com/archives/2013/2/27/unicorn_rails).
+They now [provide 2x dynos](https://blog.heroku.com/archives/2013/4/5/2x-dynos-beta) with twice the RAM
+so you can run bigger applications with unicorn or run more unicorn workers on one server.
+
+Last but not least
+[New Relic updated their gem](http://blog.newrelic.com/2013/02/21/using-new-relic-on-heroku-read-how-our-new-ruby-agent-measures-queue-time/) to
+make sure that the queuing time shown for a Heroku application is correct.
+
+We have left the rest of the blogpost untouched as it still reflects how you can set up Unicorn on your Heroku machines. But take the
+changes in the recent Heroku blogposts into account.
+
 ***This is the first of a two part series on how we set up Codeship with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
 
 ***This guide is only relevant and tested with the Heroku Cedar stack.***
