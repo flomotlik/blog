@@ -30,6 +30,17 @@ a {
     color: #313C4D;
   }
 
+
+  p a {
+      text-decoration: underline;
+  color: #0044cc;
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+   p  a:hover {
+    color: #0138A5;
+  }
+
 .maincontent {
   -webkit-box-shadow: 0px 0px 4px 0px #999999;
     -moz-box-shadow: 0px 0px 4px 0px #999999;

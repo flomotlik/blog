@@ -9,17 +9,17 @@ image: http://blog.codeship.io/images/ci_as_a_business_case/200_200_ci_as_a_busi
 ---
 
 ![Blog dependencies](/images/ci_as_a_business_case/codeship_ci_as_a_business_case.png)
-*Original image by [Ali Luke](http://www.thechangeblog.com/author/ali-luke/)*
+*Original image by <a href="http://www.thechangeblog.com/author/ali-luke/" target="_blank">Ali Luke</a>*
 
-***Recently we discovered a great article by Joe Green from smrtr.co.uk – he wrote about Continuous Integration as a business case. We liked it so much that we decided, with his permission, to publish it on the Codeship blog.***
+***Recently we discovered a great article by Joe Green from smrtr.co.uk. He wrote about Continuous Integration as a business case. We liked it so much that we asked him to publish it on the Codeship blog.***
 
-You can find Joe at [smrtr.co.uk](http://smrtr.co.uk/) or on twitter [@joegreen88](http://www.twitter.com/joegreen88).
+You can find Joe at <a href="http://smrtr.co.uk" target="_blank">smrtr.co.uk</a> or on twitter <a href="http://www.twitter.com/joegreen88" target="_blank">@joegreen88</a>.
 
 * * *
 
 Continuous Integration provides sound economical benefits. This post examines the bottom-line advantages of Continuous Integration with respect to any business dealing with software deployment.
 
-*On the ground,* the benefits of [Continuous Integration](http://en.wikipedia.org/wiki/Continuous_integration) are:
+*On the ground,* the benefits of [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) are:
 
 * Eradication of manual FTP deployment
 * Prevention & reduction of production & staging errors
@@ -45,11 +45,11 @@ The metrics of greatest interest will depend on the key requirements of the proj
 * complexity
 * dependency
 * length
-* [code smell](http://en.wikipedia.org/wiki/Code_smell)
+* [code smell](http://martinfowler.com/bliki/CodeSmell.html)
 
 ##Quarantining Errors
 
-Because Continuous Integration integrates and runs tests and inspections regularly, there is a good chance that problems will be discovered when they are introduced as opposed to during post-deployment testing, or worse, in the production environment. Having [a good CI system](https://www.codeship.io) is akin to having a fire alarm in your house. It wont fix your error for you but you will rest assured that it will flag up the error as soon as its integrated and that the build containing the error will not make it into your staging or production environments.
+Because Continuous Integration integrates and runs tests and inspections regularly, there is a good chance that problems will be discovered when they are introduced as opposed to during post-deployment testing, or worse, in the production environment. Having [a good CI system](https://www.codeship.io) is akin to having a fire alarm in your house. It won't fix your error for you but you will rest assured that it will flag up the error as soon as it's integrated and that the build containing the error will not make it into your staging or production environments.
 
 ##Validating Assumptions
 
@@ -59,13 +59,13 @@ Continuous Integration with unit testing gives you the chance to replace assumpt
 
 #CI Reducing Overheads
 
-The initial overhead of setting up a CI system will be out-weighed by the man-hours saved along the way. Read about [how to get started with testing here](http://blog.codeship.io/2013/03/15/Testing-top-to-bottom.html). Finding a bug while it's limited to the development level is the cheapest possible way to find it. If that bug needs to be fixed in any other environments, then your costs are higher. Some of the newer CI systems are quite easy to set up, so the overhead is not really that huge. Setting up [the Codeship](https://www.codeship.io) for instance only takes a couple of minutes. 
+The initial overhead of setting up a CI system will be outweighed by the man-hours saved along the way. [Finding a bug while it's limited to the development level](http://blog.codeship.io/2013/03/15/Testing-top-to-bottom.html) is the cheapest possible way to find it. If that bug needs to be fixed in any other environments, then your costs are higher. Some of the newer CI systems are quite easy to set up, so the overhead is not really that huge. Setting up the Codeship for instance only takes a couple of minutes. 
 
 Another thing to consider is what your current Quality Assurance process is like and how much of that can be replaced by a good CI setup.
 
 ##Automating Processes
 
-Repetitive manual processes are slow and prone to human error. Deployment tasks should be bundled up and automated. You can [read about the Codeship's deployment configuration here](http://blog.codeship.io/2013/03/11/New-deployment-configuration.html). On the Codeship you can run as many deployment methods in a row as you want.
+Repetitive manual processes are slow and prone to human error. [Deployment tasks should be bundled up and automated.](http://blog.codeship.io/2013/03/11/New-deployment-configuration.html) On the Codeship you can run as many deployment methods in a row as you want.
 
 Reducing repetitive manual processes lets you be assured that:
 
@@ -99,4 +99,4 @@ Overall, effective application of Continuous Integration practices can provide g
 Since Continuous Integration can inform you immediately when something goes wrong, developers and other team members have more confidence in making changes. Because Continuous Integration encourages a single-source point from which all software assets are built, there is greater confidence in its accuracy.
 
 ##Conclusions
-The Codeship crew thinks Joe is spot on with his thoughts on Continuous Integration. We can see on a daily basis just how much a good CI setup is speeding up our workflow. It gives confidence to the whole team to push on an hourly basis without having the fear of breaking something essential.
+The Codeship crew thinks Joe is spot on with his thoughts on Continuous Integration. We notice every day how much our CI setup speeds up our workflow. It encourages the team to push every change without being afraid of breaking something.
