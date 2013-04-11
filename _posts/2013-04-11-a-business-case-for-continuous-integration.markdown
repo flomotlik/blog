@@ -65,7 +65,7 @@ Another thing to consider is what your current Quality Assurance process is like
 
 ##Automating Processes
 
-Repetitive manual processes are slow and prone to human error. [Deployment tasks should be bundled up and automated.](http://blog.codeship.io/2013/03/11/New-deployment-configuration.html) On the Codeship you can run as many deployment methods in a row as you want.
+Repetitive manual processes are slow and prone to human error. [Deployment tasks should be bundled up and automated.](http://blog.codeship.io/2013/03/11/New-deployment-configuration.html) On the Codeship you can run as many sequential deployments as you want.
 
 Reducing repetitive manual processes lets you be assured that:
 
