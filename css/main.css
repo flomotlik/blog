@@ -31,13 +31,13 @@ a {
   }
 
 
-  p a {
+  p a, li a {
       text-decoration: underline;
   color: #0044cc;
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-   p  a:hover {
+   p  a:hover, li a:hover {
     color: #0138A5;
   }
 

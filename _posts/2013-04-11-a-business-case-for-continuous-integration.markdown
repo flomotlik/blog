@@ -19,7 +19,7 @@ You can find Joe at <a href="http://smrtr.co.uk" target="_blank">smrtr.co.uk</a>
 
 Continuous Integration provides sound economical benefits. This post examines the bottom-line advantages of Continuous Integration with respect to any business dealing with software deployment.
 
-*On the ground,* the benefits of [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) are:
+*On the ground,* the benefits of <a href="http://martinfowler.com/articles/continuousIntegration.html" target="_blank">Continuous Integration</a> are:
 
 * Eradication of manual FTP deployment
 * Prevention & reduction of production & staging errors
@@ -45,7 +45,7 @@ The metrics of greatest interest will depend on the key requirements of the proj
 * complexity
 * dependency
 * length
-* [code smell](http://martinfowler.com/bliki/CodeSmell.html)
+* <a href="http://martinfowler.com/bliki/CodeSmell.html" target="_blank">code smell </a>
 
 ##Quarantining Errors
 
