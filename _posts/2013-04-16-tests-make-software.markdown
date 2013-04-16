@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Testing Tuesday: Tests make software"
+title: "Testing Tuesday #1: Tests make software"
 author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
