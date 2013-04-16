@@ -7,7 +7,7 @@ google: 116883220210675577340
 description: Introduction to test-driven development. First Testing Tuesday
 image: http://blog.codeship.io/images/16-04-2013-TT-tests-make-software/200x200_tt_tests_make_software.jpg
 ---
-![Iceberg top to bottom](/images/16-04-2013-TT-tests-make-software/codeship_tt-tests-make-software.jpg)
+![Illustration testing tuesday: Tests make software](/images/16-04-2013-TT-tests-make-software/codeship_tt-tests-make-software.jpg)
 This is the first blog post of our new *Testing Tuesday* series. Every Tuesday we
 will share our insights and opinions on the software testing space. Drop by every
 Tuesday to learn more!
