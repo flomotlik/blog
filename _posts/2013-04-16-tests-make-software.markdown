@@ -7,9 +7,9 @@ google: 116883220210675577340
 description: Introduction to test-driven development. First Testing Tuesday
 image: http://blog.codeship.io/images/deploymentconfiguration/engineyard_capistrano.png
 ---
-This is the first blog post of our new Testing Tuesday series. Every Tuesday we will
-share our insights and opinions on the software testing space. Drop by every Tuesday
-to learn more!
+This is the first blog post of our new *Testing Tuesday* series. Every Tuesday we
+will share our insights and opinions on the software testing space. Drop by every
+Tuesday to learn more!
 
 <hr>
 
@@ -103,7 +103,7 @@ Most apps start out as trivial and clean but end up as a dung pile only a few we
 later. Once you have reached this point you'll realize that you are trapped. You
 can hardly clean up the code because there's no way of making sure that everything
 still works like before. The only possibility is to test everything manually after
-each little refactoring. Do you really think that's faster?  You'll probably spend
+each little refactoring. *Do you really think that's faster?*  You'll probably spend
 days and weeks on it.
 
 Test-driven development keeps you agile. You will be slower at first but you avoid
