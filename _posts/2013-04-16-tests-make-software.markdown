@@ -18,7 +18,7 @@ At [Codeship](https://www.codeship.io/) we are huge fans of behavior-driven deve
 (BDD). In the next few blog posts we will show you how our development process with
 BDD works and give you examples on how to get started.
 
-Behavior-driven development is a collection of tools and methologies based on test-driven
+Behavior-driven development is a collection of tools and methodologies based on test-driven
 development. We will therefore cover the basics of test-driven development in this
 post.
 
