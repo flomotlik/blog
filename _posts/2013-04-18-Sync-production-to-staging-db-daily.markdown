@@ -11,7 +11,7 @@ image: http://blog.codeship.io/images/database-copy/200x200_sync-prod-and-stagin
 
 ![Sync image](/images/database-copy/codeship_sync-prod-and-staging.png)
 
-*Image via http://arnaud-lapierre.com/*
+*Image via [Arnaud LaPierre](http://arnaud-lapierre.com/)*
 
 Testing your new release or database migrations should always be done on a system that is as similar 
 to your production environment as possible. Keeping the codebase and configuration synced between production
