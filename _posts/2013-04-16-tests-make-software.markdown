@@ -4,7 +4,8 @@ title: "Testing Tuesday #1: Tests make software"
 author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
-description: Introduction to test-driven development. First Testing Tuesday
+description: Codeship Testing Tuesday #1 – Introduction to test-driven development.
+keywords: Codeship, TDD, test driven development, behavior driven development, behaviour driven development, testing tuesday, testing tools, testing methodologies, develop iteratively, hosted testing, testing in the cloud
 image: http://blog.codeship.io/images/16-04-2013-TT-tests-make-software/200x200_tt_tests_make_software.jpg
 ---
 ![Illustration testing tuesday: Tests make software](/images/16-04-2013-TT-tests-make-software/codeship_tt-tests-make-software.jpg)

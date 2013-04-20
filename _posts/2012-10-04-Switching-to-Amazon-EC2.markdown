@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: A comparison about the advantages and disadvantages of various platform-as-a-service providers like Amazon EC2, Rackspace, Linode or Hetzner.
+keywords: Codeship, Platform as a Service, PaaS, IaaS, Amazon, AWS, amazon ec2, rackspace, linode, hetzner, cloud services, continuous integration, testing in the cloud, hosted testing
 image: http://blog.codeship.io/images/amazon/aws.png
 ---
 

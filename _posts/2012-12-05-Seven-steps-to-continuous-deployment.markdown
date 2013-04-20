@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: 7 steps to take to get to continuously deploying your application
+keywords: Codeship, continuous deployment, automated deployment, how to start with continuous deployment, start with continuous deployment, continuous deployment how to, continuous deployment linkedin, deploy like linkedin, deploy like etsy, continuous deployment etsy
 image: http://blog.codeship.io/images/cd/adamgod.png
 ---
 ![Creation of Adam](/images/cd/adamgod.png)

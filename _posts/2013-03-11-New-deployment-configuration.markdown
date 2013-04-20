@@ -4,7 +4,8 @@ title: Configure deployments in a minute
 author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
-description: How to setup your deployments in a minute with Codeship.
+description: How to set up your deployments in a minute with Codeship.
+keywords: Codeship, software deployment, automated deployment, continuous deployment, continuous delivery, deploy to heroku, engine yard deploment, capistrano deployment, deployment methodologies, how do i automatically deploy software, hosted testing, hosted deployment
 image: http://blog.codeship.io/images/deploymentconfiguration/engineyard_capistrano.png
 ---
 At Codeship we are always working on improving our service. We get great feedback

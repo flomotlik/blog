@@ -4,7 +4,8 @@ title: Get started with testing from top to bottom
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: Getting started with testing is hard, so start from the top, not bottom
+description: Getting started with testing ain't that easy, so start from the top, not bottom
+keywords: Codeship, getting started with testing, software testing, where to begin with software testing, TDD, test driven development, how to start with TDD, how to start with software testing, intro to tdd, tutorial software testing, testing in the cloud, hosted testing
 image: http://blog.codeship.io/images/200x200_iceberg-testing-og.jpg
 ---
 ![Iceberg top to bottom](/images/top-to-bottom-testing/iceberg-top-down-testing.jpg)

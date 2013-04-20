@@ -4,7 +4,8 @@ title: Getting efficient when working with Heroku
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: Getting efficient when working with Heroku. Just use createa a ***h*** function that calls the heroku gem with the last parameter being the heroku app name.
+description: Getting efficient when working with Heroku. Just create a ***h*** function that calls the heroku gem with the last parameter being the heroku app name.
+keywords: Codeship, Heroku, efficient programming, top 10 tools for faster programming, tips, tricks, heroku tutorial
 image: http://blog.codeship.io/images/unicorn/heroku.png
 ---
 Heroku provides a great infrastructure, but using their Gem often feels

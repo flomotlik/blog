@@ -5,6 +5,7 @@ author: Manuel Weiss
 twitter: manualwise
 google: 102765013408074370908
 description: Codeship got mentors and teams of this Spring's TechStars Boston class 2013 and the Boston Startup Institute together in a meetup.
+keywords: Codeship, Meetup, Boston, Cambridge, Voltage Coffee, social events, get-together, developer, TechStars, Startup Institute, Startup School Boston, entrepreneurs, entrepreneurship
 image: http://blog.codeship.io/images/coffeemeetup/200x200-coffee-og.jpg
 ---
 ![Codeship meetup coffee](/images/coffeemeetup/coffee.jpg)

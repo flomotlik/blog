@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: flomotlik 
 google: 115123333592137547204
 description: Always stay up to date in dependencies, otherwise you will run into constant trouble
+keywords: Codeship, dependencies, problems with outdated dependencies, lessons learned, software, top 10 donts in software, mistakes to avoid in software programming, testing in the cloud, hosted testing
 image: http://blog.codeship.io/images/blog-dependencies/200x200_dependencies_og.jpg
 ---
 

@@ -5,6 +5,7 @@ author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
 description: How to keep a database synchronized with your branches.
+keywords: Codeship, Git, GitHub, database, branches, create separate databases for git branches, separate databases, database for each branch
 image: http://blog.codeship.io/images/og_tag_gitbranches.png
 ---
 ![Branches](http://blog.codeship.io/images/branches.jpg)

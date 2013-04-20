@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How we use Google Docs the measure the shit out of our Backend Data!
+keywords: Codeship, Google Docs, google, metrics, backend data, getting data into google docs, google spreadsheets
 image: http://blog.codeship.io/images/gsmetrics/allthethings.jpg
 ---
 ![Measure all the things](http://blog.codeship.io/images/gsmetrics/allthethings.jpg)

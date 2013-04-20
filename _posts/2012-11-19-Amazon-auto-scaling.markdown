@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How we use the EC2 API to Autoscale our Infrastructure and keep track of all changes.
+description: Codeship, autoscaling infrastructure, Amazon, AWS, amazon EC2, backend infrastructure, infrastructure as a service, IaaS, PaaS, software testing, continuous integration, testing in the cloud
 image: http://blog.codeship.io/images/amazon/valueovertime.png
 ---
 ![Speed gauges](http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg)  

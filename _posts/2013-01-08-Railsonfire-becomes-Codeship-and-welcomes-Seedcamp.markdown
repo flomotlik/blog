@@ -5,6 +5,7 @@ author: Moritz Plassnig
 twitter: moritzplassnig
 google: 101268986513519499518
 description: Hooray! Finally we completed our rebranding from Railsonfire to Codeship. Furthermore we're happy to announce our investment from Seedcamp.
+keywords: Codeship, Railsonfire, continuous integration, continuous deployment, testing in the cloud, investment, Seedcamp, Seedcamp Europe, Entrepreneurship, entrepreneurs, startup
 image: http://blog.codeship.io/images/avatar.png
 ---
 

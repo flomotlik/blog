@@ -4,7 +4,8 @@ title: How to make your testing awesome with PhantomJS
 author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
-description: Why Phantomjs will make you forget Selenium as Capybara driver
+description: Why PhantomJS will make you forget Selenium as Capybara driver
+keywords: Codeship, PhantomJS, testing with PhantomJS, backend testing, software testing, continuous integration, hosted testing, automated software testing, testing in the cloud, javascript errors
 image: http://phantomjs.org/images/phantomjs-logo.png
 ---
 ![Phantom](/images/phantomjs/phantom.jpg)
@@ -30,7 +31,7 @@ Phantomjs correctly failed and provided the right error messages.
 
 Finally we started using Phantomjs with great success.
 
-Phantomjs’ main advantage for us was that it fails tests on javascript
+PhantomJS’ main advantage for us was that it fails tests on javascript
 errors. Neither Selenium nor
 capybara-webkit support this, but it is absolutely crucial. In our team
 everyone is allowed to deploy new code to the live system so we really

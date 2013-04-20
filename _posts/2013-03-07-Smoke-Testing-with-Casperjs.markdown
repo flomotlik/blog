@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: CasperJS is the perfect tool to get started with testing your deployed applications
+keywords: Codeship, CasperJS, smoke testing, smoke tests, smoketests, Selenium, Testacular, Javascript, Coffeescript, start testing software, continuous integration, testing in the cloud, hosted testing
 image: http://blog.codeship.io/images/200x200_casper_js.png
 ---
 ![Casperjs](/images/casperjs/Casper_JS_ghost.gif)

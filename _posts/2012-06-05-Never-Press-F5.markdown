@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Never press F5 again when developing your web application. Use Livereload instead!
+keywords: Codeship, Livereload, efficient programming, guard, faster programming, software development, top 10 tools do program faster
 ---
 
 ***TL:DR: Use [Livereload](http://livereload.com/) to never press F5 in your browser again and if you use Vim try [my new

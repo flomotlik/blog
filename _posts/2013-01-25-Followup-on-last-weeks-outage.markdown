@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Why the system failed and what we did to not ever have that happen again
+keywords: Codeship, service outage, how to avoid service outage, how to avoid breakdown
 image: http://blog.codeship.io/images/200x200_og_outage.png
 ---
 

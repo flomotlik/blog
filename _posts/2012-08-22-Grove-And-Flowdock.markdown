@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How to set up Grove and Flowdock notifications on Codeship.com!
+keywords: Codeship, notifications, hosted continuous integration and deployment, hosted testing, testing in the cloud
 image: http://blog.codeship.io/images/flowdock/flowdock.png
 ---
 

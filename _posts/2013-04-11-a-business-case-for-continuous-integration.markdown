@@ -5,6 +5,7 @@ author: Joe Green
 twitter: joegreen88 
 <!-- google: 115123333592137547204 -->
 description: Continuous Integration provides sound economical benefits. This post examines the bottom-line advantages of Continuous Integration with respect to any business dealing with software deployment.
+keywords: Codeship, continuous integration, advantages of continuous integration, benefits of continuous integration, software testing, why should i test software, why continuous integration, hosted testing
 image: http://blog.codeship.io/images/ci_as_a_business_case/200_200_ci_as_a_business_case.png
 ---
 

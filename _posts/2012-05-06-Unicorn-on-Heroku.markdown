@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: How to get 4x the performance out of Heroku with Unicorn!
+keywords: Codeship, Heroku, perfomance boost, Unicorn, use unicorn for heroku, unicorn workers, setting up unicorn on heroku, set up unicorn on heroku, unicorn setup, what is unicorn, configure unicorn, configurate unicorn
 image: http://blog.codeship.io/images/unicorn/dynos.png
 ---
 

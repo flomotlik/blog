@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: leanvienna
 google: 115123333592137547204
 description: Make your website super fast with Asset Pipeline, Sprites & Cloudfront!
+keywords: Codeship, faster website, website optimization, faster loading time, Asset Pipeline, sprites, cloudfront, amazon, get the best out of your website speed, website speed, website load time, faster websites
 image: http://blog.codeship.io/images/assets/distribution-caching.png
 ---
 

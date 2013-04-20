@@ -5,6 +5,7 @@ author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
 description: How to speed up your test suite to keep developing productively.
+keywords: Codeship, speed up software testing, speed up testing, Ruby on Rails, Rails, Ruby, better test suite, continuous integration, continuos deployment, hosted continuous integration and deployment, hosted testing, testing in the cloud
 image: http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg
 ---
 ![Speed gauges](http://farm1.staticflickr.com/9/13882389_d93fb7d418.jpg)  
