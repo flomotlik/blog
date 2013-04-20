@@ -5,6 +5,7 @@ author: Florian Motlik
 twitter: flomotlik
 google: 115123333592137547204
 description: Sync your production data into staging daily to have a better testing environment
+keywords: heroku, database synchronization, production data, staging environment, optimize testing, better software testing, hosted continuous integration and deployment, continuous deployment
 image: http://blog.codeship.io/images/database-copy/200x200_sync-prod-and-staging.png
 ---
 
