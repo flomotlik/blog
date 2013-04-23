@@ -85,7 +85,12 @@ Each story has a title and a short description what the story is about. The form
 
 This description is always followed by a list of scenarios containing `Given` steps (what has happened before), `When` steps (what actions the user performs) and `Then` steps (the desired outcome for the user).
 
-Also here applies the principle: Start with the Behavior that's most important to the user. Find out the *feature* that's most important, and within the feature always select the most important *scenario*. This way you always stay aligned with your user's needs and focus on the stuff that matters.
+Also here applies the principle: Start with the Behavior that's most important to the user.
+
+1. Find out the *feature* that's most important.
+2. Within the feature always select the most important *scenario*.
+
+This way you always stay aligned with your user's needs and focus on the stuff that matters.
 
 There are tools like [Cucumber](http://cukes.info/) that enable you to test your natural language features automatically. I will introduce Cucumber on one of the next Testing Tuesdays.
 
@@ -93,9 +98,11 @@ There are tools like [Cucumber](http://cukes.info/) that enable you to test your
 
 Many people refer to Behavior-driven development as "test-driven development done right" [3]. In fact, Behavior-driven development is a set of best practices that advice you how to develop software by centering your users.
 
-I barely scratched the surface of Behavior-driven development here, so I especially recommend checking out the references and further infos.
+In the past software development was mainly about technical solutions. This has changed! Behavior-driven development focuses on the *purpose* of your work to people who will use it. This way you will create better software and successfully address your customers' needs. The technical solution arises from this process almost by itself.
 
 In the next few episodes of Testing Tuesday I will introduce a few tools for Behavior-driven development. Stay tuned!
+
+I barely scratched the surface of Behavior-driven development here, so I especially recommend checking out the references and further infos.
 
 References:
 
