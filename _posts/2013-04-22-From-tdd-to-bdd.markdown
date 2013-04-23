@@ -24,11 +24,11 @@ Test-driven development is rather a paradigm than a process. It describes the cy
 * What exactly should I test?
 * How should tests be structured and named?
 
-Also the name *test*-driven development caused confusion. How can you test something that's not there yet?
+The name *test*-driven development also caused confusion. How can you test something that's not there yet?
 
-It was Dan North [1] who noticed all these unsolved questions and came up with a solution: He suggested that instead of *writing tests* you should think of *specifying Behavior*. Behavior is how the *user* wants the application to behave.
+It was Dan North [1] who noticed all these unsolved questions and came up with a solution: He suggested that instead of *writing tests* you should think of *specifying behavior*. Behavior is how the *user* wants the application to behave.
 
-When you develop Behavior-driven, you always start with the piece of functionality that's most important to your user. I consider this phase as taking the developer hat off and putting the user hat on. Once you've specified the user needs, you put the developer hat back on and implement your specification.
+When your development is Behavior-driven, you always start with the piece of functionality that's most important to your user. I consider this phase as taking the developer hat off and putting the user hat on. Once you've specified the user needs, you put the developer hat back on and implement your specification.
 
 In my experience, this is the hardest part of the process: Often you don't know what's the most important Behavior for your user. However, over time and with a lot of feedback it becomes more apparent. But we'll get into that in a later blog post.
 
@@ -48,7 +48,7 @@ In Behavior-driven development you specify Behavior in whole sentences. Not just
 
 Now we know that a user lets you assign a name. But what's the real value of this syntax?
 
-* *Focus:* You test exactly what the sentence says. Not more, not less. This will let you write fine-grained and expressive specifications.
+* *Focus:* You test exactly what the sentence says. No more, no less. This will let you write fine-grained and expressive specifications.
 * *Documentation:* Just by reading the sentence, your team-mates will understand what this Behavior is about. They don't need to read a single line of code.
 * *Regression:* When you run all these specifications later on, they become regression tests. When a regression test fails, you immediately see what Behavior of your application is broken.
 
@@ -77,15 +77,15 @@ Dan North suggested a template that lets you describe features in natural langua
     And two black garments in stock
 Source: [2]
 
-Each story has a title and a short description what the story is about. The format of this description is always the same:
+Each story has a title and a short description of what the story is about. The format of this description is always the same:
 
 * *In order to* get some benefit
 * *As* the user you are developing for
 * *I want* what this feature does
 
-This description is always followed by a list of scenarios containing `Given` steps (what has happened before), `When` steps (what actions the user performs) and `Then` steps (the desired outcome for the user).
+This description is always followed by a list of scenarios containing `Given` steps (what has happened before), `When` steps (what actions the user performs), and `Then` steps (the desired outcome for the user).
 
-Also here applies the principle: Start with the Behavior that's most important to the user.
+Here, we also apply the principle: Start with the Behavior that's most important to the user.
 
 1. Find out the *feature* that's most important.
 2. Within the feature always select the most important *scenario*.
@@ -96,13 +96,13 @@ There are tools like [Cucumber](http://cukes.info/) that enable you to test your
 
 ## Conclusions
 
-Many people refer to Behavior-driven development as "test-driven development done right" [3]. In fact, Behavior-driven development is a set of best practices that advice you how to develop software by centering your users.
+Many people refer to Behavior-driven development as "test-driven development done right" [3]. In fact, Behavior-driven development is a set of best practices that advise you on how to develop software by centering your users.
 
 In the past software development was mainly about technical solutions. This has changed! Behavior-driven development focuses on the *purpose* of your work to people who will use it. This way you will create better software and successfully address your customers' needs. The technical solution arises from this process almost by itself.
 
 In the next few episodes of Testing Tuesday I will introduce a few tools for Behavior-driven development. Stay tuned!
 
-I barely scratched the surface of Behavior-driven development here, so I especially recommend checking out the references and further infos.
+I barely scratched the surface of Behavior-driven development here, so I especially recommend checking out the references and further info (see below).
 
 References:
 
@@ -110,7 +110,7 @@ References:
 * [[2] Wikipedia: Behavior-driven development](http://en.wikipedia.org/wiki/Behavior-driven_development)
 * [[3] Get Your TDD Right with BDD](http://codingcraft.wordpress.com/2011/11/12/bdd-get-your-tdd-right/)
 
-Further infos:
+Further info:
 
 * [YouTube video: BDD vs TDD (explained)](https://www.youtube.com/watch?v=mT8QDNNhExg)
 * [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends](http://pragprog.com/book/achbd/the-rspec-book)
