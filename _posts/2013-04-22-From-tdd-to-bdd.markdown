@@ -12,7 +12,7 @@ This is the second blog post of our new *Testing Tuesday* series. Every Tuesday 
 
 <hr>
 
-[Last week's Testing Tuesday](/2013/04/16/tests-make-software.html) we talked about test-driven development. We considered it the basis for Behavior-driven development. But what's the difference between them?
+[Last Testing Tuesday](/2013/04/16/tests-make-software.html) we talked about test-driven development. We considered it the basis for Behavior-driven development. But what's the difference between them?
 
 Test-driven development focuses on the *developer's* opinion on how parts of the software should *work*. Behavior-driven development focuses on the *users'* opinion on how they want your application to *behave*.
 
@@ -21,7 +21,7 @@ Test-driven development focuses on the *developer's* opinion on how parts of the
 Test-driven development is rather a paradigm than a process. It describes the cycle of writing a test first, and application code afterwards – followed by an optional refactoring. But it doesn't make any statements about
 
 * Where do I begin to develop?
-* How much should I test?
+* What exactly should I test?
 * How should tests be structured and named?
 
 Also the name *test*-driven development caused confusion. How can you test something that's not there yet?
@@ -30,7 +30,7 @@ It was Dan North [1] who noticed all these unsolved questions and came up with a
 
 When you develop Behavior-driven, you always start with the piece of functionality that's most important to your user. I consider this phase as taking the developer hat off and putting the user hat on. Once you've specified the user needs, you put the developer hat back on and implement your specification.
 
-In my experience, this is the hardest part of the process: Often you don't know what's the most important Behavior for your user. However, over time and with a lot of feedback it becomes more apparent. But we'll get to that in a later blog post.
+In my experience, this is the hardest part of the process: Often you don't know what's the most important Behavior for your user. However, over time and with a lot of feedback it becomes more apparent. But we'll get into that in a later blog post.
 
 For now, let's assume we know what's most important to our users. So we know where to get started, but how do we specify Behavior? In traditional unit testing frameworks like Test::Unit a test would look like this:
 
@@ -54,7 +54,7 @@ Now we know that a user lets you assign a name. But what's the real value of thi
 
 But while this syntax is useful for specifying fine-grained Behavior of your application's components, it still doesn't say anything about the intentions of your users.
 
-Dan North suggested a template that describes your features in in natural language:
+Dan North suggested a template that lets you describe features in natural language:
 
     Story: Returns go to stock
 
@@ -85,7 +85,7 @@ Each story has a title and a short description what the story is about. The form
 
 This description is always followed by a list of scenarios containing `Given` steps (what has happened before), `When` steps (what actions the user performs) and `Then` steps (the desired outcome for the user).
 
-Also here applies the principle: Start with the Behavior that's most important to the user. Find out the *feature* that's most important and within the feature always select the *scenario* that's most important. This way you always stay aligned with your user's needs and focus on the stuff that matters.
+Also here applies the principle: Start with the Behavior that's most important to the user. Find out the *feature* that's most important, and within the feature always select the most important *scenario*. This way you always stay aligned with your user's needs and focus on the stuff that matters.
 
 There are tools like [Cucumber](http://cukes.info/) that enable you to test your natural language features automatically. I will introduce Cucumber on one of the next Testing Tuesdays.
 
@@ -104,5 +104,6 @@ References:
 * [[3] Get Your TDD Right with BDD](http://codingcraft.wordpress.com/2011/11/12/bdd-get-your-tdd-right/)
 
 Further infos:
+
 * [YouTube video: BDD vs TDD (explained)](https://www.youtube.com/watch?v=mT8QDNNhExg)
 * [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends](http://pragprog.com/book/achbd/the-rspec-book)
