@@ -4,7 +4,7 @@ title: "Testing Tuesday #2: From test-driven development to Behavior-driven deve
 author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
-description: Codeship Testing Tuesday #2 – How Behavior-driven development helps you focus on your user's needs instead of your tests.
+description: How Behavior-driven development helps you focus on your users' needs instead of your tests.
 keywords: Codeship, TDD, test driven development, Behavior driven development, behaviour driven development, testing tuesday, testing tools, testing methodologies, develop iteratively, hosted testing, testing in the cloud
 image: TODO
 ---
