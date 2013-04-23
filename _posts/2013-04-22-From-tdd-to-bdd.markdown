@@ -6,8 +6,9 @@ twitter: clemenshelm
 google: 116883220210675577340
 description: How Behavior-driven development helps you focus on your users' needs instead of your tests.
 keywords: Codeship, TDD, test driven development, Behavior driven development, behaviour driven development, testing tuesday, testing tools, testing methodologies, develop iteratively, hosted testing, testing in the cloud
-image: TODO
+image: http://blog.codeship.io/images/23-04-2013-TT-from-TDD-to-BDD/200x200_tt_from-tdd-to-bdd.jpg
 ---
+![Illustration testing tuesday: Tests make software](/images/23-04-2013-TT-from-TDD-to-BDD/codeship_tt_from-tdd-to-bdd.jpg)
 This is the second blog post of our new *Testing Tuesday* series. Every Tuesday we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
 
 <hr>
