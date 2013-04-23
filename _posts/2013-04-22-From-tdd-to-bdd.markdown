@@ -8,19 +8,17 @@ description: Codeship Testing Tuesday #2 – TODO.
 keywords: Codeship, TDD, test driven development, behavior driven development, behaviour driven development, testing tuesday, testing tools, testing methodologies, develop iteratively, hosted testing, testing in the cloud
 image: TODO
 ---
-This is the second blog post of our new *Testing Tuesday* series. Every Tuesday we
-will share our insights and opinions on the software testing space. Drop by every
-Tuesday to learn more!
+This is the second blog post of our new *Testing Tuesday* series. Every Tuesday we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
 
 <hr>
 
-In [last weeks Testing Tuesday](/2013/04/16/tests-make-software.html) we talked about test-driven development. We considered it the basis for behavior-driven development. But what's the difference between them?
+[Last week's Testing Tuesday](/2013/04/16/tests-make-software.html) we talked about test-driven development. We considered it the basis for behavior-driven development. But what's the difference between them?
 
-Test-driven development focuses on the *developer's* opinion on how parts of the software should *work*. Behavior-driven development focuses on the *users'* opinion on how they want to use your application.
+Test-driven development focuses on the *developer's* opinion on how parts of the software should *work*. Behavior-driven development focuses on the *users'* opinion on how they want your application to *behave*.
 
 ## Behavior-driven development
 
-The problem with test-driven development is that it's rather a paradigm than a process. Test-driven development describes the circle of writing tests first, and application code afterwards – followed by an optional refactoring. But it doesn't make any statements about
+Test-driven development is rather a paradigm than a process. It describes the cycle of writing a test first, and application code afterwards – followed by an optional refactoring. But it doesn't make any statements about
 
 * Where do I begin to develop?
 * How much should I test?
@@ -28,19 +26,21 @@ The problem with test-driven development is that it's rather a paradigm than a p
 
 Also the name *test*-driven development caused confusion. How can you test something that's not there yet?
 
-It was Dan North [1] who noticed all these unsolved questions and came up with a solution. He suggested that instead of *writing tests* you should think of *specifying behavior*. Behavior is how the *user* wants the application to behave.
+It was Dan North [1] who noticed all these unsolved questions and came up with a solution: He suggested that instead of *writing tests* you should think of *specifying behavior*. Behavior is how the *user* wants the application to behave.
 
-When you develop behavior-driven, you always start with the piece of functionality that's most important to your user. I consider this phase as taking the developer hat off and putting the user hat on. In my experience, this is the hardest part of the process: Often you don't know what's the most important behavior for your user. However, over time and with a lot of feedback it becomes more apparent. But we'll get to that in a later blog post.
+When you develop behavior-driven, you always start with the piece of functionality that's most important to your user. I consider this phase as taking the developer hat off and putting the user hat on. Once you've specified the user needs, you put the developer hat back on and implement your specification.
 
-For now, let's assume you know what's most important to your users. So we know where to get started, but how do we specify behavior? In traditional unit testing frameworks like Test::Unit a test would look like this:
+In my experience, this is the hardest part of the process: Often you don't know what's the most important behavior for your user. However, over time and with a lot of feedback it becomes more apparent. But we'll get to that in a later blog post.
+
+For now, let's assume we know what's most important to our users. So we know where to get started, but how do we specify behavior? In traditional unit testing frameworks like Test::Unit a test would look like this:
 
 <script src="https://gist.github.com/clemenshelm/5443299.js"></script>
 
-This certainly works, but there are some problems:
+This certainly works, but there are some flaws:
 
-1. There's the word test in the class name and the method name.
+1. There's the word test in the class name and the method name, but we'd like to specify requirements instead.
 2. The syntax is understandable but still appears artificial.
-3. The test name doesn't state what it really tests.
+3. And most importantly: The test name doesn't state what it really tests.
 
 In behavior-driven development you specify behavior in whole sentences. Not just the naming but also the code syntax should read naturally:
 
@@ -48,15 +48,14 @@ In behavior-driven development you specify behavior in whole sentences. Not just
 
 Now we know that a user lets you assign a name. But what's the real value of this syntax?
 
-* *Focus:* You test exactly what the sentence says. Not more, not less. This will let you write fine-grained and expressive behaviors.
+* *Focus:* You test exactly what the sentence says. Not more, not less. This will let you write fine-grained and expressive specifications.
 * *Documentation:* Just by reading the sentence, your team-mates will understand what this behavior is about. They don't need to read a single line of code.
-* *Regression:* When you run all your behaviors later on, they become regression tests. When a regression test fails, you immediately see what behavior of your application is broken.
+* *Regression:* When you run all these specifications later on, they become regression tests. When a regression test fails, you immediately see what behavior of your application is broken.
 
-But while this syntax is useful for specifying fine-grained behavior of  your application's components, it still doesn't say anything about the intentions of your users.
+But while this syntax is useful for specifying fine-grained behavior of your application's components, it still doesn't say anything about the intentions of your users.
 
 Dan North suggested a template that describes your features in in natural language:
 
-```
     Story: Returns go to stock
 
     In order to keep track of stock
@@ -76,7 +75,6 @@ Dan North suggested a template that describes your features in in natural langua
     When he returns the garment for a replacement in black,
     Then I should have three blue garments in stock
     And two black garments in stock
-```
 Source: [2]
 
 Each story has a title and a short description what the story is about. The format of this description is always the same:
@@ -95,9 +93,9 @@ There are tools like [Cucumber](http://cukes.info/) that enable you to test your
 
 Many people refer to behavior-driven development as "test-driven development done right" [3]. In fact, behavior-driven development is a set of best practices that advice you how to develop software by centering your users.
 
-I barely scratched the surface of behavior-driven development here, so I especially recommend to check out the references and further reading.
+I barely scratched the surface of behavior-driven development here, so I especially recommend checking out the references and further infos.
 
-In the next few episodes of Testing Tuesday I will introduce a few tools made for Behavior-driven development. Stay tuned!
+In the next few episodes of Testing Tuesday I will introduce a few tools for Behavior-driven development. Stay tuned!
 
 References:
 
@@ -105,5 +103,6 @@ References:
 * [[2] Wikipedia: Behavior-driven development](http://en.wikipedia.org/wiki/Behavior-driven_development)
 * [[3] Get Your TDD Right with BDD](http://codingcraft.wordpress.com/2011/11/12/bdd-get-your-tdd-right/)
 
-Further reading:
+Further infos:
+* [YouTube video: BDD vs TDD (explained)](https://www.youtube.com/watch?v=mT8QDNNhExg)
 * [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends](http://pragprog.com/book/achbd/the-rspec-book)
