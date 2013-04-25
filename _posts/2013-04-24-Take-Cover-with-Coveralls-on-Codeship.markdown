@@ -4,7 +4,8 @@ title: Combine Coveralls and Codeship to track your code coverage
 author: Florian Motlik
 twitter: flomotlik
 google: 115123333592137547204
-description: Code coverage can be
+description: Code coverage is on of the things that can quickly improve your workflow significantly. That's why we have included support for Coveralls to the Codeship.
+keywords: Codeship, Coveralls, test driven development, testing tools, testing methodologies, hosted testing, automatically deploy, code coverage, code coverage tools, healthy code, code smell, Ruby, Ruby on rails
 image: http://blog.codeship.io/images/coveralls/200x200_codeship_coveralls_integration.png
 ---
 
