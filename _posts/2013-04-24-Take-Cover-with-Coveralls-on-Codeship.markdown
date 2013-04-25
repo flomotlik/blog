@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combine Coveralls and Codeship to see exactly how your code coverage is evolving
+title: Combine Coveralls and Codeship to track your code coverage
 author: Florian Motlik
 twitter: flomotlik
 google: 115123333592137547204
@@ -10,12 +10,12 @@ image: http://blog.codeship.io/images/coveralls/200x200_codeship_coveralls_integ
 
 ![Coveralls UI](/images/coveralls/codeship_coveralls_integration.png)
 
-When starting with continuous integration and especially continuous deployment code
+When starting with continuous integration and deployment, code
 coverage is one of the tools that help tremendously in your workflow.
 
 Being able to quickly grasp which parts of your application aren't well tested and
-deserve a little more time is incredibly important. Especially with historical data
-it is a very powerful tool.
+deserve a little more time is incredibly important. Especially tracking your code coverage
+over time is a powerful feature.
 
 With this in mind we were always searching for some way to help our users get started
 with integrating code coverage into their workflows. Today we are happy to announce that
