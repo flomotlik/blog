@@ -9,9 +9,11 @@ keywords: Codeship, Cucumber, Behavior driven development, behaviour driven deve
 image: http://blog.codeship.io/images/23-04-2013-TT-from-TDD-to-BDD/200x200_tt_from-tdd-to-bdd.jpg
 ---
 ![Illustration testing tuesday: Tests make software](/images/23-04-2013-TT-from-TDD-to-BDD/codeship_tt_from-tdd-to-bdd.jpg)
-This is the third episode of our new *Testing Tuesday* series. Every Tuesday we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
+This is the third episode of our new *Testing Tuesday* series and our first screencast. Every Tuesday we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
 
-## Behavior-driven development with Cucumber
+<iframe src="http://player.vimeo.com/video/65160463" width="548" height="343" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+## BDD with Cucumber
 
 [Cucumber](http://cukes.info/) lets you write your feature in natural language and develop them behavior-driven afterwards. It is written in Ruby, but you can also use it with several other languages, including the Java Virtual Machine, Python and PHP. Check out the [Wiki](https://github.com/cucumber/cucumber/wiki) to find out more.
 
