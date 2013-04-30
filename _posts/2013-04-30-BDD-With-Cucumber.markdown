@@ -19,6 +19,10 @@ In this screencast we're creating a new feature in our Superhero Ruby on Rails a
 
 <iframe src="http://player.vimeo.com/video/65160463" width="548" height="343" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
+## Up next week: Cucumber on Codeship
+
+Next week we will dive further into Cucumber and show you how to test and deploy our Superhero app on Codeship.
+
 Further info:
 
 * [Superheroes – The code of the screencast](https://github.com/codeship/superheroes)
