@@ -6,9 +6,9 @@ twitter: clemenshelm
 google: 116883220210675577340
 description: How to specify your features in natural language and develop them behavior-driven using Cucumber.
 keywords: Codeship, Cucumber, Behavior driven development, behaviour driven development, testing tuesday, testing tools, testing methodologies, develop iteratively, hosted testing, testing in the cloud
-image: http://blog.codeship.io/images/23-04-2013-TT-from-TDD-to-BDD/200x200_tt_from-tdd-to-bdd.jpg
+image: http://blog.codeship.io/images/30-04-2013-TT_BDD_with_cucumber/200x200_TT-BDD_with_cucumber.jpg
 ---
-![Illustration testing tuesday: Tests make software](/images/23-04-2013-TT-from-TDD-to-BDD/codeship_tt_from-tdd-to-bdd.jpg)
+![Illustration testing tuesday: Tests make software](/images/30-04-2013-TT_BDD_with_cucumber/codeship_TT-behavior-driven-development-with-cucumber.jpg)
 This is the third episode of our new *Testing Tuesday* series and our first screencast. Every Tuesday we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
 
 <iframe src="http://player.vimeo.com/video/65160463" width="548" height="343" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
