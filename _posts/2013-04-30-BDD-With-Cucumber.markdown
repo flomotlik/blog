@@ -23,6 +23,8 @@ In this screencast we're creating a new feature in our Superhero Ruby on Rails a
 
 Next week we will dive further into Cucumber and show you how to test and deploy our Superhero app on Codeship.
 
+<hr/>
+
 Further info:
 
 * [Superheroes – The code of the screencast](https://github.com/codeship/superheroes)
