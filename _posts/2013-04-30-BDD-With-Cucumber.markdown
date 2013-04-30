@@ -9,7 +9,7 @@ keywords: Codeship, Cucumber, Behavior driven development, behaviour driven deve
 image: http://blog.codeship.io/images/30-04-2013-TT_BDD_with_cucumber/200x200_TT-BDD_with_cucumber.jpg
 ---
 ![Illustration testing tuesday: Tests make software](/images/30-04-2013-TT_BDD_with_cucumber/codeship_TT-behavior-driven-development-with-cucumber.jpg)
-This is the third episode of our new *Testing Tuesday* series and our first screencast. Every Tuesday we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
+This is the third episode of our new *Testing Tuesday* series and our first screencast. Every week we will share our insights and opinions on the software testing space. Drop by every Tuesday to learn more!
 
 ## BDD with Cucumber
 
