@@ -4,7 +4,7 @@ title: "Testing Tuesday #3: Behavior-driven development with Cucumber"
 author: Clemens Helm
 twitter: clemenshelm
 google: 116883220210675577340
-description: How to specify your features in natural language and develop them behavior-driven using Cucumber.
+description: An introduction to the testing framework Cucumber. We are working in a Ruby on Rails app, specify features in natural language and develop them behavior-driven using Cucumber.
 keywords: Codeship, Cucumber, Behavior driven development, behaviour driven development, testing tuesday, testing tools, testing methodologies, develop iteratively, hosted testing, testing in the cloud
 image: http://blog.codeship.io/images/30-04-2013-TT_BDD_with_cucumber/200x200_TT-BDD_with_cucumber.jpg
 ---
