@@ -15,7 +15,7 @@ This is the third episode of our new *Testing Tuesday* series and our first scre
 
 [Cucumber](http://cukes.info/) lets you write your feature in natural language and develop them behavior-driven afterwards. It is written in Ruby, but you can also use it with several other languages, including the Java Virtual Machine, Python and PHP. Check out the [Wiki](https://github.com/cucumber/cucumber/wiki) to find out more.
 
-In this screencast we're creating a new feature in our Superhero Ruby on Rails app using Cucumber. We kept it quite simple though, so it won't be to hard to follow along if you're not familiar with Ruby.
+In this screencast we're creating a new feature in our Superhero Ruby on Rails app using Cucumber. We kept it quite simple though, so it won't be too hard to follow along if you're not familiar with Ruby.
 
 <iframe src="http://player.vimeo.com/video/65160463" width="548" height="343" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
