@@ -1,11 +1,31 @@
 ---
 layout: post
 title: How to get 4x the performance out of Heroku with Unicorn
-author: Flo
-description: How to get 4x the performance out of Heroku with Unicorn
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: How to get 4x the performance out of Heroku with Unicorn!
+keywords: Codeship, Heroku, perfomance boost, Unicorn, use unicorn for heroku, unicorn workers, setting up unicorn on heroku, set up unicorn on heroku, unicorn setup, what is unicorn, configure unicorn, configurate unicorn
+image: http://blog.codeship.io/images/unicorn/dynos.png
 ---
 
-***This is the first of a two part series on how we set up Railsonfire with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
+***Update***: [Part Two](/2012/05/18/Assets-Sprites-CDN.html) was released.
+
+***Update 2***:
+
+After the [shitstorm](http://rapgenius.com/James-somers-herokus-ugly-secret-lyrics) surrounding Heroku's routing they
+have updated their docs and now regard [Unicorn as their default Rails server](https://blog.heroku.com/archives/2013/2/27/unicorn_rails).
+They now [provide 2x dynos](https://blog.heroku.com/archives/2013/4/5/2x-dynos-beta) with twice the RAM
+so you can run bigger applications with unicorn or run more unicorn workers on one server.
+
+Last but not least
+[New Relic updated their gem](http://blog.newrelic.com/2013/02/21/using-new-relic-on-heroku-read-how-our-new-ruby-agent-measures-queue-time/) to
+make sure that the queuing time shown for a Heroku application is correct.
+
+We have left the rest of the blogpost untouched as it still reflects how you can set up Unicorn on your Heroku machines. But take the
+changes in the recent Heroku blogposts into account.
+
+***This is the first of a two part series on how we set up Codeship with Heroku. The second part will deal with Assets, Sprites and Amazon Cloudfront.***
 
 ***This guide is only relevant and tested with the Heroku Cedar stack.***
 
@@ -17,13 +37,13 @@ Heroku provides plenty of resources, but as it only allows to listen on one port
 
 What we need here is a webserver that listens on one port, but can work through several concurrent requests. Sounds like a job for Unicorn.
 
-###What is Unicorn
+##What is Unicorn
 
 [Unicorn](http://unicorn.bogomips.org/) is a ruby http server that starts one master process listening on one port and forks several worker processes. Every incoming client request is handed to a worker by the master and when finished the master returns the result to the client. Thus it only needs to listen on one port, but can work on several concurrent requests.
 
 [Defunkt](https://github.com/defunkt) wrote a nice [blogpost](https://github.com/blog/517-unicorn) about unicorn some time ago that goes into more detail how GitHub uses it.
 
-###Setup
+##Setup
 To start using Unicorn all you have to do is:
 
 1. Add the Gem to your Gemfile
@@ -35,10 +55,10 @@ To start using Unicorn all you have to do is:
 3. Add unicorn config in config/unicorn.rb
    <script src="https://gist.github.com/2621308.js?file=unicorn.rb"></script>
 
-4. Set the default Logger in **production.rb** to STDOUT, otherwise logging doesn't work.
+4. Set the default Logger in **application.rb** (and not just production.rb) to STDOUT, otherwise logging doesn't work. Thx to [***@krainboltgreene***](https://twitter.com/#!/krainboltgreene) for mentioning that just setting this in production.rb is not enough.
    <script src="https://gist.github.com/2621482.js"> </script>
 
-###Unicorn config
+##Unicorn config
 
 You can find all config parameters in the [unicorn documentation](http://unicorn.bogomips.org/Unicorn/Configurator.html).
 
@@ -52,11 +72,11 @@ Let's go quickly through the configuration we use
 
 ***before\_fork/after\_fork:*** Disconnect in before\_fork and reconnect in after\_fork for your Database, Resque or other services. Without those handlers there will be regular database errors.
 
-###NewRelic
+##NewRelic
 
 Go to the NewRelic Addon of your Heroku application and check your dynos and memory consumption in the dyno tab.
 
-####Average Memory Consumption
+###Average Memory Consumption
 
 Check your Memory Consumption in NewRelic and set the ***worker_processes*** accordingly. The average consumption is shown on the Dyno tab of your NewRelic dashboard.
 
@@ -70,12 +90,13 @@ On the right hand side of that same tab you can see the number of dynos. Make su
 
 ![New Relic](/images/unicorn/dynos.png)
 
-###Benchmarks
+##Benchmarks
 
 I ran several tests with ApacheBench to determine how much the performance improved.
 
 I ran 1000 Requests with 100 concurrent connections against the landing page of our staging application. The following graph shows the time the requests took combined with 1-4 workers.
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart);
@@ -103,12 +124,12 @@ function drawChart() {
 
 Going from one process to several increases performance drastically, from then on it is still a boost to your application, but not as drastically. However you have to find the right spot on how many workers you want unicorn to fork depending on your application. Having too many may shut down your dyno due to memory constraints.
 
-###Conclusion
+##Conclusion
 So in closing using Unicorn as your Heroku Webserver not only pays off, but should be put into the Heroku documentation at least as advanced information.
 
 I actually talked to people and showed them our Unicorn setup, which convinced them that Heroku is not as expensive as it seems and especially when starting your project is a very viable alternative to having your own Server. With every new dyno you get several more concurrent requests, which is pretty neat.
 
-If you have any questions regarding the setup or anything else you can send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a Tweet to [@Railsonfire](https://twitter.com/#!/railsonfire) or use the Olark Chat Box in the right hand corner.
+If you have any questions regarding the setup or anything else you can send an email to [flo@codeship.io](mailto:flo@codeship.io), a Tweet to [@Codeship](https://twitter.com/#!/codeship) or use the Olark Chat Box in the right hand corner.
 
-###Thanks
+##Thanks
 This post is very much built on Michael van Rooijen's [Blogpost](http://michaelvanrooijen.com/articles/2011/06/01-more-concurrency-on-a-single-heroku-dyno-with-the-new-celadon-cedar-stack/). Gists that helped with the setup were by [leshill](https://gist.github.com/1401792) and [jamiew](https://gist.github.com/2227268)

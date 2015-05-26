@@ -1,0 +1,51 @@
+/* FOOTER */
+
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  position: relative;
+}
+	
+	.footer ul {
+		margin-top: 25px;
+		list-style: none;
+		float: left;
+		margin-left: -85px;
+	}
+
+		.footer ul li {
+			float: left;
+			padding-left: 45px;
+
+		}
+
+			.footer ul li a {
+				text-decoration: none;
+				color: #46505f;
+
+			}
+
+				.footer ul li a:hover {
+					color: #262B33;
+				}
+
+
+
+
+.socialbuttons {
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+
+.angel {
+	padding-right: 30px;
+}
+
+.fb-like {
+	padding-right: 30px;
+}
+.twitter-follow-button {
+	padding-right: 30px;
+}
+

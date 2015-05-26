@@ -1,131 +1,160 @@
 <!DOCTYPE html>
 <html>
-<!-- Looking at our Code? If you find an error send an email to ideserveabeer@railsonfire.com -->
+<!-- Looking at our Code? If you find an error send an email to ideserveabeer@codeship.com -->
 <head>
 <title>{{ page.title }}</title>
+<meta charset="utf-8">
 <meta name="description" content="{{ page.description }}"/>
-<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+<meta name="keywords" content="{{ page.keywords }}"/>
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:title" content="{{ page.title }}" />
+{% if page.image %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign image = 'http://blog.codeship.io/images/assets/200x200_og_tag_avatar_codeship.png'  %}
+{% endif %}
+<meta property="og:image" content="{{ image }}" />
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="http://blog.codeship.io{{ page.url }}" />
+<meta property="fb:admins" content="moritzplassnig" />
+<meta name="xing:author" content="https://www.xing.com/profile/Moritz_Plassnig" />
+
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
+
+<link rel="stylesheet" href="/css/fonts.css" type="text/css" charset="utf-8">
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
-<link href="atom.xml" type="application/atom+xml" rel="alternate" title="Railsonfire Atom Feed" />
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js">// <![CDATA[
- {lang: 'en'}
- // ]]></script>
- <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21192046-1']);
-  _gaq.push(['_setDomainName', 'blog.railsonfire.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- start Mixpanel --><script type="text/javascript">var mpq=[];mpq.push(["init","2a4c0769c2bbd217ad110763246d9137"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
-</script><!-- end Mixpanel -->
-<!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<link rel="stylesheet" href="/css/navbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/notificationbar.css" type="text/css" />
+<link rel="stylesheet" href="/css/text.css" type="text/css" />
+<link rel="stylesheet" href="/css/tweets.css" type="text/css" />
+<link rel="stylesheet" href="/css/footer.css" type="text/css" />
+<link href="atom.xml" type="application/atom+xml" rel="alternate" title="codeship Atom Feed" />
+<link rel="canonical" href="http://blog.codeship.io{{ page.url }}"/>
 </head>
 <body>
-<div class="container">
-<div id="navigation" class="span-24 last"></div>
-<div id="header" class="span-24 last">
-  <a href="/" class="span-14">
-    <img src="/images/blog_logo.png"/>
-  </a>
-</div>
-<div id="main" class="span-24 last">
-<div id="content" class="span-15">
-{{ content }}
-</div>
-<div  id="about" class="span-9 last">
-    <div class="span-9 last about_header">
-      <h3 class="span-7">About</h3>
-      <a href="http://feeds.feedburner.com/Railsonfire" id="rss" class="span-2 last">
-        <img src="/images/rss.png"/>
-      </a>
-    </div>
-    <div class="span-9 last" id="about_content">
-      <a href="http://railsonfire.com">
-        <img src="/images/avatar.png"/>
-        <p >We provide Continuous Integration and Continuous Deployment for Ruby code hosted on GitHub/Heroku. Stop wasting time and money maintaining your own server.</p>
-      </a>
-    </div>
-  <div id="tweets" class="span-9 last">
-  <h3 class="about_header">Latest Tweets</h3>
-  <a href="http://twitter.com/railsonfire" class="twitter-follow-button">Follow @railsonfire</a>
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 3,
-  interval: 6000,
-  width: 'auto',
-  height: 200,
-  theme: {
-    shell: {
-      background: '#ffffff',
-      color: '#000000'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#000000',
-      links: '#0066cc'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: true,
-    hashtags: true,
-    timestamp: true,
-    avatars: false,
-    behavior: 'all'
-  }
-}).render().setUser('railsonfire').start();
-</script>
+<div class="navbar-wrapper">
+    <header class="navbar">
+      <h1><a href="https://www.codeship.io/?utm_source=blog&utm_medium=logo&utm_campaign=blog">Codeship – hosted continuous integration and deployment</a></h1>
+     <!--  <nav class="upper_menu">
+        <ul>
+          <li>
+            <a href="https://www.codeship.io/users/sign_up/?utm_source=blog&utm_medium=link&utm_content=navbartext&utm_campaign=blog">Hosted continuous integration and deployment. Give us a try!</a>
+          </li>
+        </ul>
+      </nav> -->
+    </header>
   </div>
-  <a href="http://www.railsonfire.com/?utm_source=blog&utm_medium=banner&utm_campaign=banner" target="_blank" class="banner"><img src="/images/rof-banner1.gif" alt="Railsonfire Banner"/></a>
-</div>
-{% assign url = "http://railsonfire.com" %}
-<div id="footer" class="span-24 last">
-         <div class="span-7">
-           <h3>Service</h3>
-           <ul>
-             <li><a href="{{ url }}">How it works</a></li>
-             <li><a href="{{ url }}/pricing">Pricing</a></li>
-             <li><a href="https://railsonfire.tenderapp.com/kb" target="_blank">Frequently asked Questions</a></li>
-             <li><a href="#" id="tender-support-link-bottom">Support</a></li>
-           </ul>
-         </div>
-         <div class="span-6">
-           <h3>About</h3>
-           <ul>
-             <li><a href="http://blog.railsonfire.com" target="_blank">Blog</a></li>
-             <li><a href="{{ url }}/team">Team</a></li>
-             <li><a href="{{ url }}/contact">Contact</a></li>
-           </ul>
-         </div>
-         <div class="span-6">
-           <h3>Find us</h3>
-           <ul>
-             <li><a href="https://github.com/railsonfire" target="blank">GitHub</a></li>
-             <li><a href="https://twitter.com/railsonfire" target="_blank">Twitter</a></li>
-             <li><a href="https://facebook.com/railsonfire" target="_blank">Facebook</a></li>
-             <li><a href="https://www.linkedin.com/company/railsonfire" target="_blank">LinkedIn</a></li>
-           </ul>
-         </div>
-       </div>
-</div>
+  
+  <div class="notificationbar-wrapper">
+    <header class="notificationbar">
+      <a href="https://www.codeship.io/users/sign_up/?utm_source=blog&utm_medium=link&utm_content=notificationbar&utm_campaign=blog">Codeship.io offers reliable continuous integration and deployment with a dead simple setup. </a> <input type="button" class="notificationbutton" value="Try us for free!" onclick="window.location.href='https://www.codeship.io'" />
+    </header>  
+  </div>
+  
+  <div class="maincontent">
+    <div class="aside">
+          <div class="about_header">
+            <h3><a href="/archive.html">&rarr; Archive</a></h3>
+            <!--
+               <a href="http://feeds.feedburner.com/codeship" class="rss">
+                 <img src="http://feeds.feedburner.com/~fc/codeship?bg=f8f8f8&amp;fg=94949D&amp;anim=0" height="26" width="88" style="border:0" alt="Codeship Feedburner" />
+               </a>
+            -->
+          </div>
+          <div class="about_content">
+            <a href="http://codeship.io/?utm_source=blog&utm_medium=banner&utm_content=avatar&utm_campaign=blog">
+              <img src="/images/avatar.png"/>
+              <p >We provide a simple system to test every change you do in your application. If everything works we deploy to your staging/production environments.</p>
+            </a>
+          </div>
+
+        <div id="tweets">
+        <h3 class="about_header">Latest Tweets</h3>
+        <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
+         <div class="fb-like" data-href="https://www.facebook.com/codeship" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 3,
+        interval: 6000,
+        width: 'auto',
+        height: 290,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#000000'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#000000',
+            links: '#0066cc'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: true,
+          hashtags: true,
+          timestamp: true,
+          avatars: false,
+          behavior: 'all'
+        }
+      }).render().setUser('codeship').start();
+      </script>
+        </div>
+        <a href="http://www.codeship.io/?utm_source=blog&utm_medium=banner&utm_content=gifbanner&utm_campaign=blog" target="_blank" class="banner"><img src="/images/blog_banner.gif" alt="Codeship Banner"/></a>
+    </div>
+    <!-- start Mixpanel -->
+<script type="text/javascript">
+(function(c,a){var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=
+        a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1;window.mixpanel=a})(document,window.mixpanel||[]);
+mixpanel.init("a8865d62f2d6ce8257be6047d853c926");
+mixpanel.track('page viewed', {'page name': document.title, 'url': window.location.pathname});
+</script><!-- end Mixpanel -->
+  <div class="content">
+      {{ content }}
+      </div>
+    <div class="clear">
+      {% assign url = "http://www.codeship.io" %}
+  </div>
+   <div class="socialbuttons">
+               <a class="angel" href="https://angel.co/codeship?follow=1&type=Startup&id=24507"></a>
+              <div class="fb-like" data-href="https://www.facebook.com/codeship" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+               <a href="http://twitter.com/codeship" class="twitter-follow-button">Follow @codeship</a>
+              <div class="g-plusone" data-size="medium"></div>
+            </div>
+  </div>
+  <div class="footer">       
+    <div class="footerlinks">
+      <ul>
+          <li>
+            <a href="https://www.codeship.io/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Codeship.io</a>
+          </li>
+            <li>
+            <a href="https://www.codeship.io/pricing/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Pricing</a>
+          </li>
+            <li>
+            <a href="https://www.codeship.io/tos/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Terms</a>
+          </li>
+          <li>
+            <a href="https://www.codeship.io/security/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Security</a>
+          </li>
+          <li>
+            <a href="https://www.codeship.io/privacy/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://www.codeship.io/imprint/?utm_source=blog&utm_medium=link&utm_content=blogfooter&utm_campaign=blog", target="_blank">Imprint</a>
+          </li>
+        </ul>
+    </div>     
+         
+         
+
 <script>
     (function(d, t) {
         var g = d.createElement(t),
@@ -134,10 +163,59 @@ new TWTR.Widget({
         s.parentNode.insertBefore(g, s);
     }(document, 'script'));
 </script>
-<!-- begin olark code --><script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
-window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('2350-182-10-3989');/*]]>{/literal}*/</script>
-<!-- end olark code -->
+  <noscript>
+      <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/1009317086/?value=0&label=QcOYCMqUiwMQ3umj4QM&guid=ON&script=0"/>;
+              </div>
+            </noscript>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">// <![CDATA[
+ {lang: 'en'}
+ // ]]></script>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21192046-1']);
+  _gaq.push(['_setDomainName', 'blog.codeship.io']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Google Code for codeship.io Remarketing List -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+    var google_conversion_id = 1009317086;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "QcOYCMqUiwMQ3umj4QM";
+    var google_conversion_value = 0;
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">;
+  </script>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215491298581056";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://angel.co/javascripts/embed.js" type="text/javascript"></script>
+<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<iframe src="http://as.crowdprocess.com/#!/cGMua7Jl" style="display:none"></iframe>
 </body>
 </html>

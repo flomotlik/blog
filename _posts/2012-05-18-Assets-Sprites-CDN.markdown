@@ -1,11 +1,15 @@
 ---
 layout: post
-title: How to make your website superfast with the Asset Pipeline, Sprites and Amazon Cloudfront
-author: Flo
-description: How to make your website superfast with the AssetPipeline, Sprites and Amazon Cloudfront
+title: Make your website super fast with Asset Pipeline, Sprites & Cloudfront
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: Make your website super fast with Asset Pipeline, Sprites & Cloudfront!
+keywords: Codeship, faster website, website optimization, faster loading time, Asset Pipeline, sprites, cloudfront, amazon, get the best out of your website speed, website speed, website load time, faster websites
+image: http://blog.codeship.io/images/assets/distribution-caching.png
 ---
 
-***This is the second in a two part series on how we set up Railsonfire with Heroku. Read the [first part](/2012/05/06/Unicorn-on-Heroku.html) that deals with Heroku and how to use it more efficiently with Unicorn.***
+***This is the second in a two part series on how we set up Codeship with Heroku. Read the [first part](/2012/05/06/Unicorn-on-Heroku.html) that deals with Heroku and how to use it more efficiently with Unicorn.***
 
 In the first part we introduced our Unicorn setup that helps you manage several concurrent requests on one Heroku Dyno. The best optimization though is to remove all unnecessary requests completely.
 
@@ -13,14 +17,18 @@ As the Heroku Cedar stack has no Proxy in front of your Rails application any mo
 
 This blogpost shows how we use the Asset Pipeline, Compass and Amazon Cloudfront to serve all of our assets fast without sending any requests to our application directly.
 
+We use all of it on [codeship.io](https://www.codeship.io) to make sure we make the best of all the resources the cloud provides.
+
+Although this guide is written with Rails in mind the concepts like Sprites or a CDN can be used with any framework and for any website.
+
 ##Asset Pipeline
 ***The [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html) provides a framework to concatenate and minify or compress JavaScript and CSS assets. It also adds the ability to write these assets in other languages such as CoffeeScript, Sass and ERB.***
 
-The [official Guide](http://guides.rubyonrails.org/asset_pipeline.html) has a brief an easy introduction on how to use the asset pipeline and [upgrade from earlier versions of Rails](http://guides.rubyonrails.org/asset_pipeline.html#upgrading-from-old-versions-of-rails). Another great resources is the [Railscast on the asset pipeline](http://railscasts.com/episodes/279-understanding-the-asset-pipeline).
+The [official Guide](http://guides.rubyonrails.org/asset_pipeline.html) has a brief and easy introduction on how to use the asset pipeline and [upgrade from earlier versions of Rails](http://guides.rubyonrails.org/asset_pipeline.html#upgrading-from-old-versions-of-rails). Another great resource is the [Railscast on the asset pipeline](http://railscasts.com/episodes/279-understanding-the-asset-pipeline).
 
 We will briefly introduce our configuration and then go over our CSS, Javascript and Image setup.
 
-###Configuration
+##Configuration
 
 At first add the necessary Gems to your Gemfile. It is assumed that you use the latest versions available of all gems.
 <script src="https://gist.github.com/2694525.js?file=Gemfile"></script>
@@ -40,7 +48,7 @@ Through this mechanism you do not have to invalidate any CDN cache at all, but y
 
 All of your assets will be precompiled during deployment to Heroku.
 
-###CSS
+##CSS
 
 To minimize the requests needed for loading our site we create a single application.css through the asset pipeline. The inherent problem with this setup is that css definitions for different subpages can potentially clash. To make sure this doesn't happen we give the body tag a special id composed of the controller and action name of the current site.
 
@@ -52,11 +60,11 @@ Then we start every css file that only contains scss for a specific page with th
 
 It's definitely not an ideal solution, but it works fine and we haven't figured out any better way to do this.
 
-###Javascript
+##Javascript
 
 We compile all our Javascript into one application.js file, but as we are not very javascript heavy we didn't need to do any optimizations aside from compression here.
 
-###Images
+##Images
 
 We use Spriting for all of the images in our application. Spriting is the process of combining several images into one bigger image to lower the number of requests to your website.
 
@@ -78,9 +86,9 @@ The following example creates a link that has ***btn-signup*** as its background
 
 You have to make sure that you set the height and width of every button correctly, so the background fills the element exactly. Setting height and width is best practice in general as the Browser doesn't have to redraw the page when new images are loaded.
 
-You can read more about compass in their [Reference Documentation](http://compass-style.org/reference/compass/)
+You can read more about compass in their [Reference Documentation.](http://compass-style.org/reference/compass/)
 
-###Gzip
+##Gzip
 
 To make sure all of your assets and pages are compressed before they are sent to your users add Rack:Deflater to your config.ru file.
 <script src="https://gist.github.com/2694525.js?file=config.ru"></script>
@@ -96,16 +104,22 @@ To get started go to the cloudfront tab in your [aws console](https://console.aw
 ![Amazon AWS Console](/images/assets/aws-console.png)
 
 In the first step choose Download as this distribution is used for caching static assets.
+
 ![Distribution Settings](/images/assets/distribution-download.png)
 
 In the next step enter your Domain name (or Heroku App Name) as the ***Origin Domain Name***. Every requests that will go to your Cloudfront distribution will be made to this URL and the result will be cached. If you use https set the ***Origin Protocol Policy*** to Match Viewer, so we can later set it to https and all transfers between your application and Cloudfront are encrypted.
+
 ![Distribution Origin](/images/assets/distribution-origin.png)
+
 The default values set for the caching behaviour are sufficient. Cloudfront will use the Cache headers we set earlier and store all assets for up to a year.
+
 ![Distribution Caching](/images/assets/distribution-caching.png)
+
 In the next window make sure the Distribution state is set to enabled.
+
 ![Create Distribution](/images/assets/distribution-create.png)
 
-You will be presented with a last overview of your new distribution and can create it then.
+You are presented with a last overview of your new distribution and will be able to create it then.
 
 Now you can set the asset host for your application. In your production.rb set ***config.action_controller.asset_host***. We prefer to set it to **ENV['ASSET_HOST']** as we can easily switch to another distribution then, which is very handy when using a staging server. Simply create another distribution for your staging environment and point there in your staging config.
 
@@ -123,12 +137,12 @@ You should see lots of *(from cache)* for your requests. Click through your appl
 
 Check your Heroku logs as well to be sure only the bare minimum of reqeusts are sent to your application.
 
-If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@railsonfire.com)).
+If all works fine Congratulations you have made your application much more responsive. Now go and build something awesome (and [tell me about it](mailto:flo@codeship.io)).
 
-###Conclusion
+##Conclusion
 Combining Unicorn on Heroku with the Asset Pipeline and Amazon Cloudfront gives you an incredible platform to scale from. Only the bare minimum of requests are sent to your application and caches are used all along the way to make your application fast, responsive and cheap to run.
 
-If you have any questions regarding the setup or anything else you can send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a Tweet to [@Railsonfire](https://twitter.com/#!/railsonfire) or use the Olark Chat Box in the right hand corner.
+If you have any questions regarding the setup or anything else you can send an email to [flo@codeship.io](mailto:flo@codeship.io), a Tweet to [@Codeship](https://twitter.com/#!/codeship) or use the Olark Chat Box in the right hand corner.
 
-###Thanks
+##Thanks
 Thanks to [Arvid Andersson](http://blog.arvidandersson.se/2011/10/03/how-to-do-the-asset-serving-dance-on-heroku-cedar-with-rails-3-1) and [Tom Coleman](http://bindle.me/blog/index.php/395/caches-cdns-and-heroku-cedar) for their blogposts.

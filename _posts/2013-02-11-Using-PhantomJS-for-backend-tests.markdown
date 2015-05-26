@@ -1,0 +1,64 @@
+---
+layout: post
+title: How to make your testing awesome with PhantomJS
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: Why PhantomJS will make you forget Selenium as Capybara driver
+keywords: Codeship, PhantomJS, testing with PhantomJS, backend testing, software testing, continuous integration, hosted testing, automated software testing, testing in the cloud, javascript errors
+image: http://phantomjs.org/images/phantomjs-logo.png
+---
+![Phantom](/images/phantomjs/phantom.jpg)
+*Image by [petcoffr](http://www.flickr.com/photos/petcoffr/6050263571/sizes/l/in/photostream/).*
+
+[Phantomjs](http://phantomjs.org) is a great tool for end-to-end tests of your application. It
+provides a headless browser based on webkit that allows your tests to
+navigate through the web application. At Codeship we use its capybara integration, but Phantomjs can be used
+for lots of purposes.
+
+Throughout the lifetime of our codebase we have tried various [Capybara](https://github.com/jnicklas/capybara)
+drivers to find the one that suits our test environment and workflow.
+We started off with [akephalos](https://github.com/bernerdschaefer/akephalos),
+moved on to Selenium and switched
+that for [capybara-webkit](https://github.com/thoughtbot/capybara-webkit).
+
+All of them have their benefits, but also their quirks. Selenium broke frequently
+when new Firefox versions were released which were incompatible with
+older versions of the selenium-webdriver gem. Another issue was that
+Selenium had problems with links covered by modal panels. One of our
+customers experienced the same behavior in capybara-webkit.
+Phantomjs correctly failed and provided the right error messages.
+
+Finally we started using Phantomjs with great success.
+
+PhantomJS’ main advantage for us was that it fails tests on javascript
+errors. Neither Selenium nor
+capybara-webkit support this, but it is absolutely crucial. In our team
+everyone is allowed to deploy new code to the live system so we really
+need to make our tests hard and safe. Making sure there are no
+javascript errors on your page is mandatory. We had a
+handful of instances where a small change in javascript broke all of
+our javascript code.
+
+###Getting started
+Getting started with Phantomjs and Capybara is easy. Make
+sure to download the latest version from the [Phantomjs
+website](https://www.phantomjs.org) and follow the installation
+instructions on their [install page](http://phantomjs.org/download.html)
+
+Following is a minimal setup gist to get you started. The Poltergeist
+gem integrates Phantomjs with Capybara and provides a lot of great extensions. Take a look at their
+[customization options](https://github.com/jonleighton/poltergeist#customization) to
+get a better understanding of what you can do.
+<script src="https://gist.github.com/flomotlik/4757094.js"></script>
+
+Here is the Capybara config with the [parallel_tests
+gem](https://github.com/grosser/parallel_tests) setup we use for Codeship:
+<script src="https://gist.github.com/flomotlik/4757186.js"></script>
+
+Additionally this raises javascript errors and increases the
+Phantomjs timeout.
+
+###Conclusions
+Give Phantomjs a try for your test environment! It is a stable, easy to
+use and a powerful friend.

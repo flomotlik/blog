@@ -1,0 +1,38 @@
+/* TWEETS */
+
+
+
+#twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,
+#twtr-widget-1 .twtr-bd p {
+  color: #3a3a3a;
+}
+.twtr-widget h3, .twtr-widget h4, .twtr-widget p {
+  line-height: 1.25em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+#tweets h3{
+    border-top: 1px solid #CCC;
+    padding: 12px 0em;
+}
+.twtr-widget {
+  margin-left: -8px;
+}
+
+.twtr-ft, .twtr-hd{
+    display:none;
+}
+
+.twtr-tweet-text p{
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+.twtr-tweet-wrap {
+  margin-top:15px;
+  margin-bottom: 15px;  
+}
+

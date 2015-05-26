@@ -1,8 +1,11 @@
 ---
 layout: post
 title: How to hack Seedcamp
-author: Flo
-description: We compiled several tips how to rock at Seedcamp
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: We learned a lot in Ljubljana where we attended the Mini Seedcamp. So we compiled several tips how to rock such accelerator events!
+image: http://blog.codeship.io/images/seedcamp/seedcamp.jpg
 ---
 
 Since the [Mini Seedcamp London](http://www.seedcamp.com/2011/08/breaking-news-not-all-of-london-on-holidays-in-august.html) is starting today and the good people of [ReplyDone](http://replydone.com/) asked us about tips for Seedcamp here are some that came up. If you got more please comment below and I will add them to the post.

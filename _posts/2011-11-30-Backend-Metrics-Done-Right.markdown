@@ -1,16 +1,23 @@
 ---
 layout: post
 title: Backend Metrics done right
-author: Flo
-description: How we use Google Docs the measure the shit out of our Backend Data
+author: Florian Motlik
+twitter: leanvienna
+google: 115123333592137547204
+description: How we use Google Docs the measure the shit out of our Backend Data!
+keywords: Codeship, Google Docs, google, metrics, backend data, getting data into google docs, google spreadsheets
+image: http://blog.codeship.io/images/gsmetrics/allthethings.jpg
 ---
-![Measure all the things](http://blog.railsonfire.com/images/gsmetrics/allthethings.jpg)
+![Measure all the things](http://blog.codeship.io/images/gsmetrics/allthethings.jpg)
+
+image based on Artwork by [Hyperbole and a
+Half](http://hyperboleandahalf.blogspot.co.uk/)
 
 I love Mixpanel, Optimizely and Woopra. Diving into Google Analytics or Kissmetrics gives me regular nerdboners. **But as nice as those services are the most important source for your metrics is and always will be your database**.
 
 The problem is this is by definition always very specific to your system, thus you need to implement it yourself.
 
-To make this easy for us we implemented a gem called [GSMetrics](https://github.com/railsonfire/gsmetrics) that lets us keep track of our data in Google Spreadsheets. We use it to run a daily job on Heroku to take all the data we are interrested in and write it into a Spreadsheet. We then analyse that data either directly on Google Spreadsheets or via other means.
+To make this easy for us we implemented a gem called [GSMetrics](https://github.com/codeship/gsmetrics) that lets us keep track of our data in Google Spreadsheets. We use it to run a daily job on Heroku to take all the data we are interrested in and write it into a Spreadsheet. We then analyse that data either directly on Google Spreadsheets or via other means.
 
 I will go through the initial setup you have to do to get it running as well as a little rundown of how we use it with the Heroku Scheduler Addon.
 
@@ -43,11 +50,11 @@ If you add several new rows in a short period of time Google times out your requ
 ## Heroku Scheduler FTW
 We use the [Heroku Scheduler Addon](http://devcenter.heroku.com/articles/scheduler) to run a job every day that goes through our database, takes alle the relevant data, aggregates it and calls gsmetrics.
 
-This makes it incredibly easy to gather backend data and get meaningfull value out of it. Whenever we need to change our metrics it is a matter of minutes to change them, push the new change to github and in a matter of minutes it is tested and deployed (by Railsonfire of course).
+This makes it incredibly easy to gather backend data and get meaningfull value out of it. Whenever we need to change our metrics it is a matter of minutes to change them, push the new change to github and in a matter of minutes it is tested and deployed (by Codeship of course).
 
 ##Conclusion
 GSMetrics is a really simple way to gather your data and analyse your database in every way you wish. You can run it locally with a copy of your production database or on your production system.
 
 I would be really interrested in how you use GSMetrics or what you do to gather your backend metrics.
 
-If you have any suggestions for new features or bugs you can either comment below, send me a pull request or an email to flo@railsonfire.com.
+If you have any suggestions for new features or bugs you can either comment below, send me a pull request or an email to flo@codeship.io.
